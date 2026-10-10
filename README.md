@@ -27,7 +27,7 @@ Every receipt links to its source and carries a label that says what kind of evi
 
 ## The video
 
-VOTE. THEM. OUT. is also a video for the midterms, built from the same data: every claim on screen is a receipt here. Paused on an EXHIBIT number? The page lists every exhibit, in order.
+VOTE. THEM. OUT. is also [a video for the midterms](https://www.youtube.com/watch?v=HUumiZCCYDo), built from the same data: every claim on screen is a receipt here. Paused on an EXHIBIT number? The page lists every exhibit, in order.
 
 | Path | What |
 |---|---|

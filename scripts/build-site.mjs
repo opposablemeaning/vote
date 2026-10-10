@@ -18,7 +18,7 @@ import { SITE, REPO, LABELS, schema, labelTable, topicTable, receiptForm } from 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DOCS = join(ROOT, "docs");
 const OUT = join(DOCS, "vote");
-const VIDEO = ""; // the hero cut's YouTube link, once it's public
+const VIDEO = "https://www.youtube.com/watch?v=HUumiZCCYDo"; // the hero cut on YouTube
 const CHANNEL = "https://www.youtube.com/@OpposableMeaning";
 // the mark from brand/ (scripts/build-brand.mjs), cropped to its edges for inline use
 const MARK = readFileSync(join(ROOT, "brand/mark-on-dark.svg"), "utf8").trim()
