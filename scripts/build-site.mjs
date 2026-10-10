@@ -19,6 +19,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DOCS = join(ROOT, "docs");
 const OUT = join(DOCS, "vote");
 const VIDEO = "https://www.youtube.com/watch?v=HUumiZCCYDo"; // the hero cut on YouTube
+const VIDEO_ID = VIDEO ? new URL(VIDEO).searchParams.get("v") : "";
 const CHANNEL = "https://www.youtube.com/@OpposableMeaning";
 // the mark from brand/ (scripts/build-brand.mjs), cropped to its edges for inline use
 const MARK = readFileSync(join(ROOT, "brand/mark-on-dark.svg"), "utf8").trim()
@@ -175,6 +176,12 @@ const html = `<!doctype html>
   .nk { border: 4px solid var(--red); padding: 14px 18px; margin: 28px auto 0; max-width: 680px; background: var(--panel); }
   .nk b { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: 26px; letter-spacing: 0.02em; }
   .nk p { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+  .video { max-width: 760px; margin: 28px auto 0; }
+  .yt { position: relative; display: block; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #000; }
+  .yt img, .yt iframe { display: block; width: 100%; height: 100%; border: 0; object-fit: cover; }
+  .play { position: absolute; left: 50%; top: 50%; width: 92px; height: 92px; margin: -46px 0 0 -46px; border-radius: 50%; background: var(--red); box-shadow: 0 8px 30px rgba(0,0,0,0.6); }
+  .play::after { content: ""; position: absolute; left: 36px; top: 27px; border-style: solid; border-width: 19px 0 19px 30px; border-color: transparent transparent transparent #fff; }
+  .yt:hover .play, .yt:focus-visible .play { transform: scale(1.08); }
   nav { position: sticky; top: 0; z-index: 2; background: rgba(11,11,12,0.95); border-bottom: 1px solid var(--line); padding: 10px 0; }
   nav .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
   .navlinks { display: flex; gap: 16px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; max-width: 100%; }
@@ -240,7 +247,12 @@ const html = `<!doctype html>
     <a class="cta" href="${VOTE.check}" rel="noopener">VOTE.ORG<small>CHECK YOUR REGISTRATION TODAY</small></a>
     <div class="links">${quick}</div>
     <p class="help">Deadlines and rules differ by state, so check yours today. Missed a deadline? Some states let you register at the polls.</p>
-  </section>${noKings}
+  </section>${VIDEO_ID ? `
+  <div class="video" id="watch">
+    <a class="yt" href="${VIDEO}" data-id="${VIDEO_ID}" rel="noopener" aria-label="Play the video: VOTE. THEM. OUT.">
+      <img src="/vote/video.jpg" alt="" width="1280" height="720"><span class="play" aria-hidden="true"></span>
+    </a>
+  </div>` : ""}${noKings}
 </header>
 <nav><div class="wrap">
   <div class="navlinks"><a href="#rights">YOUR RIGHTS</a><a href="#case">THE CASE</a><a href="#playbook">PLAYBOOK</a><a href="#add">ADD A RECEIPT</a><a href="#video">VIDEO EXHIBITS</a></div>
@@ -322,6 +334,16 @@ const html = `<!doctype html>
   };
   addEventListener("hashchange", reveal);
   reveal();
+  // the video: a still until someone presses play, then YouTube's no-cookie player
+  document.querySelector(".yt")?.addEventListener("click", (e) => {
+    e.preventDefault();
+    const f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + e.currentTarget.dataset.id + "?autoplay=1&rel=0";
+    f.title = "VOTE. THEM. OUT.";
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    e.currentTarget.replaceChildren(f);
+  });
   // send this page: the share sheet where there is one, otherwise copy the link
   const share = document.getElementById("share");
   share.addEventListener("click", async () => {
@@ -361,6 +383,7 @@ writeFileSync(join(DOCS, "_headers"), [
 writeFileSync(join(DOCS, "index.html"), `<!doctype html><meta charset="utf-8"><title>VOTE. THEM. OUT.</title><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=vote/"><link rel="canonical" href="${SITE}"><a href="vote/">The receipts</a>\n`);
 writeFileSync(join(DOCS, ".nojekyll"), "");
 for (const icon of ["favicon.svg", "favicon.ico", "apple-touch-icon.png"]) cpSync(join(ROOT, "brand", icon), join(DOCS, icon));
+if (VIDEO_ID) cpSync(join(ROOT, "assets/video-thumb.jpg"), join(OUT, "video.jpg"));
 
 // the contributor docs list today's labels and topics
 const fill = (text, name, body) => {
