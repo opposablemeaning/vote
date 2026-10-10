@@ -23,6 +23,7 @@ Every receipt links to its source and carries a label that says what kind of evi
 | `scripts/receipts.mjs` | Checks receipts and submissions (`check`) and merges a submission into the data (`add`) |
 | `scripts/build-site.mjs` | Builds the page into `docs/` (Cloudflare Pages runs it on every push) and refreshes the generated tables in CONTRIBUTING.md and the topic list in the receipt form |
 | `submissions/` | Receipts from pull requests, waiting to be merged |
+| `brand/` | The Opposable Meaning logo, profile pictures, banner and site icons, built by `scripts/build-brand.mjs` |
 
 ## The video
 
@@ -55,3 +56,4 @@ The video build also expects media that isn't in this repo: two Trump audio clip
 - Fonts: SIL Open Font License (Anton, Inter, JetBrains Mono) and Apache 2.0 (Special Elite). License texts are in `assets/fonts/`.
 - Protest location data: Crowd Counting Consortium (Harvard Ash Center / UConn), CC0.
 - Sound: synthesized from scratch, plus CC0 recordings and samples credited in `assets/audio/CREDITS.md`.
+- The Opposable Meaning name and logo (`brand/`) are not covered by these licenses.

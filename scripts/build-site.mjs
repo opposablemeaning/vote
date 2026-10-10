@@ -6,6 +6,7 @@
 //
 //   node scripts/build-site.mjs   ->  docs/vote/index.html (+ fonts, receipts.json, receipt.schema.json)
 //                                     docs/_redirects, docs/_headers, docs/index.html (root -> /vote/)
+//                                     docs/favicon.svg, favicon.ico, apple-touch-icon.png (from brand/)
 //                                     CONTRIBUTING.md (label and topic tables)
 //                                     .github/ISSUE_TEMPLATE/new-receipt.yml (topic list)
 
@@ -18,6 +19,10 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DOCS = join(ROOT, "docs");
 const OUT = join(DOCS, "vote");
 const VIDEO = ""; // the hero cut's YouTube link, once it's public
+const CHANNEL = "https://www.youtube.com/@OpposableMeaning";
+// the mark from brand/ (scripts/build-brand.mjs), cropped to its edges for inline use
+const MARK = readFileSync(join(ROOT, "brand/mark-on-dark.svg"), "utf8").trim()
+  .replace('viewBox="0 0 512 512"', 'viewBox="89 74 334 364" width="22" height="24" aria-hidden="true"');
 const data = JSON.parse(readFileSync(join(ROOT, "data/receipts.json"), "utf8"));
 const stats = JSON.parse(readFileSync(join(ROOT, "data/map-stats.json"), "utf8"));
 const exhibitsFile = join(ROOT, "data/hero.exhibits.json");
@@ -141,6 +146,10 @@ const html = `<!doctype html>
 <meta property="og:description" content="${total} receipts, every one sourced. Election Day is Tuesday, Nov 3: check your registration at vote.org.">
 <meta property="og:image" content="${SITE}og.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0b0c">
 <style>
   @font-face { font-family: "Anton"; src: url("/vote/fonts/Anton-Regular.ttf"); font-display: swap; }
   @font-face { font-family: "Inter"; src: url("/vote/fonts/Inter.ttf"); font-weight: 100 900; font-display: swap; }
@@ -210,6 +219,7 @@ const html = `<!doctype html>
   .ways li { margin: 0 0 10px; }
   #exhibits ul { margin-top: 12px; }
   footer.wrap { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 60px; padding-top: 24px; padding-bottom: 60px; }
+  .by a { display: inline-flex; align-items: center; gap: 10px; color: var(--text); font-weight: 900; letter-spacing: 0.06em; text-decoration: none; }
   .hide { display: none !important; }
   @media (max-width: 640px) {
     body { font-size: 16px; } .cap { font-size: 17px; }
@@ -287,6 +297,7 @@ const html = `<!doctype html>
   </ul></details>
 </main>
 <footer class="wrap">
+  <p class="by"><a href="${CHANNEL}" rel="noopener">${MARK}OPPOSABLE MEANING</a></p>
   <p><b>Found an error or a better source?</b> Every receipt has a "correct this" link, or open an issue at <a href="${REPO}" rel="noopener">${REPO.replace("https://", "")}</a>.</p>
   <p>Take it with you: <a href="/vote/receipts.json">every receipt as JSON</a> (CC BY 4.0) · <a href="/vote/receipt.schema.json">the receipt format</a> · <a href="${REPO}" rel="noopener">the code</a> (MIT). Protest counts: Crowd Counting Consortium (Harvard Ash Center / UConn), CC0.</p>
 </footer>
@@ -349,6 +360,7 @@ writeFileSync(join(DOCS, "_headers"), [
 // fallback for hosts that ignore _redirects
 writeFileSync(join(DOCS, "index.html"), `<!doctype html><meta charset="utf-8"><title>VOTE. THEM. OUT.</title><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=vote/"><link rel="canonical" href="${SITE}"><a href="vote/">The receipts</a>\n`);
 writeFileSync(join(DOCS, ".nojekyll"), "");
+for (const icon of ["favicon.svg", "favicon.ico", "apple-touch-icon.png"]) cpSync(join(ROOT, "brand", icon), join(DOCS, icon));
 
 // the contributor docs list today's labels and topics
 const fill = (text, name, body) => {
