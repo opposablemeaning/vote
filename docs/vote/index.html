@@ -1,0 +1,2291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOTE. THEM. OUT. · The Receipts</title>
+<meta name="description" content="Every claim in VOTE. THEM. OUT., with its source. Election Day is Tuesday, Nov 3. Check your registration at vote.org.">
+<link rel="canonical" href="https://opposablemeaning.com/vote/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://opposablemeaning.com/vote/">
+<meta property="og:title" content="VOTE. THEM. OUT. · The Receipts">
+<meta property="og:description" content="Every claim in the video, with its source. Election Day is Tuesday, Nov 3. Check your registration at vote.org.">
+<meta property="og:image" content="https://opposablemeaning.com/vote/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  @font-face { font-family: "Anton"; src: url("/vote/fonts/Anton-Regular.ttf"); font-display: swap; }
+  @font-face { font-family: "Inter"; src: url("/vote/fonts/Inter.ttf"); font-weight: 100 900; font-display: swap; }
+  :root { --ink: #0b0b0c; --panel: #151518; --line: #2a2a30; --text: #f5f5f4; --muted: #a8a29e; --red: #e3122b; --tag: #ffd400; --win: #22c55e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ink); color: var(--text); font: 17px/1.5 "Inter", system-ui, sans-serif; }
+  a { color: #fde68a; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header.wrap { padding-top: 40px; padding-bottom: 24px; text-align: center; }
+  h1 { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: clamp(56px, 12vw, 120px); line-height: 0.95; margin: 0; letter-spacing: 0.01em; }
+  h1 span { color: var(--red); }
+  .sub { color: var(--muted); margin: 10px 0 26px; font-weight: 700; letter-spacing: 0.04em; }
+  .cta { display: inline-block; background: var(--tag); color: var(--ink); text-decoration: none; font-family: "Anton", Impact, sans-serif; font-size: clamp(28px, 6vw, 44px); padding: 12px 28px; border-radius: 6px; }
+  .cta small { display: block; font-family: "Inter", sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.08em; }
+  .day { font-family: "Anton", Impact, sans-serif; color: var(--red); font-size: clamp(30px, 7vw, 56px); margin: 18px 0 0; }
+  .nk { border: 4px solid var(--red); padding: 14px 18px; margin: 24px auto 0; max-width: 680px; background: var(--panel); }
+  .nk b { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: 26px; letter-spacing: 0.02em; }
+  .nk p { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+  nav { position: sticky; top: 0; z-index: 2; background: rgba(11,11,12,0.95); border-bottom: 1px solid var(--line); padding: 10px 0; }
+  nav .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+  nav a { color: var(--text); text-decoration: none; font-weight: 800; font-size: 14px; letter-spacing: 0.04em; }
+  #q { flex: 1 1 220px; min-width: 0; background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; font: inherit; }
+  h2 { font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: clamp(34px, 7vw, 54px); margin: 48px 0 6px; line-height: 1; }
+  h2 + p { color: var(--muted); margin: 0 0 18px; }
+  h3 { font-size: 17px; letter-spacing: 0.06em; font-weight: 900; margin: 30px 0 10px; color: var(--muted); }
+  h3 b { color: var(--red); font-family: "Anton", Impact, sans-serif; font-weight: 400; font-size: 26px; letter-spacing: 0.02em; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  .rc { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin: 0 0 10px; scroll-margin-top: 70px; }
+  .rc:target { outline: 3px solid var(--tag); }
+  .exn { display: inline-block; background: var(--tag); color: var(--ink); font-weight: 900; font-size: 12px; letter-spacing: 0.06em; padding: 2px 8px; margin-right: 8px; }
+  .st { display: inline-block; font-weight: 900; font-size: 11px; letter-spacing: 0.1em; padding: 1px 7px; border: 2px solid currentColor; border-radius: 3px; }
+  .st-QUOTE { color: #f59e0b; } .st-COURT { color: #60a5fa; } .st-REPORTED { color: #d6d3d1; } .st-DATA { color: #2dd4bf; }
+  .st-ESTIMATE { color: #c084fc; } .st-OFFICIAL { color: #4ade80; } .st-PROPOSED { color: #fb923c; } .st-LAW { color: #93c5fd; } .st-WIN { color: var(--win); }
+  .cap { font-weight: 800; font-size: 19px; line-height: 1.3; margin: 8px 0 6px; }
+  .src { margin: 0; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
+  .note { margin: 8px 0 0; font-size: 14px; color: var(--muted); border-left: 3px solid var(--line); padding-left: 10px; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+  .pair > div { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .lbl { display: inline-block; background: var(--text); color: var(--ink); font-weight: 900; font-size: 12px; letter-spacing: 0.12em; padding: 2px 8px; margin-bottom: 8px; }
+  .lbl.red { background: var(--red); color: #fff; }
+  .trick { margin-bottom: 18px; }
+  .tn { font-weight: 900; margin: 0; color: var(--muted); letter-spacing: 0.04em; }
+  .counter { font-family: "Anton", Impact, sans-serif; font-size: 28px; color: var(--red); margin: 2px 0 10px; line-height: 1.1; }
+  .sb li { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding: 10px 0; font-weight: 800; }
+  .sb a { color: var(--win); text-decoration: none; white-space: nowrap; }
+  .rights li { background: var(--panel); border-left: 4px solid var(--tag); padding: 10px 14px; margin-bottom: 8px; }
+  footer.wrap { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); margin-top: 60px; padding-top: 24px; padding-bottom: 60px; }
+  .hide { display: none !important; }
+  @media (max-width: 640px) { .pair { grid-template-columns: 1fr; } body { font-size: 16px; } .cap { font-size: 17px; } }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>VOTE. THEM. <span>OUT.</span></h1>
+  <p class="sub">THE RECEIPTS · 188 SOURCED CLAIMS · 114 EXHIBITS IN THE VIDEO</p>
+  <a class="cta" href="https://www.vote.org/am-i-registered-to-vote/" rel="noopener">VOTE.ORG<small>CHECK YOUR REGISTRATION TODAY</small></a>
+  <p class="day">TUESDAY, NOV 3</p>
+  <div class="nk" id="nk" data-until="2026-10-18">
+    <b>SAT, OCT 17 · NO KINGS: VOTE EARLY</b>
+    <p>Vote early where you can, or make your plan. Early voting dates vary by state: <a href="https://www.vote.org/early-voting-calendar/" rel="noopener">vote.org</a>. Events: <a href="https://www.nokings.org/" rel="noopener">nokings.org</a></p>
+  </div>
+</header>
+<nav><div class="wrap">
+  <a href="#exhibits">EXHIBITS</a><a href="#topics">BY TOPIC</a><a href="#confessions">CONFESSIONS</a><a href="#playbook">PLAYBOOK</a><a href="#rights">YOUR RIGHTS</a>
+  <input id="q" type="search" placeholder="Search receipts (e.g. Medicaid, Epstein, tariffs)" aria-label="Search receipts">
+</div></nav>
+<main class="wrap">
+  <h2 id="exhibits">EVERY EXHIBIT IN THE VIDEO</h2>
+  <p>Paused on an EXHIBIT number? It's here, in order, with the source. Status labels say what kind of evidence each one is: QUOTE, COURT RULING, COURT ORDER, COURT FILING, OFFICIAL record, REPORTED by a news outlet, DATA, ESTIMATE, PROPOSED, LAW.</p>
+  <ul data-search-list>
+      <li class="rc" id="ex1">
+        <span class="exn">EXHIBIT 01</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">A $400 million gift from Qatar is now Air Force One</p>
+        <p class="src"><a href="https://apnews.com/article/trump-air-force-one-plane-qatar-8eb5da68e95d583b14811f85e62cbcd1" rel="noopener">AP · 2026-07-01</a></p>
+        
+      </li>
+      <li class="rc" id="ex2">
+        <span class="exn">EXHIBIT 02</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Wall Street pays up to $100,000 A MONTH to see his posts first</p>
+        <p class="src"><a href="https://www.npr.org/2026/08/01/nx-s1-5912219/for-sale-early-access-to-trumps-truth-social-posts" rel="noopener">NPR · 2026-08-01</a></p>
+        
+      </li>
+      <li class="rc" id="ex3">
+        <span class="exn">EXHIBIT 03</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">$1 BILLION+ in crypto income in 2025 — his own disclosure</p>
+        <p class="src"><a href="https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf" rel="noopener">Trump financial disclosure (OGE Form 278e) · 2026-06-30</a> · <a href="https://www.reuters.com/world/us/trump-reports-over-14-billion-income-crypto-ventures-2026-06-30/" rel="noopener">also: reuters.com</a> · <a href="https://apnews.com/article/trump-financial-disclosure-crypto-060c15062b8fedc6104159ea13775463" rel="noopener">also: apnews.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex4">
+        <span class="exn">EXHIBIT 04</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Trump&#39;s regulator gives his crypto company a preliminary OK to become a bank</p>
+        <p class="src"><a href="https://www.motherjones.com/politics/2026/10/trump-world-liberty-financial-bank/" rel="noopener">Mother Jones · 2026-10</a></p>
+        
+      </li>
+      <li class="rc" id="ex5">
+        <span class="exn">EXHIBIT 05</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Buy his coin, get dinner with the President</p>
+        <p class="src"><a href="https://www.cnbc.com/2025/05/18/trump-coin-dinner-to-include-mostly-non-americans-based-on-top-holders.html" rel="noopener">CNBC · 2025-05-18</a></p>
+        
+      </li>
+      <li class="rc" id="ex6">
+        <span class="exn">EXHIBIT 06</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">9:37am: &quot;THIS IS A GREAT TIME TO BUY!!! DJT&quot; — tariff pause hours later</p>
+        <p class="src"><a href="https://apnews.com/article/trump-truth-social-djt-tesla-musk-tariffs-pause-fccfa6b06c8f1ec0cd7844641ca52669" rel="noopener">AP · 2025-04-09</a></p>
+        
+      </li>
+      <li class="rc" id="ex7">
+        <span class="exn">EXHIBIT 07</span><span class="st st-COURT">COURT RULING</span>
+        <p class="cap">Supreme Court, 6–3: his emergency tariffs were ILLEGAL</p>
+        <p class="src"><a href="https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf" rel="noopener">Supreme Court (Learning Resources v. Trump) · 2026-02-20</a></p>
+        
+      </li>
+      <li class="rc" id="ex8">
+        <span class="exn">EXHIBIT 08</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Struck down — then reimposed under a different law</p>
+        <p class="src"><a href="https://www.wtvr.com/politics/economy/court-struck-one-tariff-trumps-new-plan-still-costs-americans-plenty" rel="noopener">Scripps · 2026-02</a></p>
+        
+      </li>
+      <li class="rc" id="ex9">
+        <span class="exn">EXHIBIT 09</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Courts ordered refunds. The administration appealed.</p>
+        <p class="src"><a href="https://www.hklaw.com/en/insights/publications/2026/06/ieepa-tariff-refund-update-government-appeals" rel="noopener">Holland &amp; Knight · 2026-06-15</a></p>
+        
+      </li>
+      <li class="rc" id="ex10">
+        <span class="exn">EXHIBIT 10</span><span class="st st-DATA">DATA</span>
+        <p class="cap">NY Fed: Americans paid ~90% of the tariff bill</p>
+        <p class="src"><a href="https://libertystreeteconomics.newyorkfed.org/2026/02/who-is-paying-for-the-2025-u-s-tariffs/" rel="noopener">Federal Reserve Bank of New York · 2026-02-12</a></p>
+        
+      </li>
+      <li class="rc" id="ex11">
+        <span class="exn">EXHIBIT 11</span><span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Still costing your household $1,000+ a year</p>
+        <p class="src"><a href="https://www.goodmorningamerica.com/news/story/tariffs-cost-us-households-1000-year-yale-budget-135945432" rel="noopener">Yale Budget Lab via ABC · 2026-08-25</a></p>
+        
+      </li>
+      <li class="rc" id="ex12">
+        <span class="exn">EXHIBIT 12</span><span class="st st-DATA">DATA</span>
+        <p class="cap">Your gas: up 27% in a year</p>
+        <p class="src"><a href="https://www.bls.gov/news.release/archives/cpi_09112026.htm" rel="noopener">BLS CPI · 2026-09-11</a></p>
+        
+      </li>
+      <li class="rc" id="ex13">
+        <span class="exn">EXHIBIT 13</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Deadliest year in ICE custody on record</p>
+        <p class="src"><a href="https://www.npr.org/2026/04/17/nx-s1-5789092/deaths-of-migrants-in-ice-custody-hit-record-high-under-trump" rel="noopener">NPR · 2026-04-17</a></p>
+        
+      </li>
+      <li class="rc" id="ex14">
+        <span class="exn">EXHIBIT 14</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Renee Good, US citizen, shot dead by a federal agent in Minneapolis</p>
+        <p class="src"><a href="https://www.mprnews.org/renee-macklin-good-shooting" rel="noopener">MPR News · 2026-01-07</a></p>
+        
+      </li>
+      <li class="rc" id="ex15">
+        <span class="exn">EXHIBIT 15</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Alex Pretti, VA ICU nurse, shot dead by federal agents</p>
+        <p class="src"><a href="https://www.aljazeera.com/news/2026/1/25/who-was-alex-pretti-the-nurse-shot-dead-by-federal-agents-in-minneapolis" rel="noopener">Al Jazeera · 2026-01-25</a></p>
+        
+      </li>
+      <li class="rc" id="ex16">
+        <span class="exn">EXHIBIT 16</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">5-year-old Liam detained after arriving home from preschool</p>
+        <p class="src"><a href="https://apnews.com/article/minnesota-boy-liam-conejo-ramos-fc958185cd2b4e946b82081be11bc0f6" rel="noopener">AP · 2026-02-01</a></p>
+        
+      </li>
+      <li class="rc" id="ex17">
+        <span class="exn">EXHIBIT 17</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">500+ US citizens held by immigration agents</p>
+        <p class="src"><a href="https://projects.propublica.org/american-citizens-detained-dhs-civil-rights/" rel="noopener">ProPublica · 2026-10-06</a></p>
+        
+      </li>
+      <li class="rc" id="ex18">
+        <span class="exn">EXHIBIT 18</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Large-scale strike on Venezuela. Maduro captured.</p>
+        <p class="src"><a href="https://apnews.com/article/venezuela-us-maduro-what-to-know-a57528ff315a7f70ed51a1721f5e0bc2" rel="noopener">AP · 2026-01-03</a> · <a href="https://www.npr.org/2026/01/03/nx-s1-5665570/trump-says-u-s-carried-out-large-scale-strike-against-venezuela" rel="noopener">also: npr.org</a></p>
+        
+      </li>
+      <li class="rc" id="ex19">
+        <span class="exn">EXHIBIT 19</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">US says it will control Venezuela&#39;s oil &quot;indefinitely&quot;</p>
+        <p class="src"><a href="https://www.aljazeera.com/video/newsfeed/2026/1/8/us-says-it-will-control-venezuelan-oil-indefinitely" rel="noopener">Al Jazeera · 2026-01-08</a></p>
+        
+      </li>
+      <li class="rc" id="ex20">
+        <span class="exn">EXHIBIT 20</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Boat strikes: 235+ dead</p>
+        <p class="src"><a href="https://www.stripes.com/theaters/americas/2026-10-05/us-strike-caribbean-kills-4-23061506.html" rel="noopener">Stars and Stripes · 2026-10-05</a></p>
+        
+      </li>
+      <li class="rc" id="ex21">
+        <span class="exn">EXHIBIT 21</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Trump declares the Iran ceasefire &quot;over&quot;</p>
+        <p class="src"><a href="https://www.cnn.com/2026/07/08/world/live-news/iran-war-nato-summit-ukraine-trump" rel="noopener">CNN · 2026-07-08</a></p>
+        
+      </li>
+      <li class="rc" id="ex22">
+        <span class="exn">EXHIBIT 22</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">49 of 53 Senate Republicans voted against ending the Iran war</p>
+        <p class="src"><a href="https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00244.htm" rel="noopener">U.S. Senate roll call 244 · 2026-09-24</a></p>
+        
+      </li>
+      <li class="rc" id="ex23">
+        <span class="exn">EXHIBIT 23</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump: no attacks on Iran &quot;prior to the Midterm Elections&quot;</p>
+        <p class="src"><a href="https://www.cbsnews.com/live-updates/iran-war-nuclear-donald-trump-vance-rubio-strait-of-hormuz/" rel="noopener">CBS News · 2026-10-08</a></p>
+        
+      </li>
+      <li class="rc" id="ex24">
+        <span class="exn">EXHIBIT 24</span><span class="st st-DATA">DATA</span>
+        <p class="cap">Your diesel: a record $6.52 a gallon during the Iran war</p>
+        <p class="src"><a href="https://www.live5news.com/2026/10/02/trump-says-europe-will-release-diesel-reserves-immediately-prices-hover-near-record-highs/" rel="noopener">AAA via AP · 2026-09-22</a></p>
+        
+      </li>
+      <li class="rc" id="ex25">
+        <span class="exn">EXHIBIT 25</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Russia sanctions eased “at President Trump&#39;s direction” — to buy Putin&#39;s diesel</p>
+        <p class="src"><a href="https://www.nbcnews.com/business/energy/trump-putin-diesel-prices-rcna602566" rel="noopener">NBC News / Treasury OFAC · 2026-10-09</a> · <a href="https://www.reuters.com/business/energy/trump-big-announcement-coming-up-diesel-2026-10-09/" rel="noopener">also: reuters.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex26">
+        <span class="exn">EXHIBIT 26</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">UN inquiry: Israel committed genocide in Gaza</p>
+        <p class="src"><a href="https://news.un.org/en/story/2025/09/1165856" rel="noopener">UN News · 2025-09-16</a></p>
+        
+      </li>
+      <li class="rc" id="ex27">
+        <span class="exn">EXHIBIT 27</span><span class="st st-DATA">DATA</span>
+        <p class="cap">74,000+ killed in Gaza. 21,000+ of them children.</p>
+        <p class="src"><a href="https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers" rel="noopener">Gaza Health Ministry, via Al Jazeera · 2026-10-07</a></p>
+        
+      </li>
+      <li class="rc" id="ex28">
+        <span class="exn">EXHIBIT 28</span><span class="st st-COURT">COURT RULING</span>
+        <p class="cap">ICC arrest warrant for Netanyahu: starvation as a method of war</p>
+        <p class="src"><a href="https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges" rel="noopener">International Criminal Court · 2024-11-21</a></p>
+        
+      </li>
+      <li class="rc" id="ex29">
+        <span class="exn">EXHIBIT 29</span><span class="st st-COURT">COURT ORDER</span>
+        <p class="cap">World Court: Israel must prevent genocidal acts (case pending)</p>
+        <p class="src"><a href="https://www.icj-cij.org/case/192" rel="noopener">International Court of Justice · 2024-01-26</a></p>
+        
+      </li>
+      <li class="rc" id="ex30">
+        <span class="exn">EXHIBIT 30</span><span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">$21.7 BILLION in US military aid to Israel in two years. Your tax dollars.</p>
+        <p class="src"><a href="https://costsofwar.watson.brown.edu/paper/AidToIsrael" rel="noopener">Brown University Costs of War · 2025-10-07</a></p>
+        
+      </li>
+      <li class="rc" id="ex31">
+        <span class="exn">EXHIBIT 31</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Retired Israeli general: &quot;we can&#39;t fight this war without the United States. Period.&quot;</p>
+        <p class="src"><a href="https://www.jns.org/biden-is-the-primary-obstacle-to-israeli-victory/" rel="noopener">JNS · 2023-11-27</a></p>
+        
+      </li>
+      <li class="rc" id="ex32">
+        <span class="exn">EXHIBIT 32</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump on Netanyahu: &quot;I call all the shots.&quot;</p>
+        <p class="src"><a href="https://thehill.com/homenews/administration/5914563-donald-trump-israel-iran-ceasefire-deal/" rel="noopener">The Hill (Financial Times interview) · 2026-06-07</a> · <a href="https://www.reuters.com/world/middle-east/trump-says-new-israel-iran-strikes-wont-affect-peace-deal-2026-06-08/" rel="noopener">also: reuters.com</a> · <a href="https://www.ft.com/content/a0ce59f9-fbde-49e8-9158-fba3d4079859" rel="noopener">also: ft.com</a> · <a href="https://www.timesofisrael.com/liveblog_entry/trump-netanyahu-wont-have-any-choice-but-to-accept-us-iran-deal-i-call-the-shots/" rel="noopener">also: timesofisrael.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex33">
+        <span class="exn">EXHIBIT 33</span><span class="st st-PROPOSED">PROPOSED</span>
+        <p class="cap">Trump moves to send 40,000 more 2,000-lb bombs. $2.8B, mostly your tax dollars.</p>
+        <p class="src"><a href="https://apnews.com/article/trump-israel-weapons-sales-gaza-eb48cb7ecf773ffc472fbafc995aef2a" rel="noopener">AP · 2026-09-15</a> · <a href="https://apnews.com/article/trump-israel-arms-sale-meeks-5ced4aac47eb08d9d949af296cf79ebc" rel="noopener">also: apnews.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex34">
+        <span class="exn">EXHIBIT 34</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Votes to block bombs for Israel: 0 Senate Republicans</p>
+        <p class="src"><a href="https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00081.htm" rel="noopener">U.S. Senate roll call votes · 2026-04-15</a></p>
+        
+      </li>
+      <li class="rc" id="ex35">
+        <span class="exn">EXHIBIT 35</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Rubio: the US hit Iran because of a coming &quot;Israeli action&quot;</p>
+        <p class="src"><a href="https://news.bgov.com/bloomberg-government-news/rubio-spurs-backlash-with-latest-rationale-for-attacks-on-iran" rel="noopener">Bloomberg Government · 2026-03-02</a></p>
+        
+      </li>
+      <li class="rc" id="ex36">
+        <span class="exn">EXHIBIT 36</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Americans who died at war: &quot;losers&quot; and &quot;suckers&quot;</p>
+        <p class="src"><a href="https://www.theatlantic.com/politics/archive/2020/09/trump-americans-who-died-at-war-are-losers-and-suckers/615997/" rel="noopener">The Atlantic · 2020-09-03</a></p>
+        
+      </li>
+      <li class="rc" id="ex37">
+        <span class="exn">EXHIBIT 37</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">His own chief of staff, Gen. John Kelly, confirms it on the record</p>
+        <p class="src"><a href="https://www.axios.com/2023/10/02/trump-troops-fallen-soldiers-john-kelly" rel="noopener">Axios · 2023-10-02</a></p>
+        
+      </li>
+      <li class="rc" id="ex38">
+        <span class="exn">EXHIBIT 38</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Joint Chiefs chairman fired</p>
+        <p class="src"><a href="https://armytimes.com/pentagon/2025/02/22/trump-fires-joint-chiefs-chairman-navy-head-in-dod-leadership-purge" rel="noopener">Army Times · 2025-02-22</a></p>
+        
+      </li>
+      <li class="rc" id="ex39">
+        <span class="exn">EXHIBIT 39</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">To hundreds of military leaders: use US cities as &quot;training grounds&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/trump-hegseth-generals-meeting-military-pentagon-0ecdcbb8877e24329cfa0fc1e851ebd2" rel="noopener">AP · 2025-09-30</a></p>
+        
+      </li>
+      <li class="rc" id="ex40">
+        <span class="exn">EXHIBIT 40</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Emergency abortion guidance for ERs rescinded</p>
+        <p class="src"><a href="https://www.healio.com/news/womens-health-ob-gyn/20250604/cms-rescinds-postroe-guidance-on-emergency-abortions-even-in-states-with-bans" rel="noopener">Healio (CMS) · 2025-06-04</a></p>
+        
+      </li>
+      <li class="rc" id="ex41">
+        <span class="exn">EXHIBIT 41</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Sepsis in second-trimester miscarriages up 50%+ after Texas ban</p>
+        <p class="src"><a href="https://www.texastribune.org/2025/02/20/texas-abortion-ban-impact-death-hospitalization/" rel="noopener">ProPublica / Texas Tribune · 2025-02-20</a></p>
+        
+      </li>
+      <li class="rc" id="ex42">
+        <span class="exn">EXHIBIT 42</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Under Texas&#39;s abortion ban, she waited 40 hours for miscarriage care. She died.</p>
+        <p class="src"><a href="https://www.propublica.org/article/josseli-barnica-death-miscarriage-texas-abortion-ban" rel="noopener">ProPublica · 2024-10-30</a></p>
+        
+      </li>
+      <li class="rc" id="ex43">
+        <span class="exn">EXHIBIT 43</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Planned Parenthood: nearly 50 health centers forced to close in 2025</p>
+        <p class="src"><a href="https://www.plannedparenthood.org/about-us/newsroom/press-releases/new-report-shows-immediate-harms-of-defunding-planned-parenthood" rel="noopener">Planned Parenthood (report) · 2025-11-12</a> · <a href="https://www.plannedparenthoodaction.org/blog/defund" rel="noopener">also: plannedparenthoodaction.org</a></p>
+        
+      </li>
+      <li class="rc" id="ex44">
+        <span class="exn">EXHIBIT 44</span><span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">$911 BILLION cut from Medicaid. 10 million more uninsured by 2034.</p>
+        <p class="src"><a href="https://www.kff.org/medicaid/allocating-cbos-estimates-of-federal-medicaid-spending-reductions-across-the-states-enacted-reconciliation-package/" rel="noopener">KFF, from CBO estimates · 2025-07-23</a></p>
+        
+      </li>
+      <li class="rc" id="ex45">
+        <span class="exn">EXHIBIT 45</span><span class="st st-DATA">DATA</span>
+        <p class="cap">Work requirements started in Nebraska: 1,000+ already denied or dropped</p>
+        <p class="src"><a href="https://www.kff.org/medicaid/early-medicaid-work-requirement-insights-from-nebraska/" rel="noopener">KFF · 2026-09-29</a></p>
+        
+      </li>
+      <li class="rc" id="ex46">
+        <span class="exn">EXHIBIT 46</span><span class="st st-DATA">DATA</span>
+        <p class="cap">Your ACA premiums: up 58%. Your deductible: up 37%.</p>
+        <p class="src"><a href="https://www.kff.org/affordable-care-act/the-average-marketplace-deductible-grew-by-about-1000-per-person-in-2026-with-more-enrollees-shifting-to-higher-deductible-plans-as-enhanced-tax-credits-expired/" rel="noopener">KFF · 2026-05-19</a></p>
+        
+      </li>
+      <li class="rc" id="ex47">
+        <span class="exn">EXHIBIT 47</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Senate Republicans let your ACA tax credits expire. Only 4 voted to extend.</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/politics/watch-live-senate-expected-to-vote-on-aca-subsidies-with-premiums-set-to-rise-in-2026" rel="noopener">AP via PBS NewsHour · 2025-12-11</a></p>
+        
+      </li>
+      <li class="rc" id="ex48">
+        <span class="exn">EXHIBIT 48</span><span class="st st-DATA">DATA</span>
+        <p class="cap">2.6 million fewer people on ACA plans. Two-thirds of the drop: Republican districts.</p>
+        <p class="src"><a href="https://www.kff.org/affordable-care-act/how-does-aca-marketplace-enrollment-in-2026-vary-across-congressional-districts/" rel="noopener">KFF · 2026-10-08</a> · <a href="https://www.kff.org/quick-insights/aca-marketplace-enrollment-is-down-by-3-million-after-big-jump-in-premium-payments/" rel="noopener">also: kff.org</a></p>
+        
+      </li>
+      <li class="rc" id="ex49">
+        <span class="exn">EXHIBIT 49</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">GOP Sen. Tillis: &quot;President Trump breaks his promise by pushing them off of Medicaid&quot;</p>
+        <p class="src"><a href="https://www.wunc.org/politics/2025-06-30/senate-megabill-nc-medicaid-expansion-tillis" rel="noopener">WUNC/NPR · 2025-06-30</a></p>
+        
+      </li>
+      <li class="rc" id="ex50">
+        <span class="exn">EXHIBIT 50</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump: &quot;the Jeffrey Epstein Hoax&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/trump-supporters-epstein-sex-trafficking-investigation-bondi-47370e63060d79af64b0b8ac70b970a4" rel="noopener">AP · 2025-07-16</a></p>
+        
+      </li>
+      <li class="rc" id="ex51">
+        <span class="exn">EXHIBIT 51</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Every Republican present voted to block an Epstein files vote: 211–210</p>
+        <p class="src"><a href="https://clerk.house.gov/evs/2025/roll194" rel="noopener">House roll call 194 · 2025-07-15</a></p>
+        
+      </li>
+      <li class="rc" id="ex52">
+        <span class="exn">EXHIBIT 52</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Speaker Johnson sent the House home early instead of voting</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote" rel="noopener">AP via PBS NewsHour · 2025-07-22</a> · <a href="https://www.cbsnews.com/amp/texas/news/johnson-house-recess-epstein-files-vote" rel="noopener">also: cbsnews.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex53">
+        <span class="exn">EXHIBIT 53</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">51 Senate Republicans voted to table releasing the Epstein files</p>
+        <p class="src"><a href="https://www.dailypress.senate.gov/wednesday-september-10-2025" rel="noopener">Senate Daily Press · 2025-09-10</a></p>
+        
+      </li>
+      <li class="rc" id="ex54">
+        <span class="exn">EXHIBIT 54</span><span class="st st-COURT">COURT RULING</span>
+        <p class="cap">Judge: remove the redactions or justify them. Trump&#39;s DOJ appealed.</p>
+        <p class="src"><a href="https://thehill.com/regulation/court-battles/6047840-doj-appeals-epstein-files-ruling/" rel="noopener">The Hill · 2026-08-24</a> · <a href="https://abcnews.com/Politics/judge-orders-doj-turn-unredacted-epstein-files/story?id=134228532" rel="noopener">also: abcnews.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex55">
+        <span class="exn">EXHIBIT 55</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Senate Republicans confirmed that DOJ&#39;s attorney general, 50⁠–⁠49</p>
+        <p class="src"><a href="https://www.michiganpublic.org/2026-08-08/senate-votes-to-confirm-todd-blanche-as-attorney-general" rel="noopener">NPR via Michigan Public · 2026-08-08</a></p>
+        
+      </li>
+      <li class="rc" id="ex56">
+        <span class="exn">EXHIBIT 56</span><span class="st st-DATA">DATA</span>
+        <p class="cap">China imported ZERO US soybeans in September 2025. First time in 7 years.</p>
+        <p class="src"><a href="https://www.reuters.com/world/china/china-imports-no-us-soybeans-september-first-time-seven-years-2025-10-20/" rel="noopener">Reuters · 2025-10-20</a></p>
+        
+      </li>
+      <li class="rc" id="ex57">
+        <span class="exn">EXHIBIT 57</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Your VA: nearly 30,000 fewer staff</p>
+        <p class="src"><a href="https://www.va.gov/wilmington-health-care/news-releases/va-to-reduce-staff-by-nearly-30k-by-end-of-fy2025/" rel="noopener">Dept. of Veterans Affairs · 2025-07</a></p>
+        
+      </li>
+      <li class="rc" id="ex58">
+        <span class="exn">EXHIBIT 58</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Social Security: 7,000 staff cut</p>
+        <p class="src"><a href="https://www.ssa.gov/news/en/press/releases/2025-02-28.html" rel="noopener">Social Security Administration · 2025-02-28</a></p>
+        
+      </li>
+      <li class="rc" id="ex59">
+        <span class="exn">EXHIBIT 59</span><span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">SNAP: 2.4 million cut. The exemption for veterans: gone.</p>
+        <p class="src"><a href="https://www.cbo.gov/publication/61367" rel="noopener">CBO · 2025-08-11</a></p>
+        
+      </li>
+      <li class="rc" id="ex60">
+        <span class="exn">EXHIBIT 60</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Taking Greenland by force? &quot;I don&#39;t rule it out.&quot;</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/trump-administration/read-full-transcript-president-donald-trump-interviewed-meet-press-mod-rcna203514" rel="noopener">NBC News (Meet the Press transcript) · 2025-05-04</a></p>
+        
+      </li>
+      <li class="rc" id="ex61">
+        <span class="exn">EXHIBIT 61</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Tariff fallout: a $12 billion bailout for farmers</p>
+        <p class="src"><a href="https://www.cbsnews.com/news/white-house-12-billion-aid-package-farmers" rel="noopener">CBS News · 2025-12-08</a></p>
+        
+      </li>
+      <li class="rc" id="ex62">
+        <span class="exn">EXHIBIT 62</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">94% of VA medical centers: severe doctor shortages</p>
+        <p class="src"><a href="https://vaoig.gov/reports/national-healthcare-review/oig-determination-veterans-health-administrations-severe-1" rel="noopener">VA Inspector General · 2025-08-12</a></p>
+        
+      </li>
+      <li class="rc" id="ex63">
+        <span class="exn">EXHIBIT 63</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Rural Georgia hospital closes its maternity ward: Medicaid cuts &quot;solidified this decision&quot;</p>
+        <p class="src"><a href="https://www.cbsnews.com/amp/atlanta/news/lavonia-hospital-closes-labor-and-delivery-unit-leaving-rural-families-in-crisis" rel="noopener">CBS News Atlanta · 2025-10-28</a></p>
+        
+      </li>
+      <li class="rc" id="ex64">
+        <span class="exn">EXHIBIT 64</span><span class="st st-DATA">DATA</span>
+        <p class="cap">Promised: your energy bills cut &quot;50 to 70%.&quot; Electricity: up 6.7% in 2025.</p>
+        <p class="src"><a href="https://www.bls.gov/news.release/archives/cpi_01132026.htm" rel="noopener">AP; BLS · 2026-01-13</a> · <a href="https://spectrumlocalnews.com/nc/charlotte/news/2024/08/14/trump-s-campaign-called-it-an-economic-address--he-made-big-promises-but-mostly-veered-off-topic" rel="noopener">also: spectrumlocalnews.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex65">
+        <span class="exn">EXHIBIT 65</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Plan: half as many visits at your Social Security office</p>
+        <p class="src"><a href="https://apnews.com/article/social-security-trump-administration-retirement-a94ced488f2e052a5d9df39021701195" rel="noopener">AP · 2025-12-05</a></p>
+        
+      </li>
+      <li class="rc" id="ex66">
+        <span class="exn">EXHIBIT 66</span><span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">CBO: the poorest 10% lose $1,200 a year. The richest 10% gain $13,600.</p>
+        <p class="src"><a href="https://www.cbo.gov/publication/61367" rel="noopener">Congressional Budget Office · 2025-08-11</a></p>
+        
+      </li>
+      <li class="rc" id="ex67">
+        <span class="exn">EXHIBIT 67</span><span class="st st-DATA">DATA</span>
+        <p class="cap">Farm bankruptcies: up 46% in 2025</p>
+        <p class="src"><a href="https://www.fb.org/intel/markets/farm-bankruptcies-continued-to-climb-in-2025" rel="noopener">American Farm Bureau · 2026-02-09</a> · <a href="https://farmpolicynews.illinois.edu/2026/05/farm-bankruptcies-hit-six-year-high-in-april/" rel="noopener">also: farmpolicynews.illinois.edu</a></p>
+        
+      </li>
+      <li class="rc" id="ex68">
+        <span class="exn">EXHIBIT 68</span><span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Medicaid work requirements: 5.3 million more uninsured</p>
+        <p class="src"><a href="https://ccf.georgetown.edu/2025/08/14/new-cbo-health-coverage-estimates-of-budget-reconciliation-law/" rel="noopener">CBO via Georgetown CCF · 2025-08-14</a></p>
+        
+      </li>
+      <li class="rc" id="ex69">
+        <span class="exn">EXHIBIT 69</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Ag Secretary: &quot;we now have moved 4.3 million Americans off&quot; food stamps</p>
+        <p class="src"><a href="https://apnews.com/article/fact-check-snap-food-stamps-fraud-rollins-1a964909ae5cb808813a6478bbfa5f65" rel="noopener">AP · 2026-05-01</a></p>
+        
+      </li>
+      <li class="rc" id="ex70">
+        <span class="exn">EXHIBIT 70</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;I am your retribution.&quot;</p>
+        <p class="src"><a href="https://abcnews.com/Politics/video/trump-takes-center-stage-cpac-calls-americas-retribution-97666674" rel="noopener">CPAC via ABC News · 2023-03-04</a></p>
+        
+      </li>
+      <li class="rc" id="ex71">
+        <span class="exn">EXHIBIT 71</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Bondi: the client list is &quot;sitting on my desk.&quot; Months later, her DOJ: no incriminating &quot;client list.&quot;</p>
+        <p class="src"><a href="https://www.opb.org/article/2025/07/07/doj-releases-memo-on-sex-offender-jeffrey-epstein-files/" rel="noopener">OPB/NPR · 2025-07-07</a></p>
+        
+      </li>
+      <li class="rc" id="ex72">
+        <span class="exn">EXHIBIT 72</span><span class="st st-DATA">DATA</span>
+        <p class="cap">The counties that rely most on SNAP: 82% voted Trump</p>
+        <p class="src"><a href="https://agglomerations.eig.org/p/where-any-snap-lapse-will-bite-hardest" rel="noopener">Economic Innovation Group · 2025-11-03</a></p>
+        
+      </li>
+      <li class="rc" id="ex73">
+        <span class="exn">EXHIBIT 73</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">After the Oval Office ambush: intelligence to Ukraine paused</p>
+        <p class="src"><a href="https://apnews.com/article/ukraine-russia-putin-trump-cia-zelenskyy-5eb2c8025f6bb4b616c86e1fe89bba0f" rel="noopener">AP · 2025-03-05</a></p>
+        
+      </li>
+      <li class="rc" id="ex74">
+        <span class="exn">EXHIBIT 74</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Whistleblower: DOGE copied your Social Security data</p>
+        <p class="src"><a href="https://www.nbcnews.com/news/rcna227259" rel="noopener">NBC News · 2025-08-26</a></p>
+        
+      </li>
+      <li class="rc" id="ex75">
+        <span class="exn">EXHIBIT 75</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">On Kim Jong Un: &quot;We fell in love.&quot;</p>
+        <p class="src"><a href="https://vice.com/en/article/trump-says-he-and-kim-jong-un-fell-in-love-beautiful-letters-rally-vgtrn" rel="noopener">Wheeling, WV rally · 2018-09-29</a></p>
+        
+      </li>
+      <li class="rc" id="ex76">
+        <span class="exn">EXHIBIT 76</span><span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Researchers estimate 14 million deaths by 2030 — 4.5M children</p>
+        <p class="src"><a href="https://www.thelancet.com/article/S0140-6736(25)01186-9/fulltext" rel="noopener">The Lancet · 2025-06-30</a> · <a href="https://www.reuters.com/business/healthcare-pharmaceuticals/usaid-cuts-may-cause-over-14-million-additional-deaths-by-2030-study-says-2025-07-01/" rel="noopener">also: reuters.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex77">
+        <span class="exn">EXHIBIT 77</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">On Democratic lawmakers: &quot;SEDITIOUS BEHAVIOR, punishable by DEATH!&quot;</p>
+        <p class="src"><a href="https://truthsocial.com/@realDonaldTrump/115582703277798715" rel="noopener">Truth Social · 2025-11-20</a></p>
+        
+      </li>
+      <li class="rc" id="ex78">
+        <span class="exn">EXHIBIT 78</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Your rural clinic: closed. Officials blamed the Medicaid cuts.</p>
+        <p class="src"><a href="https://apnews.com/article/medicaid-community-health-centers-new-hampshire-2b2b3e676980b419c9d8d3539b953339" rel="noopener">AP · 2025-11-19</a></p>
+        
+      </li>
+      <li class="rc" id="ex79">
+        <span class="exn">EXHIBIT 79</span><span class="st st-DATA">DATA</span>
+        <p class="cap">His memecoin: ~764,000 wallets lost money. 58 made $10M+ each.</p>
+        <p class="src"><a href="https://www.nbcnews.com/tech/crypto/58-crypto-wallets-made-millions-trumps-meme-coin-764000-lost-money-dat-rcna205237" rel="noopener">Chainalysis via NBC/CNBC · 2025-05-06</a></p>
+        
+      </li>
+      <li class="rc" id="ex80">
+        <span class="exn">EXHIBIT 80</span><span class="st st-PROPOSED">PROPOSED</span>
+        <p class="cap">Next year: insurers want another 15%</p>
+        <p class="src"><a href="https://www.kff.org/affordable-care-act/how-much-and-why-aca-marketplace-premiums-are-going-up-in-2027/" rel="noopener">KFF · 2026-08-03</a></p>
+        
+      </li>
+      <li class="rc" id="ex81">
+        <span class="exn">EXHIBIT 81</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">$500M oil bet placed 15 minutes before his Iran post</p>
+        <p class="src"><a href="https://www.reuters.com/business/energy/traders-bet-500-million-oil-price-just-before-trumps-post-delay-iran-attack-2026-03-24/" rel="noopener">Reuters · 2026-03-24</a></p>
+        
+      </li>
+      <li class="rc" id="ex82">
+        <span class="exn">EXHIBIT 82</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Trump sanctioned the entire International Criminal Court</p>
+        <p class="src"><a href="https://www.middleeasteye.net/news/us-sanctions-international-criminal-court-major-escalation-after-former-judge-awarded-nobel" rel="noopener">Middle East Eye / Treasury OFAC · 2026-10-09</a></p>
+        
+      </li>
+      <li class="rc" id="ex83">
+        <span class="exn">EXHIBIT 83</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">GOP Rep. Randy Fine on Gaza: &quot;starve away&quot;</p>
+        <p class="src"><a href="https://dailycaller.com/2025/07/22/republican-congressman-randy-fine-starving-children-gaza-strip-hamas-israel-conflict/" rel="noopener">The Daily Caller · 2025-07-22</a> · <a href="https://x.com/RepFine/status/1947635219869139083" rel="noopener">also: x.com</a> · <a href="https://www.huffpost.com/entry/marjorie-taylor-greene-gaza-genocide_n_68890f9be4b08681ba5e56af" rel="noopener">also: huffpost.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex84">
+        <span class="exn">EXHIBIT 84</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Israel&#39;s war spread to 5 more countries. In Iran, the US joined in.</p>
+        <p class="src"><a href="https://www.latimes.com/world-nation/story/2025-09-09/gaza-daily" rel="noopener">Los Angeles Times; AP · 2025-09-09</a> · <a href="https://apnews.com/article/israel-iran-war-nuclear-talks-geneva-news-06-21-2025-a7b0cdaba28b5817467ccf712d214579" rel="noopener">also: apnews.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex85">
+        <span class="exn">EXHIBIT 85</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;DRAIN THE SWAMP.&quot;</p>
+        <p class="src"><a href="https://www.upi.com/Top_News/US/2016/10/18/Donald-Trump-pledges-to-drain-the-swamp-in-Washington-with-ethics-reform/6421476800793/" rel="noopener">UPI · 2016-10-18</a></p>
+        
+      </li>
+      <li class="rc" id="ex86">
+        <span class="exn">EXHIBIT 86</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">$2 BILLION Abu Dhabi deal — paid in his family&#39;s stablecoin</p>
+        <p class="src"><a href="https://www.reuters.com/world/middle-east/wlfs-zach-witkoff-usd1-selected-official-stablecoin-mgx-investment-binance-2025-05-01/" rel="noopener">Reuters · 2025-05-01</a></p>
+        
+      </li>
+      <li class="rc" id="ex87">
+        <span class="exn">EXHIBIT 87</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;We can&#39;t have someone in the Oval Office who doesn&#39;t understand the meaning of the word confidential or classified.&quot;</p>
+        <p class="src"><a href="https://www.justice.gov/storage/US_v_Trump-Nauta_23-80101.pdf" rel="noopener">Quoted in US v. Trump indictment ¶22 · 2016-09-06</a></p>
+        
+      </li>
+      <li class="rc" id="ex88">
+        <span class="exn">EXHIBIT 88</span><span class="st st-COURT">COURT FILING</span>
+        <p class="cap">His boxes of classified documents: stored in a shower</p>
+        <p class="src"><a href="https://www.justice.gov/storage/US_v_Trump-Nauta_23-80101.pdf" rel="noopener">US v. Trump indictment ¶5 (case dismissed 2024) · 2023-06-08</a></p>
+        
+      </li>
+      <li class="rc" id="ex89">
+        <span class="exn">EXHIBIT 89</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">&quot;ENDING THE WEAPONIZATION OF THE FEDERAL GOVERNMENT&quot;</p>
+        <p class="src"><a href="https://www.whitehouse.gov/presidential-actions/2025/01/ending-the-weaponization-of-the-federal-government/" rel="noopener">whitehouse.gov · 2025-01-20</a></p>
+        
+      </li>
+      <li class="rc" id="ex90">
+        <span class="exn">EXHIBIT 90</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;Pam… They&#39;re all guilty as hell… JUSTICE MUST BE SERVED, NOW!!!&quot;</p>
+        <p class="src"><a href="https://truthsocial.com/@realDonaldTrump/115239044548033727" rel="noopener">Truth Social · 2025-09-20</a></p>
+        
+      </li>
+      <li class="rc" id="ex91">
+        <span class="exn">EXHIBIT 91</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">&quot;RESTORING FREEDOM OF SPEECH AND ENDING FEDERAL CENSORSHIP&quot;</p>
+        <p class="src"><a href="https://www.whitehouse.gov/presidential-actions/2025/01/restoring-freedom-of-speech-and-ending-federal-censorship/" rel="noopener">whitehouse.gov · 2025-01-20</a></p>
+        
+      </li>
+      <li class="rc" id="ex92">
+        <span class="exn">EXHIBIT 92</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;Effective immediately, I am banning&quot; CNN, MS NOW and Politico from the White House</p>
+        <p class="src"><a href="https://www.ktvu.com/news/trump-banning-cnn-msnow-politico-white-house" rel="noopener">KTVU FOX 2 · 2026-09-18</a> · <a href="https://www.aljazeera.com/news/2026/9/24/us-judge-blocks-trumps-white-house-ban-on-cnn-ms-now-and-politico" rel="noopener">also: aljazeera.com</a></p>
+        
+      </li>
+      <li class="rc" id="ex93">
+        <span class="exn">EXHIBIT 93</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">&quot;RIGGED!&quot; — at least 107 times in six months</p>
+        <p class="src"><a href="https://www.reuters.com/world/us/trump-claims-2020-election-rigged-least-107-times-six-months-midterms-loom-2026-05-26/" rel="noopener">Reuters · 2026-05-26</a></p>
+        
+      </li>
+      <li class="rc" id="ex94">
+        <span class="exn">EXHIBIT 94</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;I just want to find 11,780 votes.&quot;</p>
+        <p class="src"><a href="https://www.washingtonpost.com/politics/trump-raffensperger-call-transcript-georgia-vote/2021/01/03/2768e0cc-4ddd-11eb-83e3-322644d82356_story.html" rel="noopener">Washington Post (audio) · 2021-01-02</a></p>
+        
+      </li>
+      <li class="rc" id="ex95">
+        <span class="exn">EXHIBIT 95</span><span class="st st-COURT">COURT RULING</span>
+        <p class="cap">DOJ sued 30 states + DC for your voter data. Lost 26. Won none.</p>
+        <p class="src"><a href="https://www.cbsnews.com/news/trump-lawsuits-state-voter-rolls-justice-department/" rel="noopener">CBS News · 2026-10-01</a></p>
+        
+      </li>
+      <li class="rc" id="ex96">
+        <span class="exn">EXHIBIT 96</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Texas: ~1 in 5 flagged &quot;noncitizens&quot; were citizens</p>
+        <p class="src"><a href="https://www.mprnews.org/story/2026/09/25/npr-supreme-court-trump-save-noncitizen-voting" rel="noopener">NPR/MPR · 2026-09-25</a></p>
+        
+      </li>
+      <li class="rc" id="ex97">
+        <span class="exn">EXHIBIT 97</span><span class="st st-COURT">COURT RULING</span>
+        <p class="cap">Supreme Court keeps Trump&#39;s mail-ballot rules blocked for November</p>
+        <p class="src"><a href="https://www.votebeat.org/national/2026/09/15/trump-mail-voting-executive-order-supreme-court-decision-2026-election/" rel="noopener">Votebeat · 2026-09-15</a></p>
+        
+      </li>
+      <li class="rc" id="ex98">
+        <span class="exn">EXHIBIT 98</span><span class="st st-COURT">COURT RULING</span>
+        <p class="cap">5–4: ballots postmarked by Election Day still count (RNC lost)</p>
+        <p class="src"><a href="https://www.venable.com/insights/publications/2026/07/count-the-votes-supreme-court-holds-states" rel="noopener">Venable · 2026-07</a></p>
+        
+      </li>
+      <li class="rc" id="ex99">
+        <span class="exn">EXHIBIT 99</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Moved Space Command out of Colorado: mail voting &quot;a big factor&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/space-command-trump-alabama-colorado-96589ce26df5ddaf59e2fc856084a8ca" rel="noopener">AP · 2025-09-02</a></p>
+        
+      </li>
+      <li class="rc" id="ex100">
+        <span class="exn">EXHIBIT 100</span><span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">California AG warns of false claims about &quot;where, when, and how to vote,&quot; including texts</p>
+        <p class="src"><a href="https://oag.ca.gov/system/files/attachments/press-docs/Consumer%20Alert%20-%20Election%20Misinformation.pdf" rel="noopener">CA Attorney General · 2026-05-05</a></p>
+        
+      </li>
+      <li class="rc" id="ex101">
+        <span class="exn">EXHIBIT 101</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Trump&#39;s DOJ plans to deploy federal election &quot;monitors&quot; nationwide</p>
+        <p class="src"><a href="https://wjla.com/news/nation-world/justice-department-to-deploy-election-monitors-nationwide-as-critics-warn-of-intimidation-ice-agents-trump-administration-national-guard" rel="noopener">TNND/WJLA · 2026-10-05</a></p>
+        
+      </li>
+      <li class="rc" id="ex102">
+        <span class="exn">EXHIBIT 102</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Bannon: &quot;We&#39;re gonna have ICE surround the polls&quot;</p>
+        <p class="src"><a href="https://www.mediamatters.org/steve-bannon/steve-bannon-youre-damn-right-were-gonna-have-ice-surround-polls-come-november" rel="noopener">Media Matters · 2026-02-03</a></p>
+        
+      </li>
+      <li class="rc" id="ex103">
+        <span class="exn">EXHIBIT 103</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Guard or ICE at the polls? Trump: &quot;anything necessary&quot;</p>
+        <p class="src"><a href="https://wjla.com/news/nation-world/justice-department-to-deploy-election-monitors-nationwide-as-critics-warn-of-intimidation-ice-agents-trump-administration-national-guard" rel="noopener">TNND/WJLA · 2026-10-05</a></p>
+        
+      </li>
+      <li class="rc" id="ex104">
+        <span class="exn">EXHIBIT 104</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">~1,000 CISA jobs gone; election security staff sidelined</p>
+        <p class="src"><a href="https://apnews.com/article/election-security-cisa-2026-secretaries-state-midterms-6d18799c6c5fdd1bc001544b2dca12bf" rel="noopener">AP · 2025-11-23</a></p>
+        
+      </li>
+      <li class="rc" id="ex105">
+        <span class="exn">EXHIBIT 105</span><span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">By May 2025: DOJ voting-rights lawyers down from ~30 to 3</p>
+        <p class="src"><a href="https://www.democracydocket.com/news-alerts/doj-voting-section-has-just-three-lawyers-left-watchdog-estimates/" rel="noopener">Democracy Docket · 2025-05-12</a></p>
+        
+      </li>
+      <li class="rc" id="ex106">
+        <span class="exn">EXHIBIT 106</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">FBI foreign-influence task force shut down</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/national-security/bondi-ends-fbi-effort-combat-foreign-influence-us-politics-rcna191012" rel="noopener">NBC News · 2025-02</a></p>
+        
+      </li>
+      <li class="rc" id="ex107">
+        <span class="exn">EXHIBIT 107</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">2022: GOP-sponsored polls sold a &quot;red wave&quot;</p>
+        <p class="src"><a href="https://www.semafor.com/article/10/31/2022/democrats-hope-tidal-wave-of-republican-sponsored-polls-arent-midterm-reality" rel="noopener">Semafor · 2022-10-31</a></p>
+        
+      </li>
+      <li class="rc" id="ex108">
+        <span class="exn">EXHIBIT 108</span><span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Then the &quot;red wave&quot; failed to materialize</p>
+        <p class="src"><a href="https://www.bangordailynews.com/2022/11/09/national-politics/republican-red-wave-failed-to-materialize/" rel="noopener">AP via Bangor Daily News · 2022-11-09</a></p>
+        
+      </li>
+      <li class="rc" id="ex109">
+        <span class="exn">EXHIBIT 109</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump: Republicans should &quot;nationalize the voting&quot;</p>
+        <p class="src"><a href="https://www.spotlightpa.org/news/2026/02/trump-nationalize-voting-elections-2026-republicans/" rel="noopener">Spotlight PA · 2026-02</a></p>
+        
+      </li>
+      <li class="rc" id="ex110">
+        <span class="exn">EXHIBIT 110</span><span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Asked about an election emergency to impose his voting rules: &quot;Stranger things have happened.&quot;</p>
+        <p class="src"><a href="https://www.cnn.com/2026/08/11/politics/trump-national-emergency-election" rel="noopener">CNN · 2026-08-11</a></p>
+        
+      </li>
+      <li class="rc" id="ex111">
+        <span class="exn">EXHIBIT 111</span><span class="st st-COURT">COURT RULING</span>
+        <p class="cap">Judge permanently blocks his proof-of-citizenship rules</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/politics/judge-blocks-additional-citizenship-provisions-in-latest-setback-to-trumps-wide-ranging-election-executive-order" rel="noopener">PBS · 2026-01</a></p>
+        
+      </li>
+      <li class="rc" id="ex112">
+        <span class="exn">EXHIBIT 112</span><span class="st st-WIN">WIN</span>
+        <p class="cap">+41: 2018, TRUMP&#39;S FIRST MIDTERM: HIGHEST TURNOUT IN 100 YEARS. DEMOCRATS GAINED 41 HOUSE SEATS.</p>
+        <p class="src"><a href="https://www.pewresearch.org/methods/2020/09/08/democrats-made-gains-from-multiple-sources-in-2018-midterm-victories/" rel="noopener">Pew Research Center · 2020-09-08</a></p>
+        
+      </li>
+      <li class="rc" id="ex113">
+        <span class="exn">EXHIBIT 113</span><span class="st st-WIN">WIN</span>
+        <p class="cap">+14: 2025: VIRGINIA &amp; NEW JERSEY GOVERNORS. BOTH WON BY 14+ POINTS.</p>
+        <p class="src"><a href="https://cvillerightnow.com/news/208802-virginia-election-results-certified-spanberger-defeated-earle-sears-by-over-520000-votes/" rel="noopener">Certified results, VA + NJ · 2025-12</a> · <a href="https://nj.gov/state/elections/assets/pdf/election-results/2025/2025-official-general-results-governor.pdf" rel="noopener">also: nj.gov</a></p>
+        
+      </li>
+      <li class="rc" id="ex114">
+        <span class="exn">EXHIBIT 114</span><span class="st st-WIN">WIN</span>
+        <p class="cap">31–0: STATE LEGISLATIVE SEATS FLIPPED SINCE 2025: DEMOCRATS 31, REPUBLICANS 0.</p>
+        <p class="src"><a href="https://www.the-downballot.com/p/100-specials-since-trumps-return" rel="noopener">The Downballot · 2026-08-19</a></p>
+        
+      </li>
+  </ul>
+
+  <h2 id="topics">EVERY RECEIPT, BY TOPIC</h2>
+  <p>Including the ones that didn't fit in the video.</p>
+  
+    <section class="beat" id="corruption" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>CORRUPTION</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Abu Dhabi&#39;s $2 BILLION Binance deal: paid in Trump&#39;s family stablecoin</p>
+        <p class="src"><a href="https://www.reuters.com/world/middle-east/wlfs-zach-witkoff-usd1-selected-official-stablecoin-mgx-investment-binance-2025-05-01/" rel="noopener">Reuters · 2025-05-01</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">A $400 million gift from Qatar is now Air Force One</p>
+        <p class="src"><a href="https://apnews.com/article/trump-air-force-one-plane-qatar-8eb5da68e95d583b14811f85e62cbcd1" rel="noopener">AP · 2026-07-01</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Wall Street pays up to $100,000 A MONTH to see his posts first</p>
+        <p class="src"><a href="https://www.npr.org/2026/08/01/nx-s1-5912219/for-sale-early-access-to-trumps-truth-social-posts" rel="noopener">NPR · 2026-08-01</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Buy his coin, get dinner with the President</p>
+        <p class="src"><a href="https://www.cnbc.com/2025/05/18/trump-coin-dinner-to-include-mostly-non-americans-based-on-top-holders.html" rel="noopener">CNBC · 2025-05-18</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Trump&#39;s regulator gives Trump&#39;s crypto company preliminary approval to become a bank</p>
+        <p class="src"><a href="https://www.motherjones.com/politics/2026/10/trump-world-liberty-financial-bank/" rel="noopener">Mother Jones · 2026-10</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">$1 BILLION+ in crypto income in 2025 — his own disclosure</p>
+        <p class="src"><a href="https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf" rel="noopener">Trump financial disclosure (OGE Form 278e) · 2026-06-30</a> · <a href="https://www.reuters.com/world/us/trump-reports-over-14-billion-income-crypto-ventures-2026-06-30/" rel="noopener">also: reuters.com</a> · <a href="https://apnews.com/article/trump-financial-disclosure-crypto-060c15062b8fedc6104159ea13775463" rel="noopener">also: apnews.com</a></p>
+        <p class="note">The disclosure itemizes crypto income without one total; Reuters tallies over $1.4B, AP about $1.2B.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Family crypto haul since returning to office: est. $2.3 BILLION</p>
+        <p class="src"><a href="https://www.reuters.com/investigations/under-trump-crypto-playbook-family-always-wins-investors-dont-2026-06-09/" rel="noopener">Reuters · 2026-06-09</a></p>
+        <p class="note">find reuters.com original before use &#39;at least $2.3 billion in profit from investors since Trump retook the presidency.&#39;</p>
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="tax" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>A TAX ON YOU</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-COURT">COURT RULING</span>
+        <p class="cap">Supreme Court, 6–3: his emergency tariffs were ILLEGAL</p>
+        <p class="src"><a href="https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf" rel="noopener">Supreme Court (Learning Resources v. Trump) · 2026-02-20</a></p>
+        <p class="note">Held: IEEPA does not authorize the President to impose tariffs. Covers the IEEPA (emergency) tariffs only, not Section 232/301.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Struck down — then reimposed under a different law</p>
+        <p class="src"><a href="https://www.wtvr.com/politics/economy/court-struck-one-tariff-trumps-new-plan-still-costs-americans-plenty" rel="noopener">Scripps · 2026-02</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Still costing your household $1,000+ a year</p>
+        <p class="src"><a href="https://www.goodmorningamerica.com/news/story/tariffs-cost-us-households-1000-year-yale-budget-135945432" rel="noopener">Yale Budget Lab via ABC · 2026-08-25</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">Your gas: up 27% in a year</p>
+        <p class="src"><a href="https://www.bls.gov/news.release/archives/cpi_09112026.htm" rel="noopener">BLS CPI · 2026-09-11</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Courts ordered refunds. The administration appealed.</p>
+        <p class="src"><a href="https://www.hklaw.com/en/insights/publications/2026/06/ieepa-tariff-refund-update-government-appeals" rel="noopener">Holland &amp; Knight · 2026-06-15</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="cruelty" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>CRUELTY</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Deadliest year in ICE custody on record</p>
+        <p class="src"><a href="https://www.npr.org/2026/04/17/nx-s1-5789092/deaths-of-migrants-in-ice-custody-hit-record-high-under-trump" rel="noopener">NPR · 2026-04-17</a></p>
+        <p class="note">29 deaths in FY2026 by Apr 17, already past the previous record (28, in 2004).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Renee Good, US citizen, shot dead by a federal agent in Minneapolis</p>
+        <p class="src"><a href="https://www.mprnews.org/renee-macklin-good-shooting" rel="noopener">MPR News · 2026-01-07</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Alex Pretti, VA ICU nurse, shot dead by federal agents</p>
+        <p class="src"><a href="https://www.aljazeera.com/news/2026/1/25/who-was-alex-pretti-the-nurse-shot-dead-by-federal-agents-in-minneapolis" rel="noopener">Al Jazeera · 2026-01-25</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">5-year-old Liam detained after arriving home from preschool</p>
+        <p class="src"><a href="https://apnews.com/article/minnesota-boy-liam-conejo-ramos-fc958185cd2b4e946b82081be11bc0f6" rel="noopener">AP · 2026-02-01</a></p>
+        <p class="note">Detained Jan 20 &#39;after arriving home from preschool&#39; (AP). DHS disputes the account.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">500+ US citizens held by immigration agents</p>
+        <p class="src"><a href="https://projects.propublica.org/american-citizens-detained-dhs-civil-rights/" rel="noopener">ProPublica · 2026-10-06</a></p>
+        <p class="note">Count through Oct 5, 2025; ProPublica&#39;s tally later passed 500.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Fort Bliss camp: &quot;deported or dead&quot;</p>
+        <p class="src"><a href="https://www.hrw.org/news/2026/07/15/us-deaths-neglect-in-fort-bliss-immigration-detention" rel="noopener">Human Rights Watch / ACLU · 2026-07-15</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="war" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>WAR</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Large-scale strike on Venezuela. Maduro captured.</p>
+        <p class="src"><a href="https://apnews.com/article/venezuela-us-maduro-what-to-know-a57528ff315a7f70ed51a1721f5e0bc2" rel="noopener">AP · 2026-01-03</a> · <a href="https://www.npr.org/2026/01/03/nx-s1-5665570/trump-says-u-s-carried-out-large-scale-strike-against-venezuela" rel="noopener">also: npr.org</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">US says it will control Venezuela&#39;s oil &quot;indefinitely&quot;</p>
+        <p class="src"><a href="https://www.aljazeera.com/video/newsfeed/2026/1/8/us-says-it-will-control-venezuelan-oil-indefinitely" rel="noopener">Al Jazeera · 2026-01-08</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Boat strikes: 235+ dead</p>
+        <p class="src"><a href="https://www.stripes.com/theaters/americas/2026-10-05/us-strike-caribbean-kills-4-23061506.html" rel="noopener">Stars and Stripes · 2026-10-05</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Trump declares the Iran ceasefire &quot;over&quot;</p>
+        <p class="src"><a href="https://www.cnn.com/2026/07/08/world/live-news/iran-war-nato-summit-ukraine-trump" rel="noopener">CNN · 2026-07-08</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">He keeps announcing he&#39;s halting strikes in Iran. They keep happening.</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/politics/trump-frequently-announces-hes-halting-strikes-in-iran-but-they-keep-happening" rel="noopener">PBS/AP · 2026-08</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">25 days before the midterms: Russia sanctions eased &quot;at President Trump&#39;s direction&quot; to buy Putin&#39;s diesel</p>
+        <p class="src"><a href="https://www.nbcnews.com/business/energy/trump-putin-diesel-prices-rcna602566" rel="noopener">NBC News / Treasury OFAC · 2026-10-09</a> · <a href="https://www.reuters.com/business/energy/trump-big-announcement-coming-up-diesel-2026-10-09/" rel="noopener">also: reuters.com</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">Your diesel: a record $6.52 a gallon during the Iran war</p>
+        <p class="src"><a href="https://www.live5news.com/2026/10/02/trump-says-europe-will-release-diesel-reserves-immediately-prices-hover-near-record-highs/" rel="noopener">AAA via AP · 2026-09-22</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Zelenskyy on the Russian diesel deal: &quot;an obvious weakness&quot;</p>
+        <p class="src"><a href="https://www.nbcnews.com/business/energy/trump-putin-diesel-prices-rcna602566" rel="noopener">NBC News · 2026-10-09</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">A year earlier, he sanctioned Russia&#39;s two biggest oil companies</p>
+        <p class="src"><a href="https://www.nbcnews.com/world/russia/us-sanctions-russias-two-largest-oil-companies-rcna239256" rel="noopener">NBC News · 2025-10-22</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Sept 2026: 49 of 53 Senate Republicans voted against ending the Iran war.</p>
+        <p class="src"><a href="https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00244.htm" rel="noopener">U.S. Senate roll call 244 · 2026-09-24</a></p>
+        <p class="note">Resolution to end US hostilities with Iran failed 49-50: the 14th Senate Iran war-powers vote since Mar 5, 2026. The war began Feb 28, 2026 without congressional authorization.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump, Oct 8: &quot;we will not be attacking Iran at any time prior to the Midterm Elections.&quot;</p>
+        <p class="src"><a href="https://www.cbsnews.com/live-updates/iran-war-nuclear-donald-trump-vance-rubio-strait-of-hormuz/" rel="noopener">CBS News · 2026-10-08</a></p>
+        <p class="note">&quot;...to be held in the United States on November 3rd.&quot; AP reports he has threatened escalation after the election.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">First day of the Iran truce: Israel bombed central Beirut, 182+ killed. Trump: &quot;a separate skirmish.&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/israel-lebanon-hezbollah-beirut-strikes-9402965418687c634d4a157c966ec6ea" rel="noopener">AP · 2026-04-08</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="genocide" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>GENOCIDE</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">UN Commission of Inquiry: &quot;Israel is responsible for the commission of genocide in Gaza.&quot;</p>
+        <p class="src"><a href="https://news.un.org/en/story/2025/09/1165856" rel="noopener">UN News · 2025-09-16</a></p>
+        <p class="note">Chair Navi Pillay. Found 4 of the 5 Genocide Convention acts; genocidal intent &quot;the only reasonable inference.&quot; An independent commission appointed by the UN Human Rights Council, not a court: write &quot;UN inquiry&quot;, never &quot;the UN ruled&quot;. Israel rejected the report. Pillay won the 2026 Nobel Peace Prize (Oct 9, 2026).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-COURT">COURT RULING</span>
+        <p class="cap">ICC arrest warrant for Netanyahu. The charges include starvation as a method of warfare.</p>
+        <p class="src"><a href="https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges" rel="noopener">International Criminal Court · 2024-11-21</a></p>
+        <p class="note">Pre-Trial Chamber I: reasonable grounds that Netanyahu and Gallant bear criminal responsibility for the war crime of starvation as a method of warfare and the crimes against humanity of murder, persecution and other inhumane acts. Warrants, not convictions; still in force as of Oct 2026.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-COURT">COURT ORDER</span>
+        <p class="cap">The UN&#39;s top court ordered Israel to &quot;take all measures within its power&quot; to prevent genocidal acts. The case is pending.</p>
+        <p class="src"><a href="https://www.icj-cij.org/case/192" rel="noopener">International Court of Justice · 2024-01-26</a></p>
+        <p class="note">Provisional measures (Jan 26, Mar 28, May 24, 2024). The Court has NOT ruled on whether genocide occurred; merits schedule runs to 2029. Never write &quot;the ICJ ruled genocide&quot;.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">Aug 2025: a UN-backed panel confirmed famine in Gaza City and called it &quot;entirely man-made.&quot;</p>
+        <p class="src"><a href="https://www.ipcinfo.org/ipcinfo-website/countries-in-focus-archive/issue-134/en/" rel="noopener">IPC (Integrated Food Security Phase Classification) · 2025-08-22</a></p>
+        <p class="note">Past tense: after the Oct 2025 ceasefire the IPC classified no area in famine (Dec 19, 2025).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">74,000+ Palestinians killed in Gaza since Oct 2023. More than 21,000 of them children.</p>
+        <p class="src"><a href="https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers" rel="noopener">Gaza Health Ministry, via Al Jazeera · 2026-10-07</a></p>
+        <p class="note">Ministry figures (WAFA Oct 9: 74,254 incl. 21,976 children); 1,460+ killed since the Oct 10, 2025 ceasefire. Does not separate civilians from combatants; excludes the missing. CBS (Oct 8, 2026): &quot;more than 70,000.&quot;</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Retired Israeli general: &quot;we can&#39;t fight this war without the United States. Period.&quot;</p>
+        <p class="src"><a href="https://www.jns.org/biden-is-the-primary-obstacle-to-israeli-victory/" rel="noopener">JNS · 2023-11-27</a></p>
+        <p class="note">Maj. Gen. (res.) Yitzhak Brick: &quot;All of our missiles, the ammunition, the precision-guided bombs, all the airplanes and bombs, it&#39;s all from the U.S. ... The minute they turn off the tap, you can&#39;t keep fighting.&quot; Retired, not an official. Biden-era quote.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">$21.7 billion in US military aid to Israel in the war&#39;s first two years. Your tax dollars.</p>
+        <p class="src"><a href="https://costsofwar.watson.brown.edu/paper/AidToIsrael" rel="noopener">Brown University Costs of War · 2025-10-07</a></p>
+        <p class="note">Oct 2023-Sep 2025, covering both the Biden and Trump years. Excludes arms sales committed for future years. Baseline: $3.8B a year under the 2016 MOU.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">68% of Israel&#39;s major arms imports come from the US.</p>
+        <p class="src"><a href="https://www.sipri.org/media/press-release/2026/global-arms-flows-jump-nearly-10-cent-european-demand-soars" rel="noopener">SIPRI · 2026-03-09</a></p>
+        <p class="note">2021-25 volume of major conventional arms (not dollars, not all ammunition).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Republicans control the White House, the Senate (53 of 100) and the House (218 of 435).</p>
+        <p class="src"><a href="https://clerk.house.gov/" rel="noopener">Clerk of the U.S. House / U.S. Senate · 2026-10-09</a></p>
+        <p class="note">Every House seat and 33 Senate seats are on the Nov 3, 2026 ballot.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump, June 2025: &quot;ISRAEL. DO NOT DROP THOSE BOMBS.&quot; Within hours, Israel scaled back.</p>
+        <p class="src"><a href="https://time.com/7297123/trump-warns-israel-bombs-iran-ceasefire/" rel="noopener">TIME · 2025-06-24</a></p>
+        <p class="note">About Iran, not Gaza: proof the leverage exists. Axios: Netanyahu &quot;significantly scaled back&quot; the retaliation.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump on Netanyahu: &quot;I call the shots. I call all the shots.&quot;</p>
+        <p class="src"><a href="https://thehill.com/homenews/administration/5914563-donald-trump-israel-iran-ceasefire-deal/" rel="noopener">The Hill (Financial Times interview) · 2026-06-07</a> · <a href="https://www.reuters.com/world/middle-east/trump-says-new-israel-iran-strikes-wont-affect-peace-deal-2026-06-08/" rel="noopener">also: reuters.com</a> · <a href="https://www.ft.com/content/a0ce59f9-fbde-49e8-9158-fba3d4079859" rel="noopener">also: ft.com</a> · <a href="https://www.timesofisrael.com/liveblog_entry/trump-netanyahu-wont-have-any-choice-but-to-accept-us-iran-deal-i-call-the-shots/" rel="noopener">also: timesofisrael.com</a></p>
+        <p class="note">FT phone interview, Jun 7, 2026: &quot;I call the shots. I call all the shots. He (Netanyahu) doesn&#39;t call the shots.&quot; Verbatim in Reuters&#39; first Jun 8 version (later rewritten). Also May 20, 2026 (Times of Israel): Netanyahu &quot;will do whatever I want him to do.&quot;</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Week one: Trump freed the 2,000-lb bombs Biden held back. Why? &quot;Because they bought them.&quot;</p>
+        <p class="src"><a href="https://www.reuters.com/world/us/white-house-makes-2000-pound-bombs-available-israel-undoing-bidens-pause-2025-01-25/" rel="noopener">Reuters · 2025-01-25</a></p>
+        <p class="note">Biden held one shipment over concern for civilians in Rafah; he had already sent thousands of these bombs.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Rubio cheered Trump scrapping &quot;baseless and politicized conditions&quot; on military aid to Israel.</p>
+        <p class="src"><a href="https://www.timesofisrael.com/us-moves-to-expedite-delivery-of-4-billion-in-military-aid-to-israel" rel="noopener">Times of Israel (State Dept statement) · 2025-03-01</a></p>
+        <p class="note">The repealed memo (NSM-20) required assurances that US weapons are used in line with international humanitarian law and that recipients do not block US-backed aid. Same statement: ~$4B expedited; ~$12B in sales approved since Jan 20 (approved, not delivered).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-PROPOSED">PROPOSED</span>
+        <p class="cap">Trump moves to send 40,000 more 2,000-lb bombs. $2.8B, mostly your tax dollars.</p>
+        <p class="src"><a href="https://apnews.com/article/trump-israel-weapons-sales-gaza-eb48cb7ecf773ffc472fbafc995aef2a" rel="noopener">AP · 2026-09-15</a> · <a href="https://apnews.com/article/trump-israel-arms-sale-meeks-5ced4aac47eb08d9d949af296cf79ebc" rel="noopener">also: apnews.com</a></p>
+        <p class="note">20,000 Mk84 + 20,000 BLU-117, &quot;most of which is to be paid for with foreign military financing&quot; (US taxpayer dollars). Not final: informal notification; Rep. Meeks placed a hold. Write &quot;moves to send&quot;, not &quot;sent&quot;.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">9 Senate votes to block arms sales to Israel since 2024. Republican votes to block: zero.</p>
+        <p class="src"><a href="https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00081.htm" rel="noopener">U.S. Senate roll call votes · 2026-04-15</a></p>
+        <p class="note">Motions to discharge Sanders&#39; disapproval resolutions: Nov 20, 2024 (3 votes), Apr 3, 2025 (2), Jul 30, 2025 (2), Apr 15, 2026 (2). Republican yes votes across all nine: 0. Many Democrats also voted no.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">March 2026: Trump&#39;s government told the World Court the Gaza genocide charge is &quot;false.&quot;</p>
+        <p class="src"><a href="https://www.middleeasteye.net/news/us-defends-israel-new-icj-interventions-south-africa-genocide-case" rel="noopener">Middle East Eye · 2026-03-12</a></p>
+        <p class="note">US Art. 63 declaration of intervention in South Africa v. Israel: &quot;affirms, in the strongest terms possible, that the allegations of &#39;genocide&#39; against Israel are false&quot; (JTA, Mar 16, 2026).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Oct 9, 2026: Trump sanctioned the entire International Criminal Court.</p>
+        <p class="src"><a href="https://www.middleeasteye.net/news/us-sanctions-international-criminal-court-major-escalation-after-former-judge-awarded-nobel" rel="noopener">Middle East Eye / Treasury OFAC · 2026-10-09</a></p>
+        <p class="note">OFAC designation under EO 14203, the same day Navi Pillay (ex-ICC judge, chair of the UN genocide inquiry) won the Nobel Peace Prize. Rubio: &quot;Either the ICC will end its threats, or we will end the ICC.&quot; Same-day news: re-check before publishing.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">GOP Rep. Randy Fine on Gaza hunger reports: &quot;Release the hostages. Until then, starve away.&quot;</p>
+        <p class="src"><a href="https://dailycaller.com/2025/07/22/republican-congressman-randy-fine-starving-children-gaza-strip-hamas-israel-conflict/" rel="noopener">The Daily Caller · 2025-07-22</a> · <a href="https://x.com/RepFine/status/1947635219869139083" rel="noopener">also: x.com</a> · <a href="https://www.huffpost.com/entry/marjorie-taylor-greene-gaza-genocide_n_68890f9be4b08681ba5e56af" rel="noopener">also: huffpost.com</a></p>
+        <p class="note">Fine on X, Jul 22, 2025, replying to a report of 15 malnutrition deaths including four children: &quot;Release the hostages. Until then, starve away. (This is all a lie anyway...)&quot;</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Israel&#39;s war spread to Lebanon, Syria, Yemen, Iran and Qatar, a top US ally. In Iran, the US joined in.</p>
+        <p class="src"><a href="https://www.latimes.com/world-nation/story/2025-09-09/gaza-daily" rel="noopener">Los Angeles Times; AP · 2025-09-09</a> · <a href="https://apnews.com/article/israel-iran-war-nuclear-talks-geneva-news-06-21-2025-a7b0cdaba28b5817467ccf712d214579" rel="noopener">also: apnews.com</a></p>
+        <p class="note">LA Times (Sep 9, 2025): Doha strike; operations in Lebanon, Syria and Yemen; &quot;In June it launched a war on Iran.&quot; AP (Jun 21, 2025): the US struck Iran&#39;s nuclear sites (Midnight Hammer). Feb 28, 2026: the US and Israel jointly launched a new war on Iran.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Rubio on why the US bombed Iran: &quot;We knew that there was going to be an Israeli action.&quot;</p>
+        <p class="src"><a href="https://news.bgov.com/bloomberg-government-news/rubio-spurs-backlash-with-latest-rationale-for-attacks-on-iran" rel="noopener">Bloomberg Government · 2026-03-02</a></p>
+        <p class="note">&quot;...We knew that that would precipitate an attack against American forces...&quot; Rubio later said he was taken out of context.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">The world&#39;s largest association of genocide scholars: Israel&#39;s actions in Gaza &quot;meet the legal definition of genocide.&quot;</p>
+        <p class="src"><a href="https://www.jta.org/2025/09/02/israel/international-association-of-genocide-scholars-says-israels-war-in-gaza-constitutes-genocide" rel="noopener">JTA · 2025-09-02</a></p>
+        <p class="note">IAGS resolution: 86% of votes cast (108-18-3); about 28% of ~500 members voted.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Amnesty International: Israel is committing genocide in Gaza.</p>
+        <p class="src"><a href="https://www.al-monitor.com/originals/2024/12/amnesty-accuses-israel-genocide-gaza" rel="noopener">Al-Monitor · 2024-12-05</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Human Rights Watch: &quot;extermination and acts of genocide&quot; by depriving Gaza of water.</p>
+        <p class="src"><a href="https://www.al-monitor.com/originals/2024/12/hrw-accuses-israel-acts-genocide-gaza-water-access" rel="noopener">Al-Monitor · 2024-12-19</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Israel&#39;s own leading rights groups, B&#39;Tselem and Physicians for Human Rights: it&#39;s genocide.</p>
+        <p class="src"><a href="https://www.jurist.org/news/2025/07/israeli-rights-groups-accuse-israel-of-genocide-in-gaza/" rel="noopener">JURIST · 2025-07-28</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump: &quot;The U.S. will take over the Gaza Strip... We&#39;ll own it.&quot; &quot;The Riviera of the Middle East.&quot;</p>
+        <p class="src"><a href="https://www.govinfo.gov/content/pkg/DCPD-202500225/html/DCPD-202500225.htm" rel="noopener">White House transcript (GovInfo) · 2025-02-04</a> · <a href="https://www.jns.org/kushner-unveils-new-gaza-plan-at-davos-forum/" rel="noopener">also: jns.org</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">House Republicans voted 198-0 to sanction the International Criminal Court.</p>
+        <p class="src"><a href="https://clerk.house.gov/Votes/2025007" rel="noopener">House roll call 7 · 2025-01-09</a></p>
+        <p class="note">H.R. 23 passed 243-140; Massie voted present.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Sept 2026: 50 Senate Republicans voted down even asking for a human-rights report on Israel.</p>
+        <p class="src"><a href="https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00252.htm" rel="noopener">U.S. Senate roll call 252 · 2026-09-29</a></p>
+        <p class="note">S.Res. 852 failed 47-51; Rand Paul was the lone Republican yes.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">March 2026: Rubio declared an &quot;emergency&quot; to skip Congress and send 20,000+ bombs.</p>
+        <p class="src"><a href="https://www.timesofisrael.com/us-bypasses-congressional-review-to-approve-munitions-sale-to-israel/" rel="noopener">Times of Israel · 2026-03-07</a></p>
+        <p class="note">About $650M; first formal emergency declaration under the arms-export law in Trump&#39;s second term (NYT).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">March 2025, Israel&#39;s heaviest strikes since the truce. White House: &quot;consulted by the Israelis on their attacks in Gaza.&quot;</p>
+        <p class="src"><a href="https://www.reuters.com/world/middle-east/israel-consulted-us-its-strikes-gaza-white-house-told-fox-news-2025-03-18/" rel="noopener">Reuters (Leavitt on Fox News) · 2025-03-18</a> · <a href="https://www.freemalaysiatoday.com/category/world/2025/03/18/white-house-says-israel-consulted-us-on-its-strikes-in-gaza" rel="noopener">also: freemalaysiatoday.com</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump on Netanyahu: he &quot;will do whatever I want him to do.&quot;</p>
+        <p class="src"><a href="https://www.timesofisrael.com/irgc-threatens-war-will-spread-far-beyond-the-region-if-us-renews-attacks-on-iran/" rel="noopener">Times of Israel · 2026-05-20</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">GOP Sen. Lindsey Graham: &quot;So, Israel, do whatever you have to do.&quot; &quot;Give Israel the bombs they need.&quot;</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/politics-news/sen-lindsey-graham-says-israel-whatever-comparing-war-gaza-hiroshima-n-rcna151828" rel="noopener">NBC News, Meet the Press · 2024-05-12</a></p>
+        <p class="note">Compared Gaza to Hiroshima and Nagasaki. Graham died Jul 11, 2026 (NPR): use the past tense.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump&#39;s ambassador to Israel, on land from the Nile to the Euphrates: &quot;It would be fine if they took it all.&quot;</p>
+        <p class="src"><a href="https://www.axios.com/2026/02/20/tucker-carlson-mike-huckabee-israel-middle-east" rel="noopener">Axios · 2026-02-20</a></p>
+        <p class="note">Mike Huckabee to Tucker Carlson; he later called it &quot;hyperbolic.&quot;</p>
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="troops" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>BETRAYING THE TROOPS</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Americans who died at war: &quot;losers&quot; and &quot;suckers&quot;</p>
+        <p class="src"><a href="https://www.theatlantic.com/politics/archive/2020/09/trump-americans-who-died-at-war-are-losers-and-suckers/615997/" rel="noopener">The Atlantic · 2020-09-03</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">His own chief of staff, Gen. John Kelly, confirms it on the record</p>
+        <p class="src"><a href="https://www.axios.com/2023/10/02/trump-troops-fallen-soldiers-john-kelly" rel="noopener">Axios · 2023-10-02</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Joint Chiefs chairman fired</p>
+        <p class="src"><a href="https://armytimes.com/pentagon/2025/02/22/trump-fires-joint-chiefs-chairman-navy-head-in-dod-leadership-purge" rel="noopener">Army Times · 2025-02-22</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">To hundreds of military leaders: use US cities as &quot;training grounds&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/trump-hegseth-generals-meeting-military-pentagon-0ecdcbb8877e24329cfa0fc1e851ebd2" rel="noopener">AP · 2025-09-30</a></p>
+        <p class="note">AP: &#39;hundreds of military leaders&#39; (NBC: as many as 800 senior officers). Quote: &#39;We should use some of these dangerous cities as training grounds for our military.&#39;</p>
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="women" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>WOMEN DYING</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Emergency abortion guidance for ERs rescinded</p>
+        <p class="src"><a href="https://www.healio.com/news/womens-health-ob-gyn/20250604/cms-rescinds-postroe-guidance-on-emergency-abortions-even-in-states-with-bans" rel="noopener">Healio (CMS) · 2025-06-04</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Sepsis in second-trimester miscarriages up 50%+ after Texas ban</p>
+        <p class="src"><a href="https://www.texastribune.org/2025/02/20/texas-abortion-ban-impact-death-hospitalization/" rel="noopener">ProPublica / Texas Tribune · 2025-02-20</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Under Texas&#39;s abortion ban, she waited 40 hours for miscarriage care. She died.</p>
+        <p class="src"><a href="https://www.propublica.org/article/josseli-barnica-death-miscarriage-texas-abortion-ban" rel="noopener">ProPublica · 2024-10-30</a></p>
+        <p class="note">Josseli Barnica died in Houston in Sept 2021 under Texas&#39;s abortion ban.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Planned Parenthood: nearly 50 health centers forced to close in 2025</p>
+        <p class="src"><a href="https://www.plannedparenthood.org/about-us/newsroom/press-releases/new-report-shows-immediate-harms-of-defunding-planned-parenthood" rel="noopener">Planned Parenthood (report) · 2025-11-12</a> · <a href="https://www.plannedparenthoodaction.org/blog/defund" rel="noopener">also: plannedparenthoodaction.org</a></p>
+        <p class="note">Planned Parenthood&#39;s own count: nearly 50 health centers forced to close since the start of 2025 (51 across 18 states per its Jun 2026 page).</p>
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="healthcare" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>LOSING YOUR HEALTHCARE</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">Your ACA premiums: up 58%. Your deductible: up 37%.</p>
+        <p class="src"><a href="https://www.kff.org/affordable-care-act/the-average-marketplace-deductible-grew-by-about-1000-per-person-in-2026-with-more-enrollees-shifting-to-higher-deductible-plans-as-enhanced-tax-credits-expired/" rel="noopener">KFF · 2026-05-19</a></p>
+        <p class="note">Premium payments &quot;increased by an average of 58% from $113 to $178&quot; a month; average deductible $2,759 -&gt; $3,786. (Not the 114% projection.)</p>
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">2.6 million fewer people on ACA plans. Two-thirds of the drop: Republican districts.</p>
+        <p class="src"><a href="https://www.kff.org/affordable-care-act/how-does-aca-marketplace-enrollment-in-2026-vary-across-congressional-districts/" rel="noopener">KFF · 2026-10-08</a> · <a href="https://www.kff.org/quick-insights/aca-marketplace-enrollment-is-down-by-3-million-after-big-jump-in-premium-payments/" rel="noopener">also: kff.org</a></p>
+        <p class="note">Paid enrollment 22.1M -&gt; 19.2M (Feb 2026). GOP-held districts: 55% of enrollees, 67% of the decline.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Their law: $911 billion cut from Medicaid. 10 million more uninsured by 2034.</p>
+        <p class="src"><a href="https://www.kff.org/medicaid/allocating-cbos-estimates-of-federal-medicaid-spending-reductions-across-the-states-enacted-reconciliation-package/" rel="noopener">KFF, from CBO estimates · 2025-07-23</a></p>
+        <p class="note">Enacted 2025 reconciliation law (OBBBA): net federal Medicaid cut 2025-2034; uninsured increase is CBO&#39;s 2034 projection (1.3M in 2026). $990B is the gross Medicaid+CHIP figure.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Medicaid work requirements: 5.3 million more uninsured</p>
+        <p class="src"><a href="https://ccf.georgetown.edu/2025/08/14/new-cbo-health-coverage-estimates-of-budget-reconciliation-law/" rel="noopener">CBO via Georgetown CCF · 2025-08-14</a></p>
+        <p class="note">80 hrs/month for expansion adults through 64; must start by Jan 1, 2027 (HHS may let states delay to Dec 31, 2028). CBO: $326B cut; 5.3M is 2034, before interactions.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">Work requirements started in Nebraska: 1,000+ already denied or dropped</p>
+        <p class="src"><a href="https://www.kff.org/medicaid/early-medicaid-work-requirement-insights-from-nebraska/" rel="noopener">KFF · 2026-09-29</a></p>
+        <p class="note">State data: 557 applicants denied (May-Aug) + 533 dropped at renewal (Jul-Aug).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Senate Republicans let your ACA tax credits expire. Only 4 voted to extend.</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/politics/watch-live-senate-expected-to-vote-on-aca-subsidies-with-premiums-set-to-rise-in-2026" rel="noopener">AP via PBS NewsHour · 2025-12-11</a></p>
+        <p class="note">3-year extension failed 51-48 (60 needed). Republican yes votes: Collins, Hawley, Murkowski, Sullivan. The House passed an extension 230-196 on Jan 8, 2026; the credits remain expired.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Rural Georgia hospital closes its maternity ward: Medicaid cuts &quot;solidified this decision&quot;</p>
+        <p class="src"><a href="https://www.cbsnews.com/amp/atlanta/news/lavonia-hospital-closes-labor-and-delivery-unit-leaving-rural-families-in-crisis" rel="noopener">CBS News Atlanta · 2025-10-28</a></p>
+        <p class="note">St. Mary&#39;s Sacred Heart, Lavonia GA; the hospital also cited recruiting and demographics.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Your rural clinic: closed. Officials blamed the Medicaid cuts.</p>
+        <p class="src"><a href="https://apnews.com/article/medicaid-community-health-centers-new-hampshire-2b2b3e676980b419c9d8d3539b953339" rel="noopener">AP · 2025-11-19</a></p>
+        <p class="note">Franconia, NH health center; 1,400 patients.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">GOP Sen. Tillis: &quot;President Trump breaks his promise by pushing them off of Medicaid&quot;</p>
+        <p class="src"><a href="https://www.wunc.org/politics/2025-06-30/senate-megabill-nc-medicaid-expansion-tillis" rel="noopener">WUNC/NPR · 2025-06-30</a></p>
+        <p class="note">Jun 29, 2025: &quot;So what do I tell 663,000 people in two years or three years, when President Trump breaks his promise by pushing them off of Medicaid because the funding is not there anymore?&quot;</p>
+      </li>
+      <li class="rc">
+        <span class="st st-PROPOSED">PROPOSED</span>
+        <p class="cap">Next year: insurers want another 15%</p>
+        <p class="src"><a href="https://www.kff.org/affordable-care-act/how-much-and-why-aca-marketplace-premiums-are-going-up-in-2027/" rel="noopener">KFF · 2026-08-03</a></p>
+        <p class="note">Median proposed 2027 ACA premium increase across 276 insurers.</p>
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="epstein" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>PROTECTING PEDOPHILES</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Bondi: the client list is &quot;sitting on my desk.&quot; Months later, her DOJ: no incriminating &quot;client list.&quot;</p>
+        <p class="src"><a href="https://www.opb.org/article/2025/07/07/doj-releases-memo-on-sex-offender-jeffrey-epstein-files/" rel="noopener">OPB/NPR · 2025-07-07</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">Epstein Files Transparency Act passed 427–1</p>
+        <p class="src"><a href="https://www.jurist.org/news/2025/11/trump-signs-epstein-files-transparency-act-into-law/" rel="noopener">JURIST · 2025-11-19</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-COURT">COURT RULING</span>
+        <p class="cap">Judge: remove the redactions or justify them. Trump&#39;s DOJ appealed.</p>
+        <p class="src"><a href="https://thehill.com/regulation/court-battles/6047840-doj-appeals-epstein-files-ruling/" rel="noopener">The Hill · 2026-08-24</a> · <a href="https://abcnews.com/Politics/judge-orders-doj-turn-unredacted-epstein-files/story?id=134228532" rel="noopener">also: abcnews.com</a></p>
+        <p class="note">Judge Emmet Sullivan: &quot;The Attorney General has conceded that he is in violation of the Act.&quot; Ordered DOJ to unredact co-conspirator names in a draft indictment or justify the redactions by Jul 2 (preliminary injunction); DOJ refused and appealed. DOJ says some redacted &quot;co-conspirators&quot; were victims.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Legal deadline missed. Only about half of 6 million+ pages released.</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/justice-department/doj-releases-new-trove-long-awaited-epstein-files-rcna256714" rel="noopener">NPR; NBC News · 2026-01-30</a> · <a href="https://www.npr.org/2025/12/19/nx-s1-5647638/epstein-files-release-law-deadline-trump" rel="noopener">also: npr.org</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Rules Committee Republicans voted down releasing the Epstein files</p>
+        <p class="src"><a href="https://rules.house.gov/bill/119/hr-3633" rel="noopener">House Rules Committee · 2025-07-14</a></p>
+        <p class="note">Vote 149: Khanna amendment failed 5-7; the only Republican yes was Ralph Norman.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Every Republican present voted to block an Epstein files vote: 211–210</p>
+        <p class="src"><a href="https://clerk.house.gov/evs/2025/roll194" rel="noopener">House roll call 194 · 2025-07-15</a></p>
+        <p class="note">Procedural vote, R 211-0, D 0-210.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Republicans refused a vote on the Epstein Files Act. Twice.</p>
+        <p class="src"><a href="https://rules.house.gov/bill/119/h-res-589" rel="noopener">House Rules Committee · 2025-09-02</a> · <a href="https://democrats-rules.house.gov/bill/119/h-res-668" rel="noopener">also: democrats-rules.house.gov</a></p>
+        <p class="note">Jul 17 and Sep 2, 2025: motions to take up H.R. 4405 failed 4-9 on party lines; the GOP passed a nonbinding resolution instead.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Speaker Johnson sent the House home early instead of voting</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote" rel="noopener">AP via PBS NewsHour · 2025-07-22</a> · <a href="https://www.cbsnews.com/amp/texas/news/johnson-house-recess-epstein-files-vote" rel="noopener">also: cbsnews.com</a></p>
+        <p class="note">Rules Republicans recessed Jul 21 rather than face Epstein votes; House left Jul 23, a day early. Johnson: &quot;We are not going to let them use this as a political battering ram.&quot;</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump on the Epstein files: &quot;what we will forever call the Jeffrey Epstein Hoax&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/trump-supporters-epstein-sex-trafficking-investigation-bondi-47370e63060d79af64b0b8ac70b970a4" rel="noopener">AP · 2025-07-16</a></p>
+        <p class="note">&quot;Their new SCAM is what we will forever call the Jeffrey Epstein Hoax.&quot;</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">51 Senate Republicans voted to table releasing the Epstein files</p>
+        <p class="src"><a href="https://www.dailypress.senate.gov/wednesday-september-10-2025" rel="noopener">Senate Daily Press · 2025-09-10</a></p>
+        <p class="note">Schumer NDAA amendment tabled 51-49; Hawley and Paul (R) voted against tabling.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Johnson delayed swearing in the 218th petition signer for 50 days</p>
+        <p class="src"><a href="https://apnews.com/article/adelita-grijalva-arizona-house-epstein-files-johnson-da75c9f0e362291f3d0edb1da99e019d" rel="noopener">AP · 2025-11-12</a></p>
+        <p class="note">Grijalva won Sep 23, sworn in Nov 12, signed as 218th. AP: &quot;He swore in two Republican members this year when the chamber was not in legislative session.&quot; Johnson said he would swear her in when the House returned; motive is alleged.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump: &quot;Only a very bad, or stupid, Republican would fall into that trap&quot;</p>
+        <p class="src"><a href="https://www.scrippsnews.com/politics/the-president/fake-narrative-white-house-continues-pushback-against-newly-released-epstein-emails" rel="noopener">Scripps News · 2025-11-12</a></p>
+        <p class="note">Same day, Bondi, Blanche and Patel met petition signer Boebert in the Situation Room (CNN); she denies being pressured.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">DOJ un-redacted 16 of 20 names only after Massie and Khanna caught it</p>
+        <p class="src"><a href="https://time.com/7373333/epstein-files-redactions-massie-khanna-trump/" rel="noopener">TIME · 2026-02-10</a></p>
+        <p class="note">Never show names: the people Khanna named are not accused of crimes.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Senate Republicans blocked suing the DOJ over the files</p>
+        <p class="src"><a href="https://www.wrtv.com/?p=2628027" rel="noopener">Scripps via WRTV · 2026-02-05</a></p>
+        <p class="note">Barrasso objected, calling it a &quot;reckless political stunt.&quot;</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Senate Republicans confirmed the attorney general running that DOJ, 50–49</p>
+        <p class="src"><a href="https://www.michiganpublic.org/2026-08-08/senate-votes-to-confirm-todd-blanche-as-attorney-general" rel="noopener">NPR via Michigan Public · 2026-08-08</a></p>
+        <p class="note">Todd Blanche. Sep 17, 2026: Judge Sullivan warned of possible contempt (Axios).</p>
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="you" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE AGAINST: <b>YOU</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">China imported ZERO US soybeans in September 2025. First time in 7 years.</p>
+        <p class="src"><a href="https://www.reuters.com/world/china/china-imports-no-us-soybeans-september-first-time-seven-years-2025-10-20/" rel="noopener">Reuters · 2025-10-20</a></p>
+        <p class="note">Customs data; Reuters cited tariffs. China resumed buying after the Oct 2025 truce.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Tariff fallout: a $12 billion bailout for farmers</p>
+        <p class="src"><a href="https://www.cbsnews.com/news/white-house-12-billion-aid-package-farmers" rel="noopener">CBS News · 2025-12-08</a></p>
+        <p class="note">~$11B to row-crop farmers via USDA Farmer Bridge Assistance.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">Farm bankruptcies: up 46% in 2025</p>
+        <p class="src"><a href="https://www.fb.org/intel/markets/farm-bankruptcies-continued-to-climb-in-2025" rel="noopener">American Farm Bureau · 2026-02-09</a> · <a href="https://farmpolicynews.illinois.edu/2026/05/farm-bankruptcies-hit-six-year-high-in-april/" rel="noopener">also: farmpolicynews.illinois.edu</a></p>
+        <p class="note">315 filings in 2025 (still below 2019&#39;s 599); April 2026: most in a month since Feb 2020.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Your VA: nearly 30,000 fewer staff</p>
+        <p class="src"><a href="https://www.va.gov/wilmington-health-care/news-releases/va-to-reduce-staff-by-nearly-30k-by-end-of-fy2025/" rel="noopener">Dept. of Veterans Affairs · 2025-07</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">94% of VA medical centers: severe doctor shortages</p>
+        <p class="src"><a href="https://vaoig.gov/reports/national-healthcare-review/oig-determination-veterans-health-administrations-severe-1" rel="noopener">VA Inspector General · 2025-08-12</a></p>
+        <p class="note">79% short on nurses; total shortages up 50% from 2024. Survey predates most departures.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Social Security: 7,000 staff cut</p>
+        <p class="src"><a href="https://www.ssa.gov/news/en/press/releases/2025-02-28.html" rel="noopener">Social Security Administration · 2025-02-28</a></p>
+        <p class="note">Target 50,000, down from 57,000. Do not claim longer waits (IG found phone service improved FY2025).</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Plan: half as many visits at your Social Security office</p>
+        <p class="src"><a href="https://apnews.com/article/social-security-trump-administration-retirement-a94ced488f2e052a5d9df39021701195" rel="noopener">AP · 2025-12-05</a></p>
+        <p class="note">Internal plan: no more than 15M field-office visits in FY2026, down from 31.6M.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Whistleblower: DOGE copied 300 million Americans&#39; Social Security records with no independent oversight</p>
+        <p class="src"><a href="https://www.nbcnews.com/news/rcna227259" rel="noopener">NBC News · 2025-08-26</a></p>
+        <p class="note">Alleged by SSA&#39;s chief data officer; SSA says it knows of no compromise.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">SNAP: 2.4 million cut. The exemption for veterans: gone.</p>
+        <p class="src"><a href="https://www.cbo.gov/publication/61367" rel="noopener">CBO · 2025-08-11</a></p>
+        <p class="note">Work rules extended to ages 55-64 and parents of kids 14+; exemptions for veterans, homeless people and former foster youth ended.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Ag Secretary: &quot;we now have moved 4.3 million Americans off&quot; food stamps</p>
+        <p class="src"><a href="https://apnews.com/article/fact-check-snap-food-stamps-fraud-rollins-1a964909ae5cb808813a6478bbfa5f65" rel="noopener">AP · 2026-05-01</a></p>
+        <p class="note">USDA credits fraud and the economy; experts cite the law.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">The counties that rely most on SNAP: 82% voted Trump</p>
+        <p class="src"><a href="https://agglomerations.eig.org/p/where-any-snap-lapse-will-bite-hardest" rel="noopener">Economic Innovation Group · 2025-11-03</a></p>
+        <p class="note">Counties where SNAP is more than 1% of income.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">Promised: your energy bills cut &quot;50 to 70%.&quot; Electricity: up 6.7% in 2025.</p>
+        <p class="src"><a href="https://www.bls.gov/news.release/archives/cpi_01132026.htm" rel="noopener">AP; BLS · 2026-01-13</a> · <a href="https://spectrumlocalnews.com/nc/charlotte/news/2024/08/14/trump-s-campaign-called-it-an-economic-address--he-made-big-promises-but-mostly-veered-off-topic" rel="noopener">also: spectrumlocalnews.com</a></p>
+        <p class="note">Aug 14, 2024 promise: &quot;50 to 70%&quot; within 12 months, &quot;maximum 18 months.&quot; BLS: electricity +6.7% in 2025; +3.8% in the year to Aug 2026 (cpi_09112026). Many cost drivers: frame as a broken promise.</p>
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="revenge" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>REVENGE</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;I am your retribution.&quot;</p>
+        <p class="src"><a href="https://abcnews.com/Politics/video/trump-takes-center-stage-cpac-calls-americas-retribution-97666674" rel="noopener">CPAC via ABC News · 2023-03-04</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Pardoned ~1,500 Jan 6 rioters — and 77 who tried to overturn 2020</p>
+        <p class="src"><a href="https://www.justice.gov/pardon/clemency-grants-president-donald-j-trump-2025-present" rel="noopener">DOJ Office of the Pardon Attorney · 2025-11-07</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">On Democratic lawmakers: &quot;SEDITIOUS BEHAVIOR, punishable by DEATH!&quot;</p>
+        <p class="src"><a href="https://truthsocial.com/@realDonaldTrump/115582703277798715" rel="noopener">Truth Social · 2025-11-20</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">A grand jury refused to indict the lawmakers</p>
+        <p class="src"><a href="https://time.com/7377620/doj-grand-jury-slotkin-goodlander-kelly-indictment-illegal-orders-trump/" rel="noopener">TIME · 2026-02-10</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Pardoned an ex-president serving 45 years for cocaine trafficking</p>
+        <p class="src"><a href="https://www.justice.gov/pardon/clemency-grants-president-donald-j-trump-2025-present" rel="noopener">DOJ Office of the Pardon Attorney · 2025-12-01</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">His ex-personal lawyer indicted Comey and Letitia James. A judge threw both out.</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/justice-department/judge-dismisses-cases-james-comey-letitia-james-finding-prosecutor-was-rcna244775" rel="noopener">NBC News · 2025-11-24</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">Grand juries refused — twice — to re-indict Letitia James</p>
+        <p class="src"><a href="https://apnews.com/article/letitia-james-grand-jury-6743e4d673d8b039059a958e507aea94" rel="noopener">AP · 2025-12-11</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Ordered an investigation of the official who called 2020 &quot;the most secure in American history&quot;</p>
+        <p class="src"><a href="https://www.whitehouse.gov/presidential-actions/2025/04/addressing-risks-from-chris-krebs-and-government-censorship/" rel="noopener">whitehouse.gov / CISA · 2025-04-09</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">His DOJ &quot;weaponization&quot; chief: if they can&#39;t be charged, &quot;we will name them&quot;</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/rcna206553" rel="noopener">NBC News · 2025-05-13</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">Supreme Court, 5–4, blocks his firing of Fed governor Lisa Cook</p>
+        <p class="src"><a href="https://www.scotusblog.com/2026/06/court-prevents-trump-from-firing-fed-governor/" rel="noopener">SCOTUSblog · 2026-06-29</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">Judge on the criminal probe of the Fed chair: &quot;essentially zero evidence&quot;</p>
+        <p class="src"><a href="https://www.cbsnews.com/news/federal-reserve-jerome-powell-subpoenas-justice-department-judge/" rel="noopener">CBS News · 2026-03-13</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">Judges strike down his orders punishing law firms</p>
+        <p class="src"><a href="https://knightcolumbia.org/cases/law-firms-v-trump-administration" rel="noopener">Knight First Amendment Institute · 2025-06</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">FCC chair on Kimmel: &quot;We can do this the easy way or the hard way.&quot; Pulled that night.</p>
+        <p class="src"><a href="https://www.bostonglobe.com/2025/09/18/business/brendan-carr-fcc-jimmy-kimmel/" rel="noopener">Boston Globe · 2025-09-17</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">A judge wouldn&#39;t charge journalist Don Lemon. DOJ indicted him anyway.</p>
+        <p class="src"><a href="https://www.cnn.com/2026/02/13/media/don-lemon-arraignment-minnesota" rel="noopener">CNN · 2026-02-13</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Comey re-indicted — over a photo of seashells reading &quot;86 47&quot;</p>
+        <p class="src"><a href="https://www.justice.gov/opa/pr/federal-grand-jury-indicts-former-fbi-director-james-comey-threats-harm-president-trump" rel="noopener">Department of Justice · 2026-04-28</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="rioters" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>PARDONED RIOTERS</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">&quot;Full, complete and unconditional&quot; pardons for ~1,500 Jan 6 rioters</p>
+        <p class="src"><a href="https://www.federalregister.gov/documents/2025/01/29/2025-01950/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near" rel="noopener">Proclamation 10887 (Federal Register) · 2025-01-20</a> · <a href="https://www.npr.org/2025/01/20/g-s1-36809/trump-pardons-january-6-riot" rel="noopener">also: npr.org</a></p>
+        <p class="note">14 people received commutations rather than pardons.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">~$5 million of your money to Ashli Babbitt&#39;s family</p>
+        <p class="src"><a href="https://apnews.com/article/ashli-babbitt-trump-settlement-6de2a507ddac903c68c5d3a25f35f24c" rel="noopener">AP · 2025-05-19</a></p>
+        <p class="note">&#39;just under $5 million&#39;, per a person with knowledge of the settlement.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">$1.776B &quot;weaponization&quot; fund rioters could have applied to: BLOCKED</p>
+        <p class="src"><a href="https://www.cnn.com/2026/06/12/politics/anti-weaponization-fund-ruling" rel="noopener">CNN · 2026-06-12</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="bills" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>HIGHER BILLS</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Electricity bills forecast up ~5% in 2026</p>
+        <p class="src"><a href="https://www.utilitydive.com/news/data-centers-electricity-residential-rates-eia/820342/" rel="noopener">EIA via Utility Dive · 2026</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="billionaires" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>BILLIONAIRES FIRST</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">CBO: the poorest 10% lose $1,200 a year. The richest 10% gain $13,600.</p>
+        <p class="src"><a href="https://www.cbo.gov/publication/61367" rel="noopener">Congressional Budget Office · 2025-08-11</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Arizona SNAP rolls cut in half</p>
+        <p class="src"><a href="https://www.newsfromthestates.com/node/428955" rel="noopener">States Newsroom · 2026</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">DOGE could save Musk&#39;s companies $2.37 BILLION</p>
+        <p class="src"><a href="https://www.hsgac.senate.gov/wp-content/uploads/2025-04-27-Minority-Staff-Memorandum-Elon-Musk-Conflicts.pdf" rel="noopener">Senate PSI minority staff · 2025-04-27</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="allies" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>BETRAYING ALLIES</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Taking Greenland by force? &quot;I don&#39;t rule it out.&quot;</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/trump-administration/read-full-transcript-president-donald-trump-interviewed-meet-press-mod-rcna203514" rel="noopener">NBC News (Meet the Press transcript) · 2025-05-04</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Tariffs on 8 NATO allies until Denmark sells Greenland</p>
+        <p class="src"><a href="https://www.cbsnews.com/news/trump-greenland-military-tariffs" rel="noopener">CBS News · 2026-01</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">On allied troops in Afghanistan: they &quot;stayed a little back, a little off the front lines&quot;</p>
+        <p class="src"><a href="https://www.cnn.com/2026/01/23/world/trump-nato-afghanistan-frontlines-intl" rel="noopener">CNN · 2026-01-23</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;Governor Trudeau.&quot; Canada, the &quot;51st state.&quot;</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/donald-trump/trump-takes-aim-canada-greenland-panama-canal-christmas-day-posts-rcna185416" rel="noopener">NBC News · 2024-12-25</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="dictators" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>DICTATOR WORSHIP</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">On Kim Jong Un: &quot;We fell in love.&quot;</p>
+        <p class="src"><a href="https://vice.com/en/article/trump-says-he-and-kim-jong-un-fell-in-love-beautiful-letters-rally-vgtrn" rel="noopener">Wheeling, WV rally · 2018-09-29</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">On Putin invading Ukraine: &quot;Genius.&quot; &quot;Very savvy.&quot;</p>
+        <p class="src"><a href="https://triblive.com/news/world/trump-praises-putin-as-genius-and-very-savvy-for-invading-ukraine" rel="noopener">Clay &amp; Buck Show · 2022-02-22</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Red carpet for Putin in Alaska</p>
+        <p class="src"><a href="https://foreignpolicy.com/2025/08/15/trump-putin-summit-alaska-russia-ukraine-red-carpet/" rel="noopener">Foreign Policy · 2025-08-15</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">On MBS and Khashoggi&#39;s murder: &quot;Things happen.&quot;</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/world/watch-asked-about-khashoggi-murder-trump-says-things-happen-and-mbs-knew-nothing-about-it" rel="noopener">PBS · 2025-11-18</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="ukraine" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>BLAMING UKRAINE</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">To Ukraine: &quot;You should have never started it.&quot;</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/donald-trump/trump-says-ukraine-should-never-have-started-it-remarks-war-russia-rcna192710" rel="noopener">NBC News · 2025-02-18</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Zelensky: &quot;a Dictator without Elections&quot;</p>
+        <p class="src"><a href="https://fortune.com/2025/02/19/trump-zelenskyy-dictator-ukraine-elections-truth-social" rel="noopener">Truth Social via Fortune · 2025-02-19</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">After the Oval Office ambush: intelligence to Ukraine paused</p>
+        <p class="src"><a href="https://apnews.com/article/ukraine-russia-putin-trump-cia-zelenskyy-5eb2c8025f6bb4b616c86e1fe89bba0f" rel="noopener">AP · 2025-03-05</a></p>
+        <p class="note">A pause, lifted Mar 11, 2025 after the Jeddah talks.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Peace plan: Ukraine gives up the Donbas</p>
+        <p class="src"><a href="https://www.axios.com/2025/11/19/trump-ukraine-peace-plan-russia-donbas" rel="noopener">Axios · 2025-11-19</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="suppression" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>VOTER SUPPRESSION</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;Republicans ought to nationalize the voting&quot;</p>
+        <p class="src"><a href="https://www.votebeat.org/2026/02/09/donald-trump-dan-bongino-nationalize-take-over-voting-2026-election/" rel="noopener">Votebeat · 2026-02-09</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Trump order: Postal Service delivers mail ballots only to listed voters</p>
+        <p class="src"><a href="https://www.votebeat.org/national/2026/03/31/donald-trump-2026-midterm-election-executive-order-absentee-mail-ballots-postal-service-citizenship-list/" rel="noopener">Votebeat · 2026-03-31</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-COURT">COURT RULING</span>
+        <p class="cap">Supreme Court, 6–3: Voting Rights Act protections narrowed (Louisiana v. Callais)</p>
+        <p class="src"><a href="https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf" rel="noopener">Supreme Court (Louisiana v. Callais) · 2026-04-29</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">GOP states redraw maps mid-decade: TX, MO, NC, OH, FL…</p>
+        <p class="src"><a href="https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting" rel="noopener">NCSL · 2026</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Texas GOP commissioners cut 92 polling places</p>
+        <p class="src"><a href="https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2026/09/02/tarrant-county-commissioners-approve-cutting-polling-sites" rel="noopener">Spectrum News · 2026-09-02</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Moved Space Command out of Colorado. Mail-in voting was &quot;a big factor.&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/space-command-trump-alabama-colorado-96589ce26df5ddaf59e2fc856084a8ca" rel="noopener">AP · 2025-09-02</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Trump&#39;s DOJ sends 1,000+ federal &quot;monitors&quot; into every state</p>
+        <p class="src"><a href="https://wjla.com/news/nation-world/justice-department-to-deploy-election-monitors-nationwide-as-critics-warn-of-intimidation-ice-agents-trump-administration-national-guard" rel="noopener">TNND/WJLA · 2026-10-05</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="denial" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>ELECTION DENIAL</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">FBI seizes all 2020 ballots in Fulton County</p>
+        <p class="src"><a href="https://www.georgiarecorder.com/2026/01/28/fbi-raids-fulton-county-elections-warehouse-seeking-2020-ballots/" rel="noopener">Georgia Recorder · 2026-01-28</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">He&#39;ll accept the midterm results — &quot;if the elections are honest&quot;</p>
+        <p class="src"><a href="https://www.mediaite.com/media/news/trump-says-he-will-accept-the-2026-midterm-results-if-the-elections-are-honest" rel="noopener">NBC via Mediaite · 2026-02</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">A third term? &quot;I&#39;m not joking.&quot;</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/donald-trump/trump-third-term-white-house-methods-rcna198752" rel="noopener">NBC News · 2025-03-30</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">&quot;Trump 2028&quot; hats sold on his official store</p>
+        <p class="src"><a href="https://www.weau.com/2025/04/24/trump-2028-hats-t-shirts-are-being-sold-his-official-merch-site/" rel="noopener">Gray TV · 2025-04-24</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Claimed 2020 was &quot;rigged&quot; at least 107 times in six months</p>
+        <p class="src"><a href="https://www.reuters.com/world/us/trump-claims-2020-election-rigged-least-107-times-six-months-midterms-loom-2026-05-26/" rel="noopener">Reuters · 2026-05-26</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="theocracy" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>THEOCRACY</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;You won&#39;t have to vote anymore, my beautiful Christians&quot;</p>
+        <p class="src"><a href="https://whyy.org/articles/trump-christian-wont-vote-anymore-speech" rel="noopener">NPR/WHYY · 2024-07-26</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Executive order creates a White House Faith Office</p>
+        <p class="src"><a href="https://whitehouse.gov/presidential-actions/2025/02/establishment-of-the-white-house-faith-office" rel="noopener">whitehouse.gov · 2025-02-07</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">A Project 2025 architect runs the federal budget</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/trump-administration/key-project-2025-authors-now-staffing-trump-administration-rcna195107" rel="noopener">NBC News · 2025</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Self-described Christian nationalist leads Pentagon prayer service</p>
+        <p class="src"><a href="https://www.military.com/daily-news/2026/02/18/who-doug-wilson-pentagon-defends-pastor-who-led-pentagon-prayer-service.html" rel="noopener">Military.com · 2026-02-18</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="science" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>ANTI-SCIENCE</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Fired all 17 vaccine advisers. New panel: no hepatitis B shot for all newborns.</p>
+        <p class="src"><a href="https://apnews.com/article/vaccines-babies-hepatitis-b-10f8db54beb38c5cd39a94f8a3657752" rel="noopener">AP · 2025-12-05</a></p>
+        <p class="note">On Mar 16, 2026 a federal judge stayed the reconstituted panel&#39;s votes, including this one.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">Judge blocks his vaccine schedule changes: &quot;arbitrary and capricious&quot;</p>
+        <p class="src"><a href="https://news.bgov.com/health-law-and-business/rfk-jr-s-changes-to-vaccine-schedule-advisers-paused-by-judge" rel="noopener">Bloomberg Law · 2026-03</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Blames Tylenol for autism. The science doesn&#39;t.</p>
+        <p class="src"><a href="https://www.npr.org/sections/shots-health-news/2025/09/22/nx-s1-5550153/trump-rfk-autism-tylenol-leucovorin-pregnancy" rel="noopener">NPR · 2025-09-22</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-PROPOSED">PROPOSED</span>
+        <p class="cap">Proposed: NSF cut 55%. NIH cut $5 billion.</p>
+        <p class="src"><a href="https://www.washington.edu/federalrelations/2026/04/03/administration-releases-fy2027-budget-proposal/" rel="noopener">Univ. of Washington Federal Relations · 2026-04-03</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">FDA&#39;s own scientists warned on peptides. Rules loosened anyway.</p>
+        <p class="src"><a href="https://news.bloomberglaw.com/health-law-and-business/fda-advisers-recommend-relaxing-peptide-rules-in-win-for-rfk-jr" rel="noopener">NPR / Bloomberg Law · 2026-07-23</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="aid" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>DEATH BY SPREADSHEET</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">USAID shut down. 83% of programs gone.</p>
+        <p class="src"><a href="https://www.npr.org/2025/07/01/nx-s1-5451372/usaid-officially-shuts-down-and-merges-remaining-operations-with-state-department" rel="noopener">NPR · 2025-07-01</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">Researchers estimate 14 million deaths by 2030 — 4.5M children</p>
+        <p class="src"><a href="https://www.thelancet.com/article/S0140-6736(25)01186-9/fulltext" rel="noopener">The Lancet · 2025-06-30</a> · <a href="https://www.reuters.com/business/healthcare-pharmaceuticals/usaid-cuts-may-cause-over-14-million-additional-deaths-by-2030-study-says-2025-07-01/" rel="noopener">also: reuters.com</a></p>
+        <p class="note">Model projection assuming the cuts continue.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Congress funded HIV drugs. The administration won&#39;t spend it.</p>
+        <p class="src"><a href="https://www.vpm.org/npr-news/2026-04-04/congress-gave-money-for-global-hiv-work-the-trump-administration-isnt-spending-it" rel="noopener">NPR · 2026-04-04</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="insider" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>SELLING THE PRESIDENCY</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">9:37am: &quot;THIS IS A GREAT TIME TO BUY!!! DJT&quot; — tariff pause hours later</p>
+        <p class="src"><a href="https://apnews.com/article/trump-truth-social-djt-tesla-musk-tariffs-pause-fccfa6b06c8f1ec0cd7844641ca52669" rel="noopener">AP · 2025-04-09</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">$500M oil bet placed 15 minutes before his Iran post</p>
+        <p class="src"><a href="https://www.reuters.com/business/energy/traders-bet-500-million-oil-price-just-before-trumps-post-delay-iran-attack-2026-03-24/" rel="noopener">Reuters · 2026-03-24</a></p>
+        <p class="note">Reuters&#39; own calculation; Reuters could not identify who traded.</p>
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Feds probe oil trades ahead of Trump&#39;s Iran announcements</p>
+        <p class="src"><a href="https://katv.com/news/nation-world/feds-probe-oil-futures-trades-ahead-of-trump-iran-strait-of-hormuz-announcements-prices-trading-activity-report" rel="noopener">TNND · 2026-04</a></p>
+        
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="grift" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>THE GRIFT</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;I love the poorly educated.&quot;</p>
+        <p class="src"><a href="https://www.boston25news.com/news/donald-trump-i-love-the-poorly-educated/111050547" rel="noopener">Boston 25 News · 2016-02-23</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;I could stand in the middle of Fifth Avenue and shoot somebody, and I wouldn&#39;t lose any voters.&quot;</p>
+        <p class="src"><a href="https://www.npr.org/sections/thetwo-way/2016/01/23/464129029/donald-trump-i-could-shoot-somebody-and-i-wouldnt-lose-any-voters" rel="noopener">NPR · 2016-01-23</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">His own supporters who asked about Epstein? &quot;Weaklings… I don&#39;t want their support anymore!&quot;</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/politics/trump-slams-supporters-who-are-angered-over-epstein-case-as-weaklings" rel="noopener">PBS NewsHour · 2025-07-16</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">His memecoin: ~764,000 wallets lost money. 58 made $10M+ each.</p>
+        <p class="src"><a href="https://www.nbcnews.com/tech/crypto/58-crypto-wallets-made-millions-trumps-meme-coin-764000-lost-money-dat-rcna205237" rel="noopener">Chainalysis via NBC/CNBC · 2025-05-06</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">$TRUMP coin: $73.43 at peak → ~$1.85 today (−97%)</p>
+        <p class="src"><a href="https://www.coingecko.com/en/coins/official-trump" rel="noopener">CoinGecko · 2026-10-09</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">The family cashed out ~$1.55B in tokens. Early buyers stayed locked in.</p>
+        <p class="src"><a href="https://www.bloomberg.com/news/articles/2026-05-12/quiet-token-sales-boosted-trump-crypto-wealth-by-660-million" rel="noopener">Bloomberg / Unchained · 2026-05-12</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">Trump Media stock: $79 → $8</p>
+        <p class="src"><a href="https://stockanalysis.com/stocks/djt/history/" rel="noopener">StockAnalysis · 2026-10-08</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">$1.5 million from $59.99 Bibles — his own disclosure</p>
+        <p class="src"><a href="https://www.commondreams.org/news/trump-bible-lee-greenwood" rel="noopener">OGE filing via Common Dreams · 2026</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">$399 sneakers — the day after a $355M fraud ruling</p>
+        <p class="src"><a href="https://wjla.com/news/nation-world/trump-hawks-399-branded-shoes-at-sneaker-con-a-day-after-a-355-million-ruling-against" rel="noopener">TNND/WJLA · 2024-02-17</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Trump phone: $100 deposits. &quot;Made in USA&quot; quietly dropped.</p>
+        <p class="src"><a href="https://fortune.com/2026/05/11/trump-mobile-gold-trump-phone-deposits-t1-device-fcc/" rel="noopener">Bloomberg / Fortune · 2026-05-11</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Pre-checked &quot;monthly recurring donation&quot; boxes: $122.7M refunded</p>
+        <p class="src"><a href="https://www.nytimes.com/2021/04/03/us/politics/trump-donations.html" rel="noopener">New York Times · 2021-04-03</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-DATA">DATA</span>
+        <p class="cap">NY Fed: Americans paid ~90% of the tariff bill</p>
+        <p class="src"><a href="https://libertystreeteconomics.newyorkfed.org/2026/02/who-is-paying-for-the-2025-u-s-tariffs/" rel="noopener">Federal Reserve Bank of New York · 2026-02-12</a></p>
+        <p class="note">~90% of the tariff burden fell on US firms and consumers (importers and buyers), not foreign exporters.</p>
+      </li>
+      </ul>
+    </section>
+    <section class="beat" id="faith" data-search>
+      <h3>A VOTE FOR REPUBLICANS IS A VOTE FOR: <b>USING JESUS</b></h3>
+      <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">His favorite Bible verse? &quot;An eye for an eye, you can almost say that.&quot;</p>
+        <p class="src"><a href="https://www.cbsnews.com/news/donald-trump-names-his-favorite-bible-verse/" rel="noopener">CBS News · 2016-04-14</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">A bishop asked him for mercy. He demanded an apology.</p>
+        <p class="src"><a href="https://episcopalnewsservice.org/2025/01/21/washington-bishops-plea-to-trump-have-mercy-upon-the-people-in-our-country-who-are-scared/" rel="noopener">Episcopal News Service / Fox News · 2025-01-22</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">The American pope: &quot;inhuman treatment of immigrants… I don&#39;t know if that&#39;s pro-life.&quot;</p>
+        <p class="src"><a href="https://www.npr.org/2025/10/01/nx-s1-5560169/pope-leo-xiv-says-inhuman-treatment-of-immigrants-in-the-u-s-isnt-pro-life" rel="noopener">NPR · 2025-10-01</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">Catholic bishops, 216–5: &quot;We oppose the indiscriminate mass deportation of people.&quot;</p>
+        <p class="src"><a href="https://www.americamagazine.org/news/2025/11/12/usccb-special-message-immigration/" rel="noopener">America Magazine · 2025-11-12</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Posted himself as the pope. Catholics: &quot;Do not mock us.&quot; Trump: &quot;They can&#39;t take a joke.&quot;</p>
+        <p class="src"><a href="https://www.ijpr.org/npr-news/2025-05-04/catholic-leaders-criticize-trump-for-posting-apparent-ai-photo-of-himself-as-the-pope" rel="noopener">NPR / PBS · 2025-05-04</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;They&#39;re eating the dogs… They&#39;re eating the cats.&quot; City officials: no credible reports.</p>
+        <p class="src"><a href="https://abcnews.go.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542" rel="noopener">ABC News debate transcript · 2024-09-10</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">ICE cleared to raid churches. Churches had to sue.</p>
+        <p class="src"><a href="https://www.pym.org/appeals-court-backs-philadelphia-yearly-meeting-in-lawsuit-against-trump-administration-press-release/" rel="noopener">DHS / Philadelphia Yearly Meeting · 2026-08-18</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">At a memorial: &quot;I hate my opponent, and I don&#39;t want the best for them.&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/charlie-kirk-trump-memorial-service-b5469086954908b162f464da966cf238" rel="noopener">AP · 2025-09-21</a> · <a href="https://www.nbcnews.com/politics/trump-administration/charlie-kirk-funeral-conservative-revival-rcna232823" rel="noopener">also: nbcnews.com</a></p>
+        <p class="note">Verbatim: &#39;That&#39;s where I disagreed with Charlie. I hate my opponent, and I don&#39;t want the best for them.&#39;</p>
+      </li>
+      </ul>
+    </section>
+
+  <h2 id="confessions">EVERY ACCUSATION IS A CONFESSION</h2>
+  <p>What they said, then what they did.</p>
+  
+      <div class="pair" data-search>
+        <div><span class="lbl">THEY SAID</span>
+      
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;DRAIN THE SWAMP.&quot;</p>
+        <p class="src"><a href="https://www.upi.com/Top_News/US/2016/10/18/Donald-Trump-pledges-to-drain-the-swamp-in-Washington-with-ethics-reform/6421476800793/" rel="noopener">UPI · 2016-10-18</a></p>
+        
+      </div>
+        <div><span class="lbl red">THEY DID</span>
+      
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">$2 BILLION Abu Dhabi deal — paid in his family&#39;s stablecoin</p>
+        <p class="src"><a href="https://www.reuters.com/world/middle-east/wlfs-zach-witkoff-usd1-selected-official-stablecoin-mgx-investment-binance-2025-05-01/" rel="noopener">Reuters · 2025-05-01</a></p>
+        
+      </div>
+      </div>
+      <div class="pair" data-search>
+        <div><span class="lbl">THEY SAID</span>
+      
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;We can&#39;t have someone in the Oval Office who doesn&#39;t understand the meaning of the word confidential or classified.&quot;</p>
+        <p class="src"><a href="https://www.justice.gov/storage/US_v_Trump-Nauta_23-80101.pdf" rel="noopener">Quoted in US v. Trump indictment ¶22 · 2016-09-06</a></p>
+        
+      </div>
+        <div><span class="lbl red">THEY DID</span>
+      
+        <span class="st st-COURT">COURT FILING</span>
+        <p class="cap">His boxes of classified documents: stored in a shower</p>
+        <p class="src"><a href="https://www.justice.gov/storage/US_v_Trump-Nauta_23-80101.pdf" rel="noopener">US v. Trump indictment ¶5 (case dismissed 2024) · 2023-06-08</a></p>
+        
+      </div>
+      </div>
+      <div class="pair" data-search>
+        <div><span class="lbl">THEY SAID</span>
+      
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">&quot;ENDING THE WEAPONIZATION OF THE FEDERAL GOVERNMENT&quot;</p>
+        <p class="src"><a href="https://www.whitehouse.gov/presidential-actions/2025/01/ending-the-weaponization-of-the-federal-government/" rel="noopener">whitehouse.gov · 2025-01-20</a></p>
+        
+      </div>
+        <div><span class="lbl red">THEY DID</span>
+      
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;Pam… They&#39;re all guilty as hell… JUSTICE MUST BE SERVED, NOW!!!&quot;</p>
+        <p class="src"><a href="https://truthsocial.com/@realDonaldTrump/115239044548033727" rel="noopener">Truth Social · 2025-09-20</a></p>
+        
+      </div>
+      </div>
+      <div class="pair" data-search>
+        <div><span class="lbl">THEY SAID</span>
+      
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">&quot;RESTORING FREEDOM OF SPEECH AND ENDING FEDERAL CENSORSHIP&quot;</p>
+        <p class="src"><a href="https://www.whitehouse.gov/presidential-actions/2025/01/restoring-freedom-of-speech-and-ending-federal-censorship/" rel="noopener">whitehouse.gov · 2025-01-20</a></p>
+        
+      </div>
+        <div><span class="lbl red">THEY DID</span>
+      
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;Effective immediately, I am banning&quot; CNN, MS NOW and Politico from the White House</p>
+        <p class="src"><a href="https://www.ktvu.com/news/trump-banning-cnn-msnow-politico-white-house" rel="noopener">KTVU FOX 2 · 2026-09-18</a> · <a href="https://www.aljazeera.com/news/2026/9/24/us-judge-blocks-trumps-white-house-ban-on-cnn-ms-now-and-politico" rel="noopener">also: aljazeera.com</a></p>
+        
+      </div>
+      </div>
+      <div class="pair" data-search>
+        <div><span class="lbl">THEY SAID</span>
+      
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">&quot;RIGGED!&quot; — at least 107 times in six months</p>
+        <p class="src"><a href="https://www.reuters.com/world/us/trump-claims-2020-election-rigged-least-107-times-six-months-midterms-loom-2026-05-26/" rel="noopener">Reuters · 2026-05-26</a></p>
+        
+      </div>
+        <div><span class="lbl red">THEY DID</span>
+      
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">&quot;I just want to find 11,780 votes.&quot;</p>
+        <p class="src"><a href="https://www.washingtonpost.com/politics/trump-raffensperger-call-transcript-georgia-vote/2021/01/03/2768e0cc-4ddd-11eb-83e3-322644d82356_story.html" rel="noopener">Washington Post (audio) · 2021-01-02</a></p>
+        
+      </div>
+      </div>
+
+  <h2 id="playbook">THEIR PLAYBOOK</h2>
+  <p>How they try to keep you home, and what to do about it.</p>
+  
+      <div class="trick" data-search>
+        <p class="tn">TRICK #1: PURGE THE ROLLS</p>
+        <p class="counter">CHECK YOUR REGISTRATION TODAY. VOTE.ORG</p>
+        <ul>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">DOJ sued 30 states + DC for your voter data. Lost 26. Won none.</p>
+        <p class="src"><a href="https://www.cbsnews.com/news/trump-lawsuits-state-voter-rolls-justice-department/" rel="noopener">CBS News · 2026-10-01</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Texas: ~1 in 5 flagged &quot;noncitizens&quot; were citizens</p>
+        <p class="src"><a href="https://www.mprnews.org/story/2026/09/25/npr-supreme-court-trump-save-noncitizen-voting" rel="noopener">NPR/MPR · 2026-09-25</a></p>
+        
+      </li></ul>
+      </div>
+      <div class="trick" data-search>
+        <p class="tn">TRICK #2: KILL THE MAIL BALLOT</p>
+        <p class="counter">BLOCKED. MAIL YOURS EARLY.</p>
+        <ul>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">Supreme Court keeps Trump&#39;s mail-ballot rules blocked for November</p>
+        <p class="src"><a href="https://www.votebeat.org/national/2026/09/15/trump-mail-voting-executive-order-supreme-court-decision-2026-election/" rel="noopener">Votebeat · 2026-09-15</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">5–4: ballots postmarked by Election Day still count (RNC lost)</p>
+        <p class="src"><a href="https://www.venable.com/insights/publications/2026/07/count-the-votes-supreme-court-holds-states" rel="noopener">Venable · 2026-07</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Moved Space Command out of Colorado: mail voting &quot;a big factor&quot;</p>
+        <p class="src"><a href="https://apnews.com/article/space-command-trump-alabama-colorado-96589ce26df5ddaf59e2fc856084a8ca" rel="noopener">AP · 2025-09-02</a></p>
+        
+      </li></ul>
+      </div>
+      <div class="trick" data-search>
+        <p class="tn">TRICK #3: FAKE TEXTS. WRONG DAY. WRONG PLACE.</p>
+        <p class="counter">ELECTION DAY: TUESDAY, NOV 3. TEXTS SAYING OTHERWISE ARE LYING.</p>
+        <ul>
+      <li class="rc">
+        <span class="st st-OFFICIAL">OFFICIAL</span>
+        <p class="cap">California AG warns of false claims about &quot;where, when, and how to vote,&quot; including texts</p>
+        <p class="src"><a href="https://oag.ca.gov/system/files/attachments/press-docs/Consumer%20Alert%20-%20Election%20Misinformation.pdf" rel="noopener">CA Attorney General · 2026-05-05</a></p>
+        
+      </li></ul>
+      </div>
+      <div class="trick" data-search>
+        <p class="tn">TRICK #4: SCARE YOU AT THE POLLS</p>
+        <p class="counter">TROOPS AT THE POLLS? INTIMIDATING VOTERS? FEDERAL CRIMES. STAY IN LINE.</p>
+        <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Trump&#39;s DOJ plans to deploy federal election &quot;monitors&quot; nationwide</p>
+        <p class="src"><a href="https://wjla.com/news/nation-world/justice-department-to-deploy-election-monitors-nationwide-as-critics-warn-of-intimidation-ice-agents-trump-administration-national-guard" rel="noopener">TNND/WJLA · 2026-10-05</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Bannon: &quot;We&#39;re gonna have ICE surround the polls&quot;</p>
+        <p class="src"><a href="https://www.mediamatters.org/steve-bannon/steve-bannon-youre-damn-right-were-gonna-have-ice-surround-polls-come-november" rel="noopener">Media Matters · 2026-02-03</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Guard or ICE at the polls? Trump: &quot;anything necessary&quot;</p>
+        <p class="src"><a href="https://wjla.com/news/nation-world/justice-department-to-deploy-election-monitors-nationwide-as-critics-warn-of-intimidation-ice-agents-trump-administration-national-guard" rel="noopener">TNND/WJLA · 2026-10-05</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-LAW">LAW</span>
+        <p class="cap">18 U.S.C. § 592: troops or armed men at the polls — up to 5 years</p>
+        <p class="src"><a href="https://www.law.cornell.edu/uscode/text/18/592" rel="noopener">Cornell LII</a></p>
+        
+      </li></ul>
+      </div>
+      <div class="trick" data-search>
+        <p class="tn">TRICK #5: GUT THE PEOPLE WHO PROTECT YOUR VOTE</p>
+        <p class="counter">THEN WE MAKE IT
+TOO BIG TO RIG.</p>
+        <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">~1,000 CISA jobs gone; election security staff sidelined</p>
+        <p class="src"><a href="https://apnews.com/article/election-security-cisa-2026-secretaries-state-midterms-6d18799c6c5fdd1bc001544b2dca12bf" rel="noopener">AP · 2025-11-23</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-ESTIMATE">ESTIMATE</span>
+        <p class="cap">By May 2025: DOJ voting-rights lawyers down from ~30 to 3</p>
+        <p class="src"><a href="https://www.democracydocket.com/news-alerts/doj-voting-section-has-just-three-lawyers-left-watchdog-estimates/" rel="noopener">Democracy Docket · 2025-05-12</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">FBI foreign-influence task force shut down</p>
+        <p class="src"><a href="https://www.nbcnews.com/politics/national-security/bondi-ends-fbi-effort-combat-foreign-influence-us-politics-rcna191012" rel="noopener">NBC News · 2025-02</a></p>
+        
+      </li></ul>
+      </div>
+      <div class="trick" data-search>
+        <p class="tn">TRICK #6: &quot;IT&#39;S ALREADY DECIDED.&quot;</p>
+        <p class="counter">POLLS DON&#39;T VOTE. YOU DO.</p>
+        <ul>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">2022: GOP-sponsored polls sold a &quot;red wave&quot;</p>
+        <p class="src"><a href="https://www.semafor.com/article/10/31/2022/democrats-hope-tidal-wave-of-republican-sponsored-polls-arent-midterm-reality" rel="noopener">Semafor · 2022-10-31</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-REPORTED">REPORTED</span>
+        <p class="cap">Then the &quot;red wave&quot; failed to materialize</p>
+        <p class="src"><a href="https://www.bangordailynews.com/2022/11/09/national-politics/republican-red-wave-failed-to-materialize/" rel="noopener">AP via Bangor Daily News · 2022-11-09</a></p>
+        
+      </li></ul>
+      </div>
+      <div class="trick" data-search>
+        <p class="tn">TRICK #7: &quot;NATIONALIZE THE VOTING&quot;</p>
+        <p class="counter">YOUR STATE RUNS YOUR ELECTION. NOT HIM.</p>
+        <ul>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Trump: Republicans should &quot;nationalize the voting&quot;</p>
+        <p class="src"><a href="https://www.spotlightpa.org/news/2026/02/trump-nationalize-voting-elections-2026-republicans/" rel="noopener">Spotlight PA · 2026-02</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-QUOTE">QUOTE</span>
+        <p class="cap">Asked about an election emergency to impose his voting rules: &quot;Stranger things have happened.&quot;</p>
+        <p class="src"><a href="https://www.cnn.com/2026/08/11/politics/trump-national-emergency-election" rel="noopener">CNN · 2026-08-11</a></p>
+        
+      </li>
+      <li class="rc">
+        <span class="st st-WIN">WIN</span>
+        <p class="cap">Judge permanently blocks his proof-of-citizenship rules</p>
+        <p class="src"><a href="https://www.pbs.org/newshour/politics/judge-blocks-additional-citizenship-provisions-in-latest-setback-to-trumps-wide-ranging-election-executive-order" rel="noopener">PBS · 2026-01</a></p>
+        
+      </li></ul>
+      </div>
+
+  <h2>THE SCOREBOARD</h2>
+  <p>When we show up, we win.</p>
+  <ul class="sb"><li><span>2018 MIDTERM: HIGHEST TURNOUT IN 100 YEARS</span><span><a href="https://www.pewresearch.org/methods/2020/09/08/democrats-made-gains-from-multiple-sources-in-2018-midterm-victories/" rel="noopener">DEMS +41 HOUSE SEATS ✓</a></span></li><li><span>VIRGINIA &amp; NEW JERSEY GOVERNORS</span><span><a href="https://cvillerightnow.com/news/208802-virginia-election-results-certified-spanberger-defeated-earle-sears-by-over-520000-votes/" rel="noopener">WON BY 14+ ✓</a> · <a href="https://nj.gov/state/elections/assets/pdf/election-results/2025/2025-official-general-results-governor.pdf" rel="noopener">also: nj.gov</a></span></li><li><span>STATE LEGISLATIVE SEATS FLIPPED</span><span><a href="https://www.the-downballot.com/p/100-specials-since-trumps-return" rel="noopener">31 — ALL BLUE ✓</a></span></li><li><span>110 SPECIAL ELECTIONS SINCE 2025</span><span><a href="https://www.the-downballot.com/p/100-specials-since-trumps-return" rel="noopener">DEMS RAN 12.5 PTS AHEAD OF 2024 ✓</a></span></li><li><span>TRUMP&#39;S MAIL-BALLOT ORDER</span><span><a href="https://www.votebeat.org/national/2026/09/15/trump-mail-voting-executive-order-supreme-court-decision-2026-election/" rel="noopener">BLOCKED ✓</a></span></li><li><span>DOJ GRAB FOR YOUR VOTER DATA</span><span><a href="https://www.cbsnews.com/news/trump-lawsuits-state-voter-rolls-justice-department/" rel="noopener">LOST 26, WON 0 ✓</a></span></li><li><span>INDIANA GERRYMANDER</span><span><a href="https://www.axios.com/local/indianapolis/2025/12/11/indiana-senate-rejects-trump-redistricting" rel="noopener">KILLED 31–19 ✓</a></span></li><li><span>&quot;PUNISHABLE BY DEATH&quot;</span><span><a href="https://time.com/7377620/doj-grand-jury-slotkin-goodlander-kelly-indictment-illegal-orders-trump/" rel="noopener">GRAND JURY SAID NO ✓</a></span></li><li><span>EPSTEIN FILES LAW</span><span><a href="https://www.jurist.org/news/2025/11/trump-signs-epstein-files-transparency-act-into-law/" rel="noopener">PASSED 427–1 ✓</a></span></li></ul>
+
+  <h2 id="rights">YOUR RIGHTS AT THE POLLS</h2>
+  <p>Problems voting? Election Protection: <b>866-OUR-VOTE</b> · en español <b>888-VE-Y-VOTA</b> (<a href="https://866ourvote.org" rel="noopener">866ourvote.org</a>)</p>
+  <ul class="rights">
+    <li>In line when polls close? Stay in line. You can still vote. (<a href="https://bookofthestates.org/tables/2022-6-5" rel="noopener">source</a>)</li>
+    <li>Not on the list? Ask for a provisional ballot. (<a href="https://www.law.cornell.edu/uscode/text/52/21082" rel="noopener">source</a>)</li>
+    <li>Voter intimidation is a federal crime. (<a href="https://www.govinfo.gov/link/uscode/52/20511" rel="noopener">source</a>)</li>
+    <li>Registration deadlines and voting rules differ by state. Check yours at <a href="https://www.vote.org" rel="noopener">vote.org</a> or <a href="https://www.canivote.org" rel="noopener">canivote.org</a>.</li>
+  </ul>
+</main>
+<footer class="wrap">
+  <p><b>Found an error or a better source?</b> This list is public and correctable: open an issue or pull request at <a href="https://github.com/opposablemeaning/vote" rel="noopener">github.com/opposablemeaning/vote</a>. Every receipt needs a source and an honest status label.</p>
+  <p>Data (receipts) CC BY 4.0 · code MIT. Protest map data: Crowd Counting Consortium (Harvard Ash Center / UConn), CC0. Sound: synthesized, plus CC0 field recordings and samples (credits in the repo).</p>
+</footer>
+<script>
+  // hide the dated No Kings banner after Oct 17
+  const nk = document.getElementById("nk");
+  if (nk && new Date() >= new Date(nk.dataset.until + "T12:00:00Z")) nk.classList.add("hide");
+  // live filter
+  const q = document.getElementById("q");
+  const items = [...document.querySelectorAll(".rc, .pair, .trick")];
+  q.addEventListener("input", () => {
+    const t = q.value.trim().toLowerCase();
+    items.forEach((el) => el.classList.toggle("hide", !!t && !el.textContent.toLowerCase().includes(t)));
+    document.querySelectorAll(".beat").forEach((s) => s.classList.toggle("hide", !!t && !s.querySelector(".rc:not(.hide)")));
+  });
+</script>
+</body>
+</html>

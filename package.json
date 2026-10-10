@@ -1,0 +1,17 @@
+{
+  "name": "vote-them-out",
+  "version": "1.0.0",
+  "description": "VOTE. THEM. OUT. \u2014 a get-out-the-vote video for the Nov 3, 2026 midterms, and every receipt behind it",
+  "scripts": {
+    "build": "node scripts/build-hero.mjs && .venv/bin/python scripts/mix.py && node scripts/build-site.mjs",
+    "site": "node scripts/build-site.mjs"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "us-atlas": "^3.0.1"
+  },
+  "private": true
+}

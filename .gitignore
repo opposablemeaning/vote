@@ -1,0 +1,23 @@
+# local tooling
+node_modules/
+.venv/
+.DS_Store
+
+# renders and generated build output
+/out/
+/hero/
+data/hero.cues.json
+
+# audio media (synthesized on build, or fetched from the sources in assets/audio/CREDITS.md)
+*.wav
+*.mp3
+*.ogg
+assets/clips/
+
+# working notes
+HANDOFF.md
+__pycache__/
+*.pyc
+/shorts/
+data/short-*.cues.json
+/publish/

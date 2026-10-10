@@ -1,0 +1,109 @@
+{
+ "id": "diesel",
+ "title": "HE'S BUYING PUTIN'S DIESEL",
+ "note": "Timely (Oct 9, 2026 news). Every claim is a receipt in data/receipts.json (w4, w6, w7, w8, w9). DESPERATE / PUTIN'S POCKET are commentary.",
+ "steps": [
+  {
+   "slam": [
+    {
+     "text": "HE'S BUYING",
+     "size": 170
+    },
+    {
+     "text": "PUTIN'S DIESEL.",
+     "size": 170,
+     "color": "red"
+    }
+   ],
+   "stagger": 0.5,
+   "beats": 5,
+   "music": "drone"
+  },
+  {
+   "kicker": "HE'S BUYING <b>PUTIN'S DIESEL.</b>"
+  },
+  {
+   "head": "TREASURY, OCT 9:",
+   "cards": [
+    "w6"
+   ],
+   "beats": 8,
+   "music": "groove"
+  },
+  {
+   "head": "HOW DID WE GET HERE? HIS IRAN WAR.",
+   "cards": [
+    "w4"
+   ],
+   "beats": 6,
+   "music": "drive"
+  },
+  {
+   "head": "YOUR DIESEL:",
+   "bigstat": "$6.52",
+   "label": "A RECORD. DURING HIS WAR.",
+   "cards": [
+    "w7"
+   ],
+   "cardY": 1110,
+   "beats": 9,
+   "music": "drive"
+  },
+  {
+   "head": "A YEAR AGO, HE PUNISHED RUSSIAN OIL.",
+   "cards": [
+    "w9"
+   ],
+   "beats": 6,
+   "music": "drive"
+  },
+  {
+   "head": "NOW, 25 DAYS BEFORE THE MIDTERMS, HE EASED THEM.",
+   "slam": [
+    {
+     "text": "DESPERATE.",
+     "size": 250,
+     "color": "red"
+    }
+   ],
+   "slamAt": 2,
+   "beats": 5,
+   "music": "drone"
+  },
+  {
+   "head": "UKRAINE'S PRESIDENT:",
+   "cards": [
+    "w8"
+   ],
+   "beats": 6,
+   "music": "groove"
+  },
+  {
+   "slam": [
+    {
+     "text": "HIS WAR.",
+     "size": 190
+    },
+    {
+     "text": "YOUR WALLET.",
+     "size": 190,
+     "color": "yellow"
+    },
+    {
+     "text": "PUTIN'S POCKET.",
+     "size": 160,
+     "color": "red"
+    }
+   ],
+   "stagger": 1.0,
+   "beats": 5,
+   "music": "frenzy",
+   "kickerOff": true
+  },
+  {
+   "end": true,
+   "beats": 12,
+   "music": "anthem"
+  }
+ ]
+}

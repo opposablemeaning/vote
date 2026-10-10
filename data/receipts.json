@@ -1,0 +1,2552 @@
+{
+ "_note": "Single source of truth. Every on-screen claim maps to an item here. status: QUOTE | COURT RULING | COURT ORDER | COURT FILING | OFFICIAL | REPORTED | DATA | ESTIMATE | PROPOSED | LAW. 'capture' = TODO: replace syndicated url with the original outlet page before screenshotting.",
+ "beats": [
+  {
+   "id": "corruption",
+   "word": "CORRUPTION",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "tax",
+   "word": "A TAX ON YOU",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "cruelty",
+   "word": "CRUELTY",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "war",
+   "word": "WAR",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "genocide",
+   "word": "GENOCIDE",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "troops",
+   "word": "BETRAYING THE TROOPS",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "women",
+   "word": "WOMEN DYING",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "healthcare",
+   "word": "LOSING YOUR HEALTHCARE",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "epstein",
+   "word": "PROTECTING PEDOPHILES",
+   "act": 1,
+   "hero": true
+  },
+  {
+   "id": "you",
+   "word": "A VOTE AGAINST YOU",
+   "act": 1,
+   "hero": false,
+   "spin": false
+  },
+  {
+   "id": "revenge",
+   "word": "REVENGE",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "rioters",
+   "word": "PARDONED RIOTERS",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "bills",
+   "word": "HIGHER BILLS",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "billionaires",
+   "word": "BILLIONAIRES FIRST",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "allies",
+   "word": "BETRAYING ALLIES",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "dictators",
+   "word": "DICTATOR WORSHIP",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "ukraine",
+   "word": "BLAMING UKRAINE",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "suppression",
+   "word": "VOTER SUPPRESSION",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "denial",
+   "word": "ELECTION DENIAL",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "theocracy",
+   "word": "THEOCRACY",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "science",
+   "word": "ANTI-SCIENCE",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "aid",
+   "word": "DEATH BY SPREADSHEET",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "insider",
+   "word": "SELLING THE PRESIDENCY",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "grift",
+   "word": "THE GRIFT",
+   "act": 1,
+   "hero": false
+  },
+  {
+   "id": "faith",
+   "word": "USING JESUS",
+   "act": 1,
+   "hero": false
+  }
+ ],
+ "receipts": [
+  {
+   "id": "c1",
+   "beat": "corruption",
+   "status": "REPORTED",
+   "caption": "Abu Dhabi's $2 BILLION Binance deal: paid in Trump's family stablecoin",
+   "outlet": "Reuters",
+   "date": "2025-05-01",
+   "url": "https://www.reuters.com/world/middle-east/wlfs-zach-witkoff-usd1-selected-official-stablecoin-mgx-investment-binance-2025-05-01/"
+  },
+  {
+   "id": "c2",
+   "beat": "corruption",
+   "status": "REPORTED",
+   "caption": "A $400 million gift from Qatar is now Air Force One",
+   "outlet": "AP",
+   "date": "2026-07-01",
+   "url": "https://apnews.com/article/trump-air-force-one-plane-qatar-8eb5da68e95d583b14811f85e62cbcd1"
+  },
+  {
+   "id": "c3",
+   "beat": "corruption",
+   "status": "REPORTED",
+   "caption": "Wall Street pays up to $100,000 A MONTH to see his posts first",
+   "outlet": "NPR",
+   "date": "2026-08-01",
+   "url": "https://www.npr.org/2026/08/01/nx-s1-5912219/for-sale-early-access-to-trumps-truth-social-posts"
+  },
+  {
+   "id": "c4",
+   "beat": "corruption",
+   "status": "REPORTED",
+   "caption": "Buy his coin, get dinner with the President",
+   "outlet": "CNBC",
+   "date": "2025-05-18",
+   "url": "https://www.cnbc.com/2025/05/18/trump-coin-dinner-to-include-mostly-non-americans-based-on-top-holders.html"
+  },
+  {
+   "id": "c5",
+   "beat": "corruption",
+   "status": "REPORTED",
+   "caption": "Trump's regulator gives Trump's crypto company preliminary approval to become a bank",
+   "outlet": "Mother Jones",
+   "date": "2026-10",
+   "url": "https://www.motherjones.com/politics/2026/10/trump-world-liberty-financial-bank/",
+   "short": "Trump's regulator gives his crypto company a preliminary OK to become a bank"
+  },
+  {
+   "id": "c6",
+   "beat": "corruption",
+   "status": "OFFICIAL",
+   "caption": "$1 BILLION+ in crypto income in 2025 — his own disclosure",
+   "outlet": "Trump financial disclosure (OGE Form 278e)",
+   "date": "2026-06-30",
+   "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
+   "also": [
+    "https://www.reuters.com/world/us/trump-reports-over-14-billion-income-crypto-ventures-2026-06-30/",
+    "https://apnews.com/article/trump-financial-disclosure-crypto-060c15062b8fedc6104159ea13775463"
+   ],
+   "note": "The disclosure itemizes crypto income without one total; Reuters tallies over $1.4B, AP about $1.2B."
+  },
+  {
+   "id": "i1",
+   "beat": "insider",
+   "status": "QUOTE",
+   "caption": "9:37am: \"THIS IS A GREAT TIME TO BUY!!! DJT\" — tariff pause hours later",
+   "outlet": "AP",
+   "date": "2025-04-09",
+   "url": "https://apnews.com/article/trump-truth-social-djt-tesla-musk-tariffs-pause-fccfa6b06c8f1ec0cd7844641ca52669"
+  },
+  {
+   "id": "i2",
+   "beat": "insider",
+   "status": "REPORTED",
+   "caption": "$500M oil bet placed 15 minutes before his Iran post",
+   "outlet": "Reuters",
+   "date": "2026-03-24",
+   "url": "https://www.reuters.com/business/energy/traders-bet-500-million-oil-price-just-before-trumps-post-delay-iran-attack-2026-03-24/",
+   "note": "Reuters' own calculation; Reuters could not identify who traded."
+  },
+  {
+   "id": "i3",
+   "beat": "insider",
+   "status": "REPORTED",
+   "caption": "Feds probe oil trades ahead of Trump's Iran announcements",
+   "outlet": "TNND",
+   "date": "2026-04",
+   "url": "https://katv.com/news/nation-world/feds-probe-oil-futures-trades-ahead-of-trump-iran-strait-of-hormuz-announcements-prices-trading-activity-report"
+  },
+  {
+   "id": "t1",
+   "beat": "tax",
+   "status": "COURT RULING",
+   "caption": "Supreme Court, 6–3: his emergency tariffs were ILLEGAL",
+   "outlet": "Supreme Court (Learning Resources v. Trump)",
+   "date": "2026-02-20",
+   "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+   "note": "Held: IEEPA does not authorize the President to impose tariffs. Covers the IEEPA (emergency) tariffs only, not Section 232/301."
+  },
+  {
+   "id": "t2",
+   "beat": "tax",
+   "status": "REPORTED",
+   "caption": "Struck down — then reimposed under a different law",
+   "outlet": "Scripps",
+   "date": "2026-02",
+   "url": "https://www.wtvr.com/politics/economy/court-struck-one-tariff-trumps-new-plan-still-costs-americans-plenty"
+  },
+  {
+   "id": "t3",
+   "beat": "tax",
+   "status": "ESTIMATE",
+   "caption": "Still costing your household $1,000+ a year",
+   "outlet": "Yale Budget Lab via ABC",
+   "date": "2026-08-25",
+   "url": "https://www.goodmorningamerica.com/news/story/tariffs-cost-us-households-1000-year-yale-budget-135945432"
+  },
+  {
+   "id": "t4",
+   "beat": "tax",
+   "status": "DATA",
+   "caption": "Your gas: up 27% in a year",
+   "outlet": "BLS CPI",
+   "date": "2026-09-11",
+   "url": "https://www.bls.gov/news.release/archives/cpi_09112026.htm"
+  },
+  {
+   "id": "t5",
+   "beat": "tax",
+   "status": "REPORTED",
+   "caption": "Courts ordered refunds. The administration appealed.",
+   "outlet": "Holland & Knight",
+   "date": "2026-06-15",
+   "url": "https://www.hklaw.com/en/insights/publications/2026/06/ieepa-tariff-refund-update-government-appeals"
+  },
+  {
+   "id": "b1",
+   "beat": "healthcare",
+   "status": "DATA",
+   "caption": "Your ACA premiums: up 58%. Your deductible: up 37%.",
+   "outlet": "KFF",
+   "date": "2026-05-19",
+   "url": "https://www.kff.org/affordable-care-act/the-average-marketplace-deductible-grew-by-about-1000-per-person-in-2026-with-more-enrollees-shifting-to-higher-deductible-plans-as-enhanced-tax-credits-expired/",
+   "note": "Premium payments \"increased by an average of 58% from $113 to $178\" a month; average deductible $2,759 -> $3,786. (Not the 114% projection.)"
+  },
+  {
+   "id": "b2",
+   "beat": "healthcare",
+   "status": "DATA",
+   "caption": "2.6 million fewer people on ACA plans. Two-thirds of the drop: Republican districts.",
+   "outlet": "KFF",
+   "date": "2026-10-08",
+   "url": "https://www.kff.org/affordable-care-act/how-does-aca-marketplace-enrollment-in-2026-vary-across-congressional-districts/",
+   "also": "https://www.kff.org/quick-insights/aca-marketplace-enrollment-is-down-by-3-million-after-big-jump-in-premium-payments/",
+   "note": "Paid enrollment 22.1M -> 19.2M (Feb 2026). GOP-held districts: 55% of enrollees, 67% of the decline."
+  },
+  {
+   "id": "b3",
+   "beat": "bills",
+   "status": "ESTIMATE",
+   "caption": "Electricity bills forecast up ~5% in 2026",
+   "outlet": "EIA via Utility Dive",
+   "date": "2026",
+   "url": "https://www.utilitydive.com/news/data-centers-electricity-residential-rates-eia/820342/"
+  },
+  {
+   "id": "m1",
+   "beat": "billionaires",
+   "status": "ESTIMATE",
+   "caption": "CBO: the poorest 10% lose $1,200 a year. The richest 10% gain $13,600.",
+   "outlet": "Congressional Budget Office",
+   "date": "2025-08-11",
+   "url": "https://www.cbo.gov/publication/61367"
+  },
+  {
+   "id": "m2",
+   "beat": "billionaires",
+   "status": "REPORTED",
+   "caption": "Arizona SNAP rolls cut in half",
+   "outlet": "States Newsroom",
+   "date": "2026",
+   "url": "https://www.newsfromthestates.com/node/428955"
+  },
+  {
+   "id": "m3",
+   "beat": "billionaires",
+   "status": "OFFICIAL",
+   "caption": "DOGE could save Musk's companies $2.37 BILLION",
+   "outlet": "Senate PSI minority staff",
+   "date": "2025-04-27",
+   "url": "https://www.hsgac.senate.gov/wp-content/uploads/2025-04-27-Minority-Staff-Memorandum-Elon-Musk-Conflicts.pdf"
+  },
+  {
+   "id": "w1",
+   "beat": "war",
+   "status": "REPORTED",
+   "caption": "Large-scale strike on Venezuela. Maduro captured.",
+   "outlet": "AP",
+   "date": "2026-01-03",
+   "url": "https://apnews.com/article/venezuela-us-maduro-what-to-know-a57528ff315a7f70ed51a1721f5e0bc2",
+   "also": "https://www.npr.org/2026/01/03/nx-s1-5665570/trump-says-u-s-carried-out-large-scale-strike-against-venezuela"
+  },
+  {
+   "id": "w2",
+   "beat": "war",
+   "status": "REPORTED",
+   "caption": "US says it will control Venezuela's oil \"indefinitely\"",
+   "outlet": "Al Jazeera",
+   "date": "2026-01-08",
+   "url": "https://www.aljazeera.com/video/newsfeed/2026/1/8/us-says-it-will-control-venezuelan-oil-indefinitely"
+  },
+  {
+   "id": "w3",
+   "beat": "war",
+   "status": "REPORTED",
+   "caption": "Boat strikes: 235+ dead",
+   "outlet": "Stars and Stripes",
+   "date": "2026-10-05",
+   "url": "https://www.stripes.com/theaters/americas/2026-10-05/us-strike-caribbean-kills-4-23061506.html"
+  },
+  {
+   "id": "w4",
+   "beat": "war",
+   "status": "REPORTED",
+   "caption": "Trump declares the Iran ceasefire \"over\"",
+   "outlet": "CNN",
+   "date": "2026-07-08",
+   "url": "https://www.cnn.com/2026/07/08/world/live-news/iran-war-nato-summit-ukraine-trump"
+  },
+  {
+   "id": "w5",
+   "beat": "war",
+   "status": "REPORTED",
+   "caption": "He keeps announcing he's halting strikes in Iran. They keep happening.",
+   "outlet": "PBS/AP",
+   "date": "2026-08",
+   "url": "https://www.pbs.org/newshour/politics/trump-frequently-announces-hes-halting-strikes-in-iran-but-they-keep-happening"
+  },
+  {
+   "id": "a1",
+   "beat": "allies",
+   "status": "QUOTE",
+   "caption": "Taking Greenland by force? \"I don't rule it out.\"",
+   "outlet": "NBC News (Meet the Press transcript)",
+   "date": "2025-05-04",
+   "url": "https://www.nbcnews.com/politics/trump-administration/read-full-transcript-president-donald-trump-interviewed-meet-press-mod-rcna203514"
+  },
+  {
+   "id": "a2",
+   "beat": "allies",
+   "status": "REPORTED",
+   "caption": "Tariffs on 8 NATO allies until Denmark sells Greenland",
+   "outlet": "CBS News",
+   "date": "2026-01",
+   "url": "https://www.cbsnews.com/news/trump-greenland-military-tariffs"
+  },
+  {
+   "id": "a3",
+   "beat": "allies",
+   "status": "QUOTE",
+   "caption": "On allied troops in Afghanistan: they \"stayed a little back, a little off the front lines\"",
+   "outlet": "CNN",
+   "date": "2026-01-23",
+   "url": "https://www.cnn.com/2026/01/23/world/trump-nato-afghanistan-frontlines-intl"
+  },
+  {
+   "id": "a4",
+   "beat": "allies",
+   "status": "QUOTE",
+   "caption": "\"Governor Trudeau.\" Canada, the \"51st state.\"",
+   "outlet": "NBC News",
+   "date": "2024-12-25",
+   "url": "https://www.nbcnews.com/politics/donald-trump/trump-takes-aim-canada-greenland-panama-canal-christmas-day-posts-rcna185416"
+  },
+  {
+   "id": "d1",
+   "beat": "dictators",
+   "status": "QUOTE",
+   "caption": "On Kim Jong Un: \"We fell in love.\"",
+   "outlet": "Wheeling, WV rally",
+   "date": "2018-09-29",
+   "url": "https://vice.com/en/article/trump-says-he-and-kim-jong-un-fell-in-love-beautiful-letters-rally-vgtrn"
+  },
+  {
+   "id": "d2",
+   "beat": "dictators",
+   "status": "QUOTE",
+   "caption": "On Putin invading Ukraine: \"Genius.\" \"Very savvy.\"",
+   "outlet": "Clay & Buck Show",
+   "date": "2022-02-22",
+   "url": "https://triblive.com/news/world/trump-praises-putin-as-genius-and-very-savvy-for-invading-ukraine"
+  },
+  {
+   "id": "d3",
+   "beat": "dictators",
+   "status": "REPORTED",
+   "caption": "Red carpet for Putin in Alaska",
+   "outlet": "Foreign Policy",
+   "date": "2025-08-15",
+   "url": "https://foreignpolicy.com/2025/08/15/trump-putin-summit-alaska-russia-ukraine-red-carpet/"
+  },
+  {
+   "id": "d4",
+   "beat": "dictators",
+   "status": "QUOTE",
+   "caption": "On MBS and Khashoggi's murder: \"Things happen.\"",
+   "outlet": "PBS",
+   "date": "2025-11-18",
+   "url": "https://www.pbs.org/newshour/world/watch-asked-about-khashoggi-murder-trump-says-things-happen-and-mbs-knew-nothing-about-it"
+  },
+  {
+   "id": "u1",
+   "beat": "ukraine",
+   "status": "QUOTE",
+   "caption": "To Ukraine: \"You should have never started it.\"",
+   "outlet": "NBC News",
+   "date": "2025-02-18",
+   "url": "https://www.nbcnews.com/politics/donald-trump/trump-says-ukraine-should-never-have-started-it-remarks-war-russia-rcna192710"
+  },
+  {
+   "id": "u2",
+   "beat": "ukraine",
+   "status": "QUOTE",
+   "caption": "Zelensky: \"a Dictator without Elections\"",
+   "outlet": "Truth Social via Fortune",
+   "date": "2025-02-19",
+   "url": "https://fortune.com/2025/02/19/trump-zelenskyy-dictator-ukraine-elections-truth-social"
+  },
+  {
+   "id": "u3",
+   "beat": "ukraine",
+   "status": "REPORTED",
+   "caption": "After the Oval Office ambush: intelligence to Ukraine paused",
+   "outlet": "AP",
+   "date": "2025-03-05",
+   "url": "https://apnews.com/article/ukraine-russia-putin-trump-cia-zelenskyy-5eb2c8025f6bb4b616c86e1fe89bba0f",
+   "note": "A pause, lifted Mar 11, 2025 after the Jeddah talks."
+  },
+  {
+   "id": "u4",
+   "beat": "ukraine",
+   "status": "REPORTED",
+   "caption": "Peace plan: Ukraine gives up the Donbas",
+   "outlet": "Axios",
+   "date": "2025-11-19",
+   "url": "https://www.axios.com/2025/11/19/trump-ukraine-peace-plan-russia-donbas"
+  },
+  {
+   "id": "m4",
+   "beat": "troops",
+   "status": "REPORTED",
+   "caption": "Americans who died at war: \"losers\" and \"suckers\"",
+   "outlet": "The Atlantic",
+   "date": "2020-09-03",
+   "url": "https://www.theatlantic.com/politics/archive/2020/09/trump-americans-who-died-at-war-are-losers-and-suckers/615997/"
+  },
+  {
+   "id": "m5",
+   "beat": "troops",
+   "status": "QUOTE",
+   "caption": "His own chief of staff, Gen. John Kelly, confirms it on the record",
+   "outlet": "Axios",
+   "date": "2023-10-02",
+   "url": "https://www.axios.com/2023/10/02/trump-troops-fallen-soldiers-john-kelly"
+  },
+  {
+   "id": "m6",
+   "beat": "troops",
+   "status": "REPORTED",
+   "caption": "Joint Chiefs chairman fired",
+   "outlet": "Army Times",
+   "date": "2025-02-22",
+   "url": "https://armytimes.com/pentagon/2025/02/22/trump-fires-joint-chiefs-chairman-navy-head-in-dod-leadership-purge"
+  },
+  {
+   "id": "m7",
+   "beat": "troops",
+   "status": "QUOTE",
+   "caption": "To hundreds of military leaders: use US cities as \"training grounds\"",
+   "outlet": "AP",
+   "date": "2025-09-30",
+   "url": "https://apnews.com/article/trump-hegseth-generals-meeting-military-pentagon-0ecdcbb8877e24329cfa0fc1e851ebd2",
+   "note": "AP: 'hundreds of military leaders' (NBC: as many as 800 senior officers). Quote: 'We should use some of these dangerous cities as training grounds for our military.'"
+  },
+  {
+   "id": "x1",
+   "beat": "cruelty",
+   "status": "REPORTED",
+   "caption": "Deadliest year in ICE custody on record",
+   "outlet": "NPR",
+   "date": "2026-04-17",
+   "url": "https://www.npr.org/2026/04/17/nx-s1-5789092/deaths-of-migrants-in-ice-custody-hit-record-high-under-trump",
+   "note": "29 deaths in FY2026 by Apr 17, already past the previous record (28, in 2004)."
+  },
+  {
+   "id": "x2",
+   "beat": "cruelty",
+   "status": "REPORTED",
+   "caption": "Renee Good, US citizen, shot dead by a federal agent in Minneapolis",
+   "outlet": "MPR News",
+   "date": "2026-01-07",
+   "url": "https://www.mprnews.org/renee-macklin-good-shooting"
+  },
+  {
+   "id": "x3",
+   "beat": "cruelty",
+   "status": "REPORTED",
+   "caption": "Alex Pretti, VA ICU nurse, shot dead by federal agents",
+   "outlet": "Al Jazeera",
+   "date": "2026-01-25",
+   "url": "https://www.aljazeera.com/news/2026/1/25/who-was-alex-pretti-the-nurse-shot-dead-by-federal-agents-in-minneapolis"
+  },
+  {
+   "id": "x4",
+   "beat": "cruelty",
+   "status": "REPORTED",
+   "caption": "5-year-old Liam detained after arriving home from preschool",
+   "outlet": "AP",
+   "date": "2026-02-01",
+   "url": "https://apnews.com/article/minnesota-boy-liam-conejo-ramos-fc958185cd2b4e946b82081be11bc0f6",
+   "note": "Detained Jan 20 'after arriving home from preschool' (AP). DHS disputes the account."
+  },
+  {
+   "id": "x5",
+   "beat": "cruelty",
+   "status": "REPORTED",
+   "caption": "500+ US citizens held by immigration agents",
+   "outlet": "ProPublica",
+   "date": "2026-10-06",
+   "url": "https://projects.propublica.org/american-citizens-detained-dhs-civil-rights/",
+   "note": "Count through Oct 5, 2025; ProPublica's tally later passed 500."
+  },
+  {
+   "id": "x6",
+   "beat": "cruelty",
+   "status": "REPORTED",
+   "caption": "Fort Bliss camp: \"deported or dead\"",
+   "outlet": "Human Rights Watch / ACLU",
+   "date": "2026-07-15",
+   "url": "https://www.hrw.org/news/2026/07/15/us-deaths-neglect-in-fort-bliss-immigration-detention"
+  },
+  {
+   "id": "r1",
+   "beat": "rioters",
+   "status": "OFFICIAL",
+   "caption": "\"Full, complete and unconditional\" pardons for ~1,500 Jan 6 rioters",
+   "outlet": "Proclamation 10887 (Federal Register)",
+   "date": "2025-01-20",
+   "url": "https://www.federalregister.gov/documents/2025/01/29/2025-01950/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near",
+   "also": "https://www.npr.org/2025/01/20/g-s1-36809/trump-pardons-january-6-riot",
+   "note": "14 people received commutations rather than pardons."
+  },
+  {
+   "id": "r2",
+   "beat": "rioters",
+   "status": "REPORTED",
+   "caption": "~$5 million of your money to Ashli Babbitt's family",
+   "outlet": "AP",
+   "date": "2025-05-19",
+   "url": "https://apnews.com/article/ashli-babbitt-trump-settlement-6de2a507ddac903c68c5d3a25f35f24c",
+   "note": "'just under $5 million', per a person with knowledge of the settlement."
+  },
+  {
+   "id": "r3",
+   "beat": "rioters",
+   "status": "COURT RULING",
+   "caption": "$1.776B \"weaponization\" fund rioters could have applied to: BLOCKED",
+   "outlet": "CNN",
+   "date": "2026-06-12",
+   "url": "https://www.cnn.com/2026/06/12/politics/anti-weaponization-fund-ruling",
+   "win": true
+  },
+  {
+   "id": "e1",
+   "beat": "epstein",
+   "status": "REPORTED",
+   "caption": "Bondi: the client list is \"sitting on my desk.\" Months later, her DOJ: no incriminating \"client list.\"",
+   "outlet": "OPB/NPR",
+   "date": "2025-07-07",
+   "url": "https://www.opb.org/article/2025/07/07/doj-releases-memo-on-sex-offender-jeffrey-epstein-files/"
+  },
+  {
+   "id": "e2",
+   "beat": "epstein",
+   "status": "OFFICIAL",
+   "caption": "Epstein Files Transparency Act passed 427–1",
+   "outlet": "JURIST",
+   "date": "2025-11-19",
+   "url": "https://www.jurist.org/news/2025/11/trump-signs-epstein-files-transparency-act-into-law/",
+   "win": true
+  },
+  {
+   "id": "e3",
+   "beat": "epstein",
+   "status": "COURT RULING",
+   "caption": "Judge: remove the redactions or justify them. Trump's DOJ appealed.",
+   "outlet": "The Hill",
+   "date": "2026-08-24",
+   "url": "https://thehill.com/regulation/court-battles/6047840-doj-appeals-epstein-files-ruling/",
+   "short": "Judge: remove the redactions or justify them. Trump's DOJ appealed.",
+   "also": [
+    "https://abcnews.com/Politics/judge-orders-doj-turn-unredacted-epstein-files/story?id=134228532"
+   ],
+   "note": "Judge Emmet Sullivan: \"The Attorney General has conceded that he is in violation of the Act.\" Ordered DOJ to unredact co-conspirator names in a draft indictment or justify the redactions by Jul 2 (preliminary injunction); DOJ refused and appealed. DOJ says some redacted \"co-conspirators\" were victims."
+  },
+  {
+   "id": "e4",
+   "beat": "epstein",
+   "status": "REPORTED",
+   "caption": "Legal deadline missed. Only about half of 6 million+ pages released.",
+   "outlet": "NPR; NBC News",
+   "date": "2026-01-30",
+   "url": "https://www.nbcnews.com/politics/justice-department/doj-releases-new-trove-long-awaited-epstein-files-rcna256714",
+   "also": "https://www.npr.org/2025/12/19/nx-s1-5647638/epstein-files-release-law-deadline-trump"
+  },
+  {
+   "id": "f1",
+   "beat": "women",
+   "status": "OFFICIAL",
+   "caption": "Emergency abortion guidance for ERs rescinded",
+   "outlet": "Healio (CMS)",
+   "date": "2025-06-04",
+   "url": "https://www.healio.com/news/womens-health-ob-gyn/20250604/cms-rescinds-postroe-guidance-on-emergency-abortions-even-in-states-with-bans"
+  },
+  {
+   "id": "f2",
+   "beat": "women",
+   "status": "REPORTED",
+   "caption": "Sepsis in second-trimester miscarriages up 50%+ after Texas ban",
+   "outlet": "ProPublica / Texas Tribune",
+   "date": "2025-02-20",
+   "url": "https://www.texastribune.org/2025/02/20/texas-abortion-ban-impact-death-hospitalization/"
+  },
+  {
+   "id": "f3",
+   "beat": "women",
+   "status": "REPORTED",
+   "caption": "Under Texas's abortion ban, she waited 40 hours for miscarriage care. She died.",
+   "outlet": "ProPublica",
+   "date": "2024-10-30",
+   "url": "https://www.propublica.org/article/josseli-barnica-death-miscarriage-texas-abortion-ban",
+   "note": "Josseli Barnica died in Houston in Sept 2021 under Texas's abortion ban."
+  },
+  {
+   "id": "f4",
+   "beat": "women",
+   "status": "REPORTED",
+   "caption": "Planned Parenthood: nearly 50 health centers forced to close in 2025",
+   "outlet": "Planned Parenthood (report)",
+   "date": "2025-11-12",
+   "url": "https://www.plannedparenthood.org/about-us/newsroom/press-releases/new-report-shows-immediate-harms-of-defunding-planned-parenthood",
+   "also": "https://www.plannedparenthoodaction.org/blog/defund",
+   "note": "Planned Parenthood's own count: nearly 50 health centers forced to close since the start of 2025 (51 across 18 states per its Jun 2026 page)."
+  },
+  {
+   "id": "s1",
+   "beat": "science",
+   "status": "REPORTED",
+   "caption": "Fired all 17 vaccine advisers. New panel: no hepatitis B shot for all newborns.",
+   "outlet": "AP",
+   "date": "2025-12-05",
+   "url": "https://apnews.com/article/vaccines-babies-hepatitis-b-10f8db54beb38c5cd39a94f8a3657752",
+   "note": "On Mar 16, 2026 a federal judge stayed the reconstituted panel's votes, including this one."
+  },
+  {
+   "id": "s2",
+   "beat": "science",
+   "status": "COURT RULING",
+   "caption": "Judge blocks his vaccine schedule changes: \"arbitrary and capricious\"",
+   "outlet": "Bloomberg Law",
+   "date": "2026-03",
+   "url": "https://news.bgov.com/health-law-and-business/rfk-jr-s-changes-to-vaccine-schedule-advisers-paused-by-judge",
+   "win": true
+  },
+  {
+   "id": "s3",
+   "beat": "science",
+   "status": "QUOTE",
+   "caption": "Blames Tylenol for autism. The science doesn't.",
+   "outlet": "NPR",
+   "date": "2025-09-22",
+   "url": "https://www.npr.org/sections/shots-health-news/2025/09/22/nx-s1-5550153/trump-rfk-autism-tylenol-leucovorin-pregnancy"
+  },
+  {
+   "id": "s4",
+   "beat": "science",
+   "status": "PROPOSED",
+   "caption": "Proposed: NSF cut 55%. NIH cut $5 billion.",
+   "outlet": "Univ. of Washington Federal Relations",
+   "date": "2026-04-03",
+   "url": "https://www.washington.edu/federalrelations/2026/04/03/administration-releases-fy2027-budget-proposal/"
+  },
+  {
+   "id": "s5",
+   "beat": "science",
+   "status": "REPORTED",
+   "caption": "FDA's own scientists warned on peptides. Rules loosened anyway.",
+   "outlet": "NPR / Bloomberg Law",
+   "date": "2026-07-23",
+   "url": "https://news.bloomberglaw.com/health-law-and-business/fda-advisers-recommend-relaxing-peptide-rules-in-win-for-rfk-jr"
+  },
+  {
+   "id": "g1",
+   "beat": "aid",
+   "status": "REPORTED",
+   "caption": "USAID shut down. 83% of programs gone.",
+   "outlet": "NPR",
+   "date": "2025-07-01",
+   "url": "https://www.npr.org/2025/07/01/nx-s1-5451372/usaid-officially-shuts-down-and-merges-remaining-operations-with-state-department"
+  },
+  {
+   "id": "g2",
+   "beat": "aid",
+   "status": "ESTIMATE",
+   "caption": "Researchers estimate 14 million deaths by 2030 — 4.5M children",
+   "outlet": "The Lancet",
+   "date": "2025-06-30",
+   "url": "https://www.thelancet.com/article/S0140-6736(25)01186-9/fulltext",
+   "also": "https://www.reuters.com/business/healthcare-pharmaceuticals/usaid-cuts-may-cause-over-14-million-additional-deaths-by-2030-study-says-2025-07-01/",
+   "note": "Model projection assuming the cuts continue."
+  },
+  {
+   "id": "g3",
+   "beat": "aid",
+   "status": "REPORTED",
+   "caption": "Congress funded HIV drugs. The administration won't spend it.",
+   "outlet": "NPR",
+   "date": "2026-04-04",
+   "url": "https://www.vpm.org/npr-news/2026-04-04/congress-gave-money-for-global-hiv-work-the-trump-administration-isnt-spending-it"
+  },
+  {
+   "id": "v1",
+   "beat": "suppression",
+   "status": "QUOTE",
+   "caption": "\"Republicans ought to nationalize the voting\"",
+   "outlet": "Votebeat",
+   "date": "2026-02-09",
+   "url": "https://www.votebeat.org/2026/02/09/donald-trump-dan-bongino-nationalize-take-over-voting-2026-election/"
+  },
+  {
+   "id": "v2",
+   "beat": "suppression",
+   "status": "OFFICIAL",
+   "caption": "Trump order: Postal Service delivers mail ballots only to listed voters",
+   "outlet": "Votebeat",
+   "date": "2026-03-31",
+   "url": "https://www.votebeat.org/national/2026/03/31/donald-trump-2026-midterm-election-executive-order-absentee-mail-ballots-postal-service-citizenship-list/"
+  },
+  {
+   "id": "v3",
+   "beat": "suppression",
+   "status": "COURT RULING",
+   "caption": "Supreme Court, 6–3: Voting Rights Act protections narrowed (Louisiana v. Callais)",
+   "outlet": "Supreme Court (Louisiana v. Callais)",
+   "date": "2026-04-29",
+   "url": "https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf"
+  },
+  {
+   "id": "v4",
+   "beat": "suppression",
+   "status": "REPORTED",
+   "caption": "GOP states redraw maps mid-decade: TX, MO, NC, OH, FL…",
+   "outlet": "NCSL",
+   "date": "2026",
+   "url": "https://www.ncsl.org/redistricting-and-census/changing-the-maps-tracking-mid-decade-redistricting"
+  },
+  {
+   "id": "v5",
+   "beat": "suppression",
+   "status": "REPORTED",
+   "caption": "Texas GOP commissioners cut 92 polling places",
+   "outlet": "Spectrum News",
+   "date": "2026-09-02",
+   "url": "https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2026/09/02/tarrant-county-commissioners-approve-cutting-polling-sites"
+  },
+  {
+   "id": "n1",
+   "beat": "denial",
+   "status": "REPORTED",
+   "caption": "FBI seizes all 2020 ballots in Fulton County",
+   "outlet": "Georgia Recorder",
+   "date": "2026-01-28",
+   "url": "https://www.georgiarecorder.com/2026/01/28/fbi-raids-fulton-county-elections-warehouse-seeking-2020-ballots/"
+  },
+  {
+   "id": "n2",
+   "beat": "denial",
+   "status": "QUOTE",
+   "caption": "He'll accept the midterm results — \"if the elections are honest\"",
+   "outlet": "NBC via Mediaite",
+   "date": "2026-02",
+   "url": "https://www.mediaite.com/media/news/trump-says-he-will-accept-the-2026-midterm-results-if-the-elections-are-honest"
+  },
+  {
+   "id": "n3",
+   "beat": "denial",
+   "status": "QUOTE",
+   "caption": "A third term? \"I'm not joking.\"",
+   "outlet": "NBC News",
+   "date": "2025-03-30",
+   "url": "https://www.nbcnews.com/politics/donald-trump/trump-third-term-white-house-methods-rcna198752"
+  },
+  {
+   "id": "n4",
+   "beat": "denial",
+   "status": "REPORTED",
+   "caption": "\"Trump 2028\" hats sold on his official store",
+   "outlet": "Gray TV",
+   "date": "2025-04-24",
+   "url": "https://www.weau.com/2025/04/24/trump-2028-hats-t-shirts-are-being-sold-his-official-merch-site/"
+  },
+  {
+   "id": "h1",
+   "beat": "theocracy",
+   "status": "QUOTE",
+   "caption": "\"You won't have to vote anymore, my beautiful Christians\"",
+   "outlet": "NPR/WHYY",
+   "date": "2024-07-26",
+   "url": "https://whyy.org/articles/trump-christian-wont-vote-anymore-speech"
+  },
+  {
+   "id": "h2",
+   "beat": "theocracy",
+   "status": "OFFICIAL",
+   "caption": "Executive order creates a White House Faith Office",
+   "outlet": "whitehouse.gov",
+   "date": "2025-02-07",
+   "url": "https://whitehouse.gov/presidential-actions/2025/02/establishment-of-the-white-house-faith-office"
+  },
+  {
+   "id": "h3",
+   "beat": "theocracy",
+   "status": "REPORTED",
+   "caption": "A Project 2025 architect runs the federal budget",
+   "outlet": "NBC News",
+   "date": "2025",
+   "url": "https://www.nbcnews.com/politics/trump-administration/key-project-2025-authors-now-staffing-trump-administration-rcna195107"
+  },
+  {
+   "id": "h4",
+   "beat": "theocracy",
+   "status": "REPORTED",
+   "caption": "Self-described Christian nationalist leads Pentagon prayer service",
+   "outlet": "Military.com",
+   "date": "2026-02-18",
+   "url": "https://www.military.com/daily-news/2026/02/18/who-doug-wilson-pentagon-defends-pastor-who-led-pentagon-prayer-service.html"
+  },
+  {
+   "id": "rv1",
+   "beat": "revenge",
+   "status": "QUOTE",
+   "caption": "\"I am your retribution.\"",
+   "outlet": "CPAC via ABC News",
+   "date": "2023-03-04",
+   "url": "https://abcnews.com/Politics/video/trump-takes-center-stage-cpac-calls-americas-retribution-97666674"
+  },
+  {
+   "id": "rv2",
+   "beat": "revenge",
+   "status": "OFFICIAL",
+   "caption": "Pardoned ~1,500 Jan 6 rioters — and 77 who tried to overturn 2020",
+   "outlet": "DOJ Office of the Pardon Attorney",
+   "date": "2025-11-07",
+   "url": "https://www.justice.gov/pardon/clemency-grants-president-donald-j-trump-2025-present"
+  },
+  {
+   "id": "rv3",
+   "beat": "revenge",
+   "status": "QUOTE",
+   "caption": "On Democratic lawmakers: \"SEDITIOUS BEHAVIOR, punishable by DEATH!\"",
+   "outlet": "Truth Social",
+   "date": "2025-11-20",
+   "url": "https://truthsocial.com/@realDonaldTrump/115582703277798715"
+  },
+  {
+   "id": "rv4",
+   "beat": "revenge",
+   "status": "COURT RULING",
+   "caption": "A grand jury refused to indict the lawmakers",
+   "outlet": "TIME",
+   "date": "2026-02-10",
+   "url": "https://time.com/7377620/doj-grand-jury-slotkin-goodlander-kelly-indictment-illegal-orders-trump/",
+   "win": true
+  },
+  {
+   "id": "rv5",
+   "beat": "revenge",
+   "status": "OFFICIAL",
+   "caption": "Pardoned an ex-president serving 45 years for cocaine trafficking",
+   "outlet": "DOJ Office of the Pardon Attorney",
+   "date": "2025-12-01",
+   "url": "https://www.justice.gov/pardon/clemency-grants-president-donald-j-trump-2025-present"
+  },
+  {
+   "id": "rv6",
+   "beat": "revenge",
+   "status": "COURT RULING",
+   "caption": "His ex-personal lawyer indicted Comey and Letitia James. A judge threw both out.",
+   "outlet": "NBC News",
+   "date": "2025-11-24",
+   "url": "https://www.nbcnews.com/politics/justice-department/judge-dismisses-cases-james-comey-letitia-james-finding-prosecutor-was-rcna244775",
+   "win": true
+  },
+  {
+   "id": "rv7",
+   "beat": "revenge",
+   "status": "REPORTED",
+   "caption": "Grand juries refused — twice — to re-indict Letitia James",
+   "outlet": "AP",
+   "date": "2025-12-11",
+   "url": "https://apnews.com/article/letitia-james-grand-jury-6743e4d673d8b039059a958e507aea94",
+   "win": true
+  },
+  {
+   "id": "rv8",
+   "beat": "revenge",
+   "status": "OFFICIAL",
+   "caption": "Ordered an investigation of the official who called 2020 \"the most secure in American history\"",
+   "outlet": "whitehouse.gov / CISA",
+   "date": "2025-04-09",
+   "url": "https://www.whitehouse.gov/presidential-actions/2025/04/addressing-risks-from-chris-krebs-and-government-censorship/"
+  },
+  {
+   "id": "rv9",
+   "beat": "revenge",
+   "status": "QUOTE",
+   "caption": "His DOJ \"weaponization\" chief: if they can't be charged, \"we will name them\"",
+   "outlet": "NBC News",
+   "date": "2025-05-13",
+   "url": "https://www.nbcnews.com/politics/rcna206553"
+  },
+  {
+   "id": "rv10",
+   "beat": "revenge",
+   "status": "COURT RULING",
+   "caption": "Supreme Court, 5–4, blocks his firing of Fed governor Lisa Cook",
+   "outlet": "SCOTUSblog",
+   "date": "2026-06-29",
+   "url": "https://www.scotusblog.com/2026/06/court-prevents-trump-from-firing-fed-governor/",
+   "win": true
+  },
+  {
+   "id": "rv11",
+   "beat": "revenge",
+   "status": "COURT RULING",
+   "caption": "Judge on the criminal probe of the Fed chair: \"essentially zero evidence\"",
+   "outlet": "CBS News",
+   "date": "2026-03-13",
+   "url": "https://www.cbsnews.com/news/federal-reserve-jerome-powell-subpoenas-justice-department-judge/",
+   "win": true
+  },
+  {
+   "id": "rv12",
+   "beat": "revenge",
+   "status": "COURT RULING",
+   "caption": "Judges strike down his orders punishing law firms",
+   "outlet": "Knight First Amendment Institute",
+   "date": "2025-06",
+   "url": "https://knightcolumbia.org/cases/law-firms-v-trump-administration",
+   "win": true
+  },
+  {
+   "id": "rv13",
+   "beat": "revenge",
+   "status": "QUOTE",
+   "caption": "FCC chair on Kimmel: \"We can do this the easy way or the hard way.\" Pulled that night.",
+   "outlet": "Boston Globe",
+   "date": "2025-09-17",
+   "url": "https://www.bostonglobe.com/2025/09/18/business/brendan-carr-fcc-jimmy-kimmel/"
+  },
+  {
+   "id": "rv14",
+   "beat": "revenge",
+   "status": "REPORTED",
+   "caption": "A judge wouldn't charge journalist Don Lemon. DOJ indicted him anyway.",
+   "outlet": "CNN",
+   "date": "2026-02-13",
+   "url": "https://www.cnn.com/2026/02/13/media/don-lemon-arraignment-minnesota"
+  },
+  {
+   "id": "rv15",
+   "beat": "revenge",
+   "status": "OFFICIAL",
+   "caption": "Comey re-indicted — over a photo of seashells reading \"86 47\"",
+   "outlet": "Department of Justice",
+   "date": "2026-04-28",
+   "url": "https://www.justice.gov/opa/pr/federal-grand-jury-indicts-former-fbi-director-james-comey-threats-harm-president-trump"
+  },
+  {
+   "id": "n5",
+   "beat": "denial",
+   "status": "REPORTED",
+   "caption": "Claimed 2020 was \"rigged\" at least 107 times in six months",
+   "outlet": "Reuters",
+   "date": "2026-05-26",
+   "url": "https://www.reuters.com/world/us/trump-claims-2020-election-rigged-least-107-times-six-months-midterms-loom-2026-05-26/"
+  },
+  {
+   "id": "c7",
+   "beat": "corruption",
+   "status": "ESTIMATE",
+   "caption": "Family crypto haul since returning to office: est. $2.3 BILLION",
+   "outlet": "Reuters",
+   "date": "2026-06-09",
+   "url": "https://www.reuters.com/investigations/under-trump-crypto-playbook-family-always-wins-investors-dont-2026-06-09/",
+   "note": "find reuters.com original before use 'at least $2.3 billion in profit from investors since Trump retook the presidency.'"
+  },
+  {
+   "id": "v6",
+   "beat": "suppression",
+   "status": "QUOTE",
+   "caption": "Moved Space Command out of Colorado. Mail-in voting was \"a big factor.\"",
+   "outlet": "AP",
+   "date": "2025-09-02",
+   "url": "https://apnews.com/article/space-command-trump-alabama-colorado-96589ce26df5ddaf59e2fc856084a8ca"
+  },
+  {
+   "id": "v7",
+   "beat": "suppression",
+   "status": "REPORTED",
+   "caption": "Trump's DOJ sends 1,000+ federal \"monitors\" into every state",
+   "outlet": "TNND/WJLA",
+   "date": "2026-10-05",
+   "url": "https://wjla.com/news/nation-world/justice-department-to-deploy-election-monitors-nationwide-as-critics-warn-of-intimidation-ice-agents-trump-administration-national-guard"
+  },
+  {
+   "id": "g10",
+   "beat": "grift",
+   "status": "QUOTE",
+   "caption": "\"I love the poorly educated.\"",
+   "outlet": "Boston 25 News",
+   "date": "2016-02-23",
+   "url": "https://www.boston25news.com/news/donald-trump-i-love-the-poorly-educated/111050547"
+  },
+  {
+   "id": "g11",
+   "beat": "grift",
+   "status": "QUOTE",
+   "caption": "\"I could stand in the middle of Fifth Avenue and shoot somebody, and I wouldn't lose any voters.\"",
+   "outlet": "NPR",
+   "date": "2016-01-23",
+   "url": "https://www.npr.org/sections/thetwo-way/2016/01/23/464129029/donald-trump-i-could-shoot-somebody-and-i-wouldnt-lose-any-voters"
+  },
+  {
+   "id": "g12",
+   "beat": "grift",
+   "status": "QUOTE",
+   "caption": "His own supporters who asked about Epstein? \"Weaklings… I don't want their support anymore!\"",
+   "outlet": "PBS NewsHour",
+   "date": "2025-07-16",
+   "url": "https://www.pbs.org/newshour/politics/trump-slams-supporters-who-are-angered-over-epstein-case-as-weaklings"
+  },
+  {
+   "id": "g13",
+   "beat": "grift",
+   "status": "DATA",
+   "caption": "His memecoin: ~764,000 wallets lost money. 58 made $10M+ each.",
+   "outlet": "Chainalysis via NBC/CNBC",
+   "date": "2025-05-06",
+   "url": "https://www.nbcnews.com/tech/crypto/58-crypto-wallets-made-millions-trumps-meme-coin-764000-lost-money-dat-rcna205237"
+  },
+  {
+   "id": "g14",
+   "beat": "grift",
+   "status": "DATA",
+   "caption": "$TRUMP coin: $73.43 at peak → ~$1.85 today (−97%)",
+   "outlet": "CoinGecko",
+   "date": "2026-10-09",
+   "url": "https://www.coingecko.com/en/coins/official-trump"
+  },
+  {
+   "id": "g15",
+   "beat": "grift",
+   "status": "ESTIMATE",
+   "caption": "The family cashed out ~$1.55B in tokens. Early buyers stayed locked in.",
+   "outlet": "Bloomberg / Unchained",
+   "date": "2026-05-12",
+   "url": "https://www.bloomberg.com/news/articles/2026-05-12/quiet-token-sales-boosted-trump-crypto-wealth-by-660-million"
+  },
+  {
+   "id": "g16",
+   "beat": "grift",
+   "status": "DATA",
+   "caption": "Trump Media stock: $79 → $8",
+   "outlet": "StockAnalysis",
+   "date": "2026-10-08",
+   "url": "https://stockanalysis.com/stocks/djt/history/"
+  },
+  {
+   "id": "g17",
+   "beat": "grift",
+   "status": "OFFICIAL",
+   "caption": "$1.5 million from $59.99 Bibles — his own disclosure",
+   "outlet": "OGE filing via Common Dreams",
+   "date": "2026",
+   "url": "https://www.commondreams.org/news/trump-bible-lee-greenwood"
+  },
+  {
+   "id": "g18",
+   "beat": "grift",
+   "status": "REPORTED",
+   "caption": "$399 sneakers — the day after a $355M fraud ruling",
+   "outlet": "TNND/WJLA",
+   "date": "2024-02-17",
+   "url": "https://wjla.com/news/nation-world/trump-hawks-399-branded-shoes-at-sneaker-con-a-day-after-a-355-million-ruling-against"
+  },
+  {
+   "id": "g19",
+   "beat": "grift",
+   "status": "REPORTED",
+   "caption": "Trump phone: $100 deposits. \"Made in USA\" quietly dropped.",
+   "outlet": "Bloomberg / Fortune",
+   "date": "2026-05-11",
+   "url": "https://fortune.com/2026/05/11/trump-mobile-gold-trump-phone-deposits-t1-device-fcc/"
+  },
+  {
+   "id": "g20",
+   "beat": "grift",
+   "status": "REPORTED",
+   "caption": "Pre-checked \"monthly recurring donation\" boxes: $122.7M refunded",
+   "outlet": "New York Times",
+   "date": "2021-04-03",
+   "url": "https://www.nytimes.com/2021/04/03/us/politics/trump-donations.html"
+  },
+  {
+   "id": "g21",
+   "beat": "grift",
+   "status": "DATA",
+   "caption": "NY Fed: Americans paid ~90% of the tariff bill",
+   "outlet": "Federal Reserve Bank of New York",
+   "date": "2026-02-12",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/02/who-is-paying-for-the-2025-u-s-tariffs/",
+   "note": "~90% of the tariff burden fell on US firms and consumers (importers and buyers), not foreign exporters."
+  },
+  {
+   "id": "h5",
+   "beat": "faith",
+   "status": "QUOTE",
+   "caption": "His favorite Bible verse? \"An eye for an eye, you can almost say that.\"",
+   "outlet": "CBS News",
+   "date": "2016-04-14",
+   "url": "https://www.cbsnews.com/news/donald-trump-names-his-favorite-bible-verse/"
+  },
+  {
+   "id": "h6",
+   "beat": "faith",
+   "status": "QUOTE",
+   "caption": "A bishop asked him for mercy. He demanded an apology.",
+   "outlet": "Episcopal News Service / Fox News",
+   "date": "2025-01-22",
+   "url": "https://episcopalnewsservice.org/2025/01/21/washington-bishops-plea-to-trump-have-mercy-upon-the-people-in-our-country-who-are-scared/"
+  },
+  {
+   "id": "h7",
+   "beat": "faith",
+   "status": "QUOTE",
+   "caption": "The American pope: \"inhuman treatment of immigrants… I don't know if that's pro-life.\"",
+   "outlet": "NPR",
+   "date": "2025-10-01",
+   "url": "https://www.npr.org/2025/10/01/nx-s1-5560169/pope-leo-xiv-says-inhuman-treatment-of-immigrants-in-the-u-s-isnt-pro-life"
+  },
+  {
+   "id": "h8",
+   "beat": "faith",
+   "status": "OFFICIAL",
+   "caption": "Catholic bishops, 216–5: \"We oppose the indiscriminate mass deportation of people.\"",
+   "outlet": "America Magazine",
+   "date": "2025-11-12",
+   "url": "https://www.americamagazine.org/news/2025/11/12/usccb-special-message-immigration/"
+  },
+  {
+   "id": "h9",
+   "beat": "faith",
+   "status": "QUOTE",
+   "caption": "Posted himself as the pope. Catholics: \"Do not mock us.\" Trump: \"They can't take a joke.\"",
+   "outlet": "NPR / PBS",
+   "date": "2025-05-04",
+   "url": "https://www.ijpr.org/npr-news/2025-05-04/catholic-leaders-criticize-trump-for-posting-apparent-ai-photo-of-himself-as-the-pope"
+  },
+  {
+   "id": "h10",
+   "beat": "faith",
+   "status": "QUOTE",
+   "caption": "\"They're eating the dogs… They're eating the cats.\" City officials: no credible reports.",
+   "outlet": "ABC News debate transcript",
+   "date": "2024-09-10",
+   "url": "https://abcnews.go.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542"
+  },
+  {
+   "id": "h11",
+   "beat": "faith",
+   "status": "OFFICIAL",
+   "caption": "ICE cleared to raid churches. Churches had to sue.",
+   "outlet": "DHS / Philadelphia Yearly Meeting",
+   "date": "2026-08-18",
+   "url": "https://www.pym.org/appeals-court-backs-philadelphia-yearly-meeting-in-lawsuit-against-trump-administration-press-release/"
+  },
+  {
+   "id": "h12",
+   "beat": "faith",
+   "status": "QUOTE",
+   "caption": "At a memorial: \"I hate my opponent, and I don't want the best for them.\"",
+   "outlet": "AP",
+   "date": "2025-09-21",
+   "url": "https://apnews.com/article/charlie-kirk-trump-memorial-service-b5469086954908b162f464da966cf238",
+   "also": "https://www.nbcnews.com/politics/trump-administration/charlie-kirk-funeral-conservative-revival-rcna232823",
+   "note": "Verbatim: 'That's where I disagreed with Charlie. I hate my opponent, and I don't want the best for them.'"
+  },
+  {
+   "id": "w6",
+   "beat": "war",
+   "status": "OFFICIAL",
+   "caption": "25 days before the midterms: Russia sanctions eased \"at President Trump's direction\" to buy Putin's diesel",
+   "outlet": "NBC News / Treasury OFAC",
+   "date": "2026-10-09",
+   "url": "https://www.nbcnews.com/business/energy/trump-putin-diesel-prices-rcna602566",
+   "also": "https://www.reuters.com/business/energy/trump-big-announcement-coming-up-diesel-2026-10-09/",
+   "short": "Russia sanctions eased “at President Trump's direction” — to buy Putin's diesel"
+  },
+  {
+   "id": "w7",
+   "beat": "war",
+   "status": "DATA",
+   "caption": "Your diesel: a record $6.52 a gallon during the Iran war",
+   "outlet": "AAA via AP",
+   "date": "2026-09-22",
+   "url": "https://www.live5news.com/2026/10/02/trump-says-europe-will-release-diesel-reserves-immediately-prices-hover-near-record-highs/"
+  },
+  {
+   "id": "w8",
+   "beat": "war",
+   "status": "QUOTE",
+   "caption": "Zelenskyy on the Russian diesel deal: \"an obvious weakness\"",
+   "outlet": "NBC News",
+   "date": "2026-10-09",
+   "url": "https://www.nbcnews.com/business/energy/trump-putin-diesel-prices-rcna602566"
+  },
+  {
+   "id": "w9",
+   "beat": "war",
+   "status": "REPORTED",
+   "caption": "A year earlier, he sanctioned Russia's two biggest oil companies",
+   "outlet": "NBC News",
+   "date": "2025-10-22",
+   "url": "https://www.nbcnews.com/world/russia/us-sanctions-russias-two-largest-oil-companies-rcna239256"
+  },
+  {
+   "id": "hc1",
+   "beat": "healthcare",
+   "status": "ESTIMATE",
+   "caption": "Their law: $911 billion cut from Medicaid. 10 million more uninsured by 2034.",
+   "outlet": "KFF, from CBO estimates",
+   "date": "2025-07-23",
+   "url": "https://www.kff.org/medicaid/allocating-cbos-estimates-of-federal-medicaid-spending-reductions-across-the-states-enacted-reconciliation-package/",
+   "short": "$911 BILLION cut from Medicaid. 10 million more uninsured by 2034.",
+   "note": "Enacted 2025 reconciliation law (OBBBA): net federal Medicaid cut 2025-2034; uninsured increase is CBO's 2034 projection (1.3M in 2026). $990B is the gross Medicaid+CHIP figure."
+  },
+  {
+   "id": "hc2",
+   "beat": "healthcare",
+   "status": "ESTIMATE",
+   "caption": "Medicaid work requirements: 5.3 million more uninsured",
+   "outlet": "CBO via Georgetown CCF",
+   "date": "2025-08-14",
+   "url": "https://ccf.georgetown.edu/2025/08/14/new-cbo-health-coverage-estimates-of-budget-reconciliation-law/",
+   "note": "80 hrs/month for expansion adults through 64; must start by Jan 1, 2027 (HHS may let states delay to Dec 31, 2028). CBO: $326B cut; 5.3M is 2034, before interactions."
+  },
+  {
+   "id": "hc3",
+   "beat": "healthcare",
+   "status": "DATA",
+   "caption": "Work requirements started in Nebraska: 1,000+ already denied or dropped",
+   "outlet": "KFF",
+   "date": "2026-09-29",
+   "url": "https://www.kff.org/medicaid/early-medicaid-work-requirement-insights-from-nebraska/",
+   "note": "State data: 557 applicants denied (May-Aug) + 533 dropped at renewal (Jul-Aug)."
+  },
+  {
+   "id": "hc6",
+   "beat": "healthcare",
+   "status": "OFFICIAL",
+   "caption": "Senate Republicans let your ACA tax credits expire. Only 4 voted to extend.",
+   "outlet": "AP via PBS NewsHour",
+   "date": "2025-12-11",
+   "url": "https://www.pbs.org/newshour/politics/watch-live-senate-expected-to-vote-on-aca-subsidies-with-premiums-set-to-rise-in-2026",
+   "note": "3-year extension failed 51-48 (60 needed). Republican yes votes: Collins, Hawley, Murkowski, Sullivan. The House passed an extension 230-196 on Jan 8, 2026; the credits remain expired."
+  },
+  {
+   "id": "hc7",
+   "beat": "healthcare",
+   "status": "QUOTE",
+   "caption": "Rural Georgia hospital closes its maternity ward: Medicaid cuts \"solidified this decision\"",
+   "outlet": "CBS News Atlanta",
+   "date": "2025-10-28",
+   "url": "https://www.cbsnews.com/amp/atlanta/news/lavonia-hospital-closes-labor-and-delivery-unit-leaving-rural-families-in-crisis",
+   "note": "St. Mary's Sacred Heart, Lavonia GA; the hospital also cited recruiting and demographics."
+  },
+  {
+   "id": "hc8",
+   "beat": "healthcare",
+   "status": "REPORTED",
+   "caption": "Your rural clinic: closed. Officials blamed the Medicaid cuts.",
+   "outlet": "AP",
+   "date": "2025-11-19",
+   "url": "https://apnews.com/article/medicaid-community-health-centers-new-hampshire-2b2b3e676980b419c9d8d3539b953339",
+   "note": "Franconia, NH health center; 1,400 patients."
+  },
+  {
+   "id": "hc9",
+   "beat": "healthcare",
+   "status": "QUOTE",
+   "caption": "GOP Sen. Tillis: \"President Trump breaks his promise by pushing them off of Medicaid\"",
+   "outlet": "WUNC/NPR",
+   "date": "2025-06-30",
+   "url": "https://www.wunc.org/politics/2025-06-30/senate-megabill-nc-medicaid-expansion-tillis",
+   "note": "Jun 29, 2025: \"So what do I tell 663,000 people in two years or three years, when President Trump breaks his promise by pushing them off of Medicaid because the funding is not there anymore?\""
+  },
+  {
+   "id": "hc10",
+   "beat": "healthcare",
+   "status": "PROPOSED",
+   "caption": "Next year: insurers want another 15%",
+   "outlet": "KFF",
+   "date": "2026-08-03",
+   "url": "https://www.kff.org/affordable-care-act/how-much-and-why-aca-marketplace-premiums-are-going-up-in-2027/",
+   "note": "Median proposed 2027 ACA premium increase across 276 insurers."
+  },
+  {
+   "id": "ep1",
+   "beat": "epstein",
+   "status": "OFFICIAL",
+   "caption": "Rules Committee Republicans voted down releasing the Epstein files",
+   "outlet": "House Rules Committee",
+   "date": "2025-07-14",
+   "url": "https://rules.house.gov/bill/119/hr-3633",
+   "note": "Vote 149: Khanna amendment failed 5-7; the only Republican yes was Ralph Norman."
+  },
+  {
+   "id": "ep2",
+   "beat": "epstein",
+   "status": "OFFICIAL",
+   "caption": "Every Republican present voted to block an Epstein files vote: 211–210",
+   "outlet": "House roll call 194",
+   "date": "2025-07-15",
+   "url": "https://clerk.house.gov/evs/2025/roll194",
+   "note": "Procedural vote, R 211-0, D 0-210."
+  },
+  {
+   "id": "ep3",
+   "beat": "epstein",
+   "status": "OFFICIAL",
+   "caption": "Republicans refused a vote on the Epstein Files Act. Twice.",
+   "outlet": "House Rules Committee",
+   "date": "2025-09-02",
+   "url": "https://rules.house.gov/bill/119/h-res-589",
+   "also": "https://democrats-rules.house.gov/bill/119/h-res-668",
+   "note": "Jul 17 and Sep 2, 2025: motions to take up H.R. 4405 failed 4-9 on party lines; the GOP passed a nonbinding resolution instead."
+  },
+  {
+   "id": "ep4",
+   "beat": "epstein",
+   "status": "REPORTED",
+   "caption": "Speaker Johnson sent the House home early instead of voting",
+   "outlet": "AP via PBS NewsHour",
+   "date": "2025-07-22",
+   "url": "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote",
+   "also": "https://www.cbsnews.com/amp/texas/news/johnson-house-recess-epstein-files-vote",
+   "note": "Rules Republicans recessed Jul 21 rather than face Epstein votes; House left Jul 23, a day early. Johnson: \"We are not going to let them use this as a political battering ram.\""
+  },
+  {
+   "id": "ep5",
+   "beat": "epstein",
+   "status": "QUOTE",
+   "caption": "Trump on the Epstein files: \"what we will forever call the Jeffrey Epstein Hoax\"",
+   "outlet": "AP",
+   "date": "2025-07-16",
+   "url": "https://apnews.com/article/trump-supporters-epstein-sex-trafficking-investigation-bondi-47370e63060d79af64b0b8ac70b970a4",
+   "short": "Trump: \"the Jeffrey Epstein Hoax\"",
+   "note": "\"Their new SCAM is what we will forever call the Jeffrey Epstein Hoax.\""
+  },
+  {
+   "id": "ep6",
+   "beat": "epstein",
+   "status": "OFFICIAL",
+   "caption": "51 Senate Republicans voted to table releasing the Epstein files",
+   "outlet": "Senate Daily Press",
+   "date": "2025-09-10",
+   "url": "https://www.dailypress.senate.gov/wednesday-september-10-2025",
+   "note": "Schumer NDAA amendment tabled 51-49; Hawley and Paul (R) voted against tabling."
+  },
+  {
+   "id": "ep7",
+   "beat": "epstein",
+   "status": "REPORTED",
+   "caption": "Johnson delayed swearing in the 218th petition signer for 50 days",
+   "outlet": "AP",
+   "date": "2025-11-12",
+   "url": "https://apnews.com/article/adelita-grijalva-arizona-house-epstein-files-johnson-da75c9f0e362291f3d0edb1da99e019d",
+   "note": "Grijalva won Sep 23, sworn in Nov 12, signed as 218th. AP: \"He swore in two Republican members this year when the chamber was not in legislative session.\" Johnson said he would swear her in when the House returned; motive is alleged."
+  },
+  {
+   "id": "ep8",
+   "beat": "epstein",
+   "status": "QUOTE",
+   "caption": "Trump: \"Only a very bad, or stupid, Republican would fall into that trap\"",
+   "outlet": "Scripps News",
+   "date": "2025-11-12",
+   "url": "https://www.scrippsnews.com/politics/the-president/fake-narrative-white-house-continues-pushback-against-newly-released-epstein-emails",
+   "note": "Same day, Bondi, Blanche and Patel met petition signer Boebert in the Situation Room (CNN); she denies being pressured."
+  },
+  {
+   "id": "ep10",
+   "beat": "epstein",
+   "status": "REPORTED",
+   "caption": "DOJ un-redacted 16 of 20 names only after Massie and Khanna caught it",
+   "outlet": "TIME",
+   "date": "2026-02-10",
+   "url": "https://time.com/7373333/epstein-files-redactions-massie-khanna-trump/",
+   "note": "Never show names: the people Khanna named are not accused of crimes."
+  },
+  {
+   "id": "ep11",
+   "beat": "epstein",
+   "status": "REPORTED",
+   "caption": "Senate Republicans blocked suing the DOJ over the files",
+   "outlet": "Scripps via WRTV",
+   "date": "2026-02-05",
+   "url": "https://www.wrtv.com/?p=2628027",
+   "note": "Barrasso objected, calling it a \"reckless political stunt.\""
+  },
+  {
+   "id": "ep12",
+   "beat": "epstein",
+   "status": "OFFICIAL",
+   "caption": "Senate Republicans confirmed the attorney general running that DOJ, 50–49",
+   "outlet": "NPR via Michigan Public",
+   "date": "2026-08-08",
+   "url": "https://www.michiganpublic.org/2026-08-08/senate-votes-to-confirm-todd-blanche-as-attorney-general",
+   "note": "Todd Blanche. Sep 17, 2026: Judge Sullivan warned of possible contempt (Axios).",
+   "short": "Senate Republicans confirmed that DOJ's attorney general, 50⁠–⁠49"
+  },
+  {
+   "id": "si1",
+   "beat": "you",
+   "status": "DATA",
+   "caption": "China imported ZERO US soybeans in September 2025. First time in 7 years.",
+   "outlet": "Reuters",
+   "date": "2025-10-20",
+   "url": "https://www.reuters.com/world/china/china-imports-no-us-soybeans-september-first-time-seven-years-2025-10-20/",
+   "note": "Customs data; Reuters cited tariffs. China resumed buying after the Oct 2025 truce."
+  },
+  {
+   "id": "si2",
+   "beat": "you",
+   "status": "OFFICIAL",
+   "caption": "Tariff fallout: a $12 billion bailout for farmers",
+   "outlet": "CBS News",
+   "date": "2025-12-08",
+   "url": "https://www.cbsnews.com/news/white-house-12-billion-aid-package-farmers",
+   "note": "~$11B to row-crop farmers via USDA Farmer Bridge Assistance."
+  },
+  {
+   "id": "si3",
+   "beat": "you",
+   "status": "DATA",
+   "caption": "Farm bankruptcies: up 46% in 2025",
+   "outlet": "American Farm Bureau",
+   "date": "2026-02-09",
+   "url": "https://www.fb.org/intel/markets/farm-bankruptcies-continued-to-climb-in-2025",
+   "also": "https://farmpolicynews.illinois.edu/2026/05/farm-bankruptcies-hit-six-year-high-in-april/",
+   "note": "315 filings in 2025 (still below 2019's 599); April 2026: most in a month since Feb 2020."
+  },
+  {
+   "id": "si4",
+   "beat": "you",
+   "status": "OFFICIAL",
+   "caption": "Your VA: nearly 30,000 fewer staff",
+   "outlet": "Dept. of Veterans Affairs",
+   "date": "2025-07",
+   "url": "https://www.va.gov/wilmington-health-care/news-releases/va-to-reduce-staff-by-nearly-30k-by-end-of-fy2025/"
+  },
+  {
+   "id": "si5",
+   "beat": "you",
+   "status": "OFFICIAL",
+   "caption": "94% of VA medical centers: severe doctor shortages",
+   "outlet": "VA Inspector General",
+   "date": "2025-08-12",
+   "url": "https://vaoig.gov/reports/national-healthcare-review/oig-determination-veterans-health-administrations-severe-1",
+   "note": "79% short on nurses; total shortages up 50% from 2024. Survey predates most departures."
+  },
+  {
+   "id": "si6",
+   "beat": "you",
+   "status": "OFFICIAL",
+   "caption": "Social Security: 7,000 staff cut",
+   "outlet": "Social Security Administration",
+   "date": "2025-02-28",
+   "url": "https://www.ssa.gov/news/en/press/releases/2025-02-28.html",
+   "note": "Target 50,000, down from 57,000. Do not claim longer waits (IG found phone service improved FY2025)."
+  },
+  {
+   "id": "si7",
+   "beat": "you",
+   "status": "REPORTED",
+   "caption": "Plan: half as many visits at your Social Security office",
+   "outlet": "AP",
+   "date": "2025-12-05",
+   "url": "https://apnews.com/article/social-security-trump-administration-retirement-a94ced488f2e052a5d9df39021701195",
+   "note": "Internal plan: no more than 15M field-office visits in FY2026, down from 31.6M."
+  },
+  {
+   "id": "si8",
+   "beat": "you",
+   "status": "REPORTED",
+   "caption": "Whistleblower: DOGE copied 300 million Americans' Social Security records with no independent oversight",
+   "outlet": "NBC News",
+   "date": "2025-08-26",
+   "url": "https://www.nbcnews.com/news/rcna227259",
+   "short": "Whistleblower: DOGE copied your Social Security data",
+   "note": "Alleged by SSA's chief data officer; SSA says it knows of no compromise."
+  },
+  {
+   "id": "si9",
+   "beat": "you",
+   "status": "ESTIMATE",
+   "caption": "SNAP: 2.4 million cut. The exemption for veterans: gone.",
+   "outlet": "CBO",
+   "date": "2025-08-11",
+   "url": "https://www.cbo.gov/publication/61367",
+   "note": "Work rules extended to ages 55-64 and parents of kids 14+; exemptions for veterans, homeless people and former foster youth ended."
+  },
+  {
+   "id": "si10",
+   "beat": "you",
+   "status": "QUOTE",
+   "caption": "Ag Secretary: \"we now have moved 4.3 million Americans off\" food stamps",
+   "outlet": "AP",
+   "date": "2026-05-01",
+   "url": "https://apnews.com/article/fact-check-snap-food-stamps-fraud-rollins-1a964909ae5cb808813a6478bbfa5f65",
+   "note": "USDA credits fraud and the economy; experts cite the law."
+  },
+  {
+   "id": "si11",
+   "beat": "you",
+   "status": "DATA",
+   "caption": "The counties that rely most on SNAP: 82% voted Trump",
+   "outlet": "Economic Innovation Group",
+   "date": "2025-11-03",
+   "url": "https://agglomerations.eig.org/p/where-any-snap-lapse-will-bite-hardest",
+   "note": "Counties where SNAP is more than 1% of income."
+  },
+  {
+   "id": "si12",
+   "beat": "you",
+   "status": "DATA",
+   "caption": "Promised: your energy bills cut \"50 to 70%.\" Electricity: up 6.7% in 2025.",
+   "outlet": "AP; BLS",
+   "date": "2026-01-13",
+   "url": "https://www.bls.gov/news.release/archives/cpi_01132026.htm",
+   "also": "https://spectrumlocalnews.com/nc/charlotte/news/2024/08/14/trump-s-campaign-called-it-an-economic-address--he-made-big-promises-but-mostly-veered-off-topic",
+   "note": "Aug 14, 2024 promise: \"50 to 70%\" within 12 months, \"maximum 18 months.\" BLS: electricity +6.7% in 2025; +3.8% in the year to Aug 2026 (cpi_09112026). Many cost drivers: frame as a broken promise."
+  },
+  {
+   "id": "gz1",
+   "beat": "genocide",
+   "status": "OFFICIAL",
+   "caption": "UN Commission of Inquiry: \"Israel is responsible for the commission of genocide in Gaza.\"",
+   "outlet": "UN News",
+   "date": "2025-09-16",
+   "url": "https://news.un.org/en/story/2025/09/1165856",
+   "short": "UN inquiry: Israel committed genocide in Gaza",
+   "note": "Chair Navi Pillay. Found 4 of the 5 Genocide Convention acts; genocidal intent \"the only reasonable inference.\" An independent commission appointed by the UN Human Rights Council, not a court: write \"UN inquiry\", never \"the UN ruled\". Israel rejected the report. Pillay won the 2026 Nobel Peace Prize (Oct 9, 2026)."
+  },
+  {
+   "id": "gz2",
+   "beat": "genocide",
+   "status": "COURT RULING",
+   "caption": "ICC arrest warrant for Netanyahu. The charges include starvation as a method of warfare.",
+   "outlet": "International Criminal Court",
+   "date": "2024-11-21",
+   "url": "https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges",
+   "short": "ICC arrest warrant for Netanyahu: starvation as a method of war",
+   "note": "Pre-Trial Chamber I: reasonable grounds that Netanyahu and Gallant bear criminal responsibility for the war crime of starvation as a method of warfare and the crimes against humanity of murder, persecution and other inhumane acts. Warrants, not convictions; still in force as of Oct 2026."
+  },
+  {
+   "id": "gz3",
+   "beat": "genocide",
+   "status": "COURT ORDER",
+   "caption": "The UN's top court ordered Israel to \"take all measures within its power\" to prevent genocidal acts. The case is pending.",
+   "outlet": "International Court of Justice",
+   "date": "2024-01-26",
+   "url": "https://www.icj-cij.org/case/192",
+   "short": "World Court: Israel must prevent genocidal acts (case pending)",
+   "note": "Provisional measures (Jan 26, Mar 28, May 24, 2024). The Court has NOT ruled on whether genocide occurred; merits schedule runs to 2029. Never write \"the ICJ ruled genocide\"."
+  },
+  {
+   "id": "gz4",
+   "beat": "genocide",
+   "status": "DATA",
+   "caption": "Aug 2025: a UN-backed panel confirmed famine in Gaza City and called it \"entirely man-made.\"",
+   "outlet": "IPC (Integrated Food Security Phase Classification)",
+   "date": "2025-08-22",
+   "url": "https://www.ipcinfo.org/ipcinfo-website/countries-in-focus-archive/issue-134/en/",
+   "short": "Famine confirmed in Gaza City, Aug 2025: \"entirely man-made\"",
+   "note": "Past tense: after the Oct 2025 ceasefire the IPC classified no area in famine (Dec 19, 2025)."
+  },
+  {
+   "id": "gz5",
+   "beat": "genocide",
+   "status": "DATA",
+   "caption": "74,000+ Palestinians killed in Gaza since Oct 2023. More than 21,000 of them children.",
+   "outlet": "Gaza Health Ministry, via Al Jazeera",
+   "date": "2026-10-07",
+   "url": "https://www.aljazeera.com/news/2026/10/7/three-years-of-israels-genocide-in-gaza-in-numbers",
+   "short": "74,000+ killed in Gaza. 21,000+ of them children.",
+   "note": "Ministry figures (WAFA Oct 9: 74,254 incl. 21,976 children); 1,460+ killed since the Oct 10, 2025 ceasefire. Does not separate civilians from combatants; excludes the missing. CBS (Oct 8, 2026): \"more than 70,000.\""
+  },
+  {
+   "id": "gz6",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Retired Israeli general: \"we can't fight this war without the United States. Period.\"",
+   "outlet": "JNS",
+   "date": "2023-11-27",
+   "url": "https://www.jns.org/biden-is-the-primary-obstacle-to-israeli-victory/",
+   "short": "Retired Israeli general: \"we can't fight this war without the United States. Period.\"",
+   "note": "Maj. Gen. (res.) Yitzhak Brick: \"All of our missiles, the ammunition, the precision-guided bombs, all the airplanes and bombs, it's all from the U.S. ... The minute they turn off the tap, you can't keep fighting.\" Retired, not an official. Biden-era quote."
+  },
+  {
+   "id": "gz7",
+   "beat": "genocide",
+   "status": "ESTIMATE",
+   "caption": "$21.7 billion in US military aid to Israel in the war's first two years. Your tax dollars.",
+   "outlet": "Brown University Costs of War",
+   "date": "2025-10-07",
+   "url": "https://costsofwar.watson.brown.edu/paper/AidToIsrael",
+   "short": "$21.7 BILLION in US military aid to Israel in two years. Your tax dollars.",
+   "note": "Oct 2023-Sep 2025, covering both the Biden and Trump years. Excludes arms sales committed for future years. Baseline: $3.8B a year under the 2016 MOU."
+  },
+  {
+   "id": "gz8",
+   "beat": "genocide",
+   "status": "DATA",
+   "caption": "68% of Israel's major arms imports come from the US.",
+   "outlet": "SIPRI",
+   "date": "2026-03-09",
+   "url": "https://www.sipri.org/media/press-release/2026/global-arms-flows-jump-nearly-10-cent-european-demand-soars",
+   "note": "2021-25 volume of major conventional arms (not dollars, not all ammunition)."
+  },
+  {
+   "id": "gz9",
+   "beat": "genocide",
+   "status": "OFFICIAL",
+   "caption": "Republicans control the White House, the Senate (53 of 100) and the House (218 of 435).",
+   "outlet": "Clerk of the U.S. House / U.S. Senate",
+   "date": "2026-10-09",
+   "url": "https://clerk.house.gov/",
+   "note": "Every House seat and 33 Senate seats are on the Nov 3, 2026 ballot."
+  },
+  {
+   "id": "gz10",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Trump, June 2025: \"ISRAEL. DO NOT DROP THOSE BOMBS.\" Within hours, Israel scaled back.",
+   "outlet": "TIME",
+   "date": "2025-06-24",
+   "url": "https://time.com/7297123/trump-warns-israel-bombs-iran-ceasefire/",
+   "note": "About Iran, not Gaza: proof the leverage exists. Axios: Netanyahu \"significantly scaled back\" the retaliation."
+  },
+  {
+   "id": "gz11",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Trump on Netanyahu: \"I call the shots. I call all the shots.\"",
+   "outlet": "The Hill (Financial Times interview)",
+   "date": "2026-06-07",
+   "url": "https://thehill.com/homenews/administration/5914563-donald-trump-israel-iran-ceasefire-deal/",
+   "short": "Trump on Netanyahu: \"I call all the shots.\"",
+   "note": "FT phone interview, Jun 7, 2026: \"I call the shots. I call all the shots. He (Netanyahu) doesn't call the shots.\" Verbatim in Reuters' first Jun 8 version (later rewritten). Also May 20, 2026 (Times of Israel): Netanyahu \"will do whatever I want him to do.\"",
+   "also": [
+    "https://www.reuters.com/world/middle-east/trump-says-new-israel-iran-strikes-wont-affect-peace-deal-2026-06-08/",
+    "https://www.ft.com/content/a0ce59f9-fbde-49e8-9158-fba3d4079859",
+    "https://www.timesofisrael.com/liveblog_entry/trump-netanyahu-wont-have-any-choice-but-to-accept-us-iran-deal-i-call-the-shots/"
+   ]
+  },
+  {
+   "id": "gz12",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Week one: Trump freed the 2,000-lb bombs Biden held back. Why? \"Because they bought them.\"",
+   "outlet": "Reuters",
+   "date": "2025-01-25",
+   "url": "https://www.reuters.com/world/us/white-house-makes-2000-pound-bombs-available-israel-undoing-bidens-pause-2025-01-25/",
+   "short": "Trump freed the 2,000-lb bombs: \"because they bought them\"",
+   "note": "Biden held one shipment over concern for civilians in Rafah; he had already sent thousands of these bombs."
+  },
+  {
+   "id": "gz13",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Rubio cheered Trump scrapping \"baseless and politicized conditions\" on military aid to Israel.",
+   "outlet": "Times of Israel (State Dept statement)",
+   "date": "2025-03-01",
+   "url": "https://www.timesofisrael.com/us-moves-to-expedite-delivery-of-4-billion-in-military-aid-to-israel",
+   "note": "The repealed memo (NSM-20) required assurances that US weapons are used in line with international humanitarian law and that recipients do not block US-backed aid. Same statement: ~$4B expedited; ~$12B in sales approved since Jan 20 (approved, not delivered)."
+  },
+  {
+   "id": "gz14",
+   "beat": "genocide",
+   "status": "PROPOSED",
+   "caption": "Trump moves to send 40,000 more 2,000-lb bombs. $2.8B, mostly your tax dollars.",
+   "outlet": "AP",
+   "date": "2026-09-15",
+   "url": "https://apnews.com/article/trump-israel-weapons-sales-gaza-eb48cb7ecf773ffc472fbafc995aef2a",
+   "short": "Trump moves to send 40,000 more 2,000-lb bombs. $2.8B, mostly your tax dollars.",
+   "note": "20,000 Mk84 + 20,000 BLU-117, \"most of which is to be paid for with foreign military financing\" (US taxpayer dollars). Not final: informal notification; Rep. Meeks placed a hold. Write \"moves to send\", not \"sent\".",
+   "also": "https://apnews.com/article/trump-israel-arms-sale-meeks-5ced4aac47eb08d9d949af296cf79ebc"
+  },
+  {
+   "id": "gz15",
+   "beat": "genocide",
+   "status": "OFFICIAL",
+   "caption": "9 Senate votes to block arms sales to Israel since 2024. Republican votes to block: zero.",
+   "outlet": "U.S. Senate roll call votes",
+   "date": "2026-04-15",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00081.htm",
+   "short": "Votes to block bombs for Israel: 0 Senate Republicans",
+   "note": "Motions to discharge Sanders' disapproval resolutions: Nov 20, 2024 (3 votes), Apr 3, 2025 (2), Jul 30, 2025 (2), Apr 15, 2026 (2). Republican yes votes across all nine: 0. Many Democrats also voted no."
+  },
+  {
+   "id": "gz16",
+   "beat": "genocide",
+   "status": "OFFICIAL",
+   "caption": "March 2026: Trump's government told the World Court the Gaza genocide charge is \"false.\"",
+   "outlet": "Middle East Eye",
+   "date": "2026-03-12",
+   "url": "https://www.middleeasteye.net/news/us-defends-israel-new-icj-interventions-south-africa-genocide-case",
+   "note": "US Art. 63 declaration of intervention in South Africa v. Israel: \"affirms, in the strongest terms possible, that the allegations of 'genocide' against Israel are false\" (JTA, Mar 16, 2026)."
+  },
+  {
+   "id": "gz17",
+   "beat": "genocide",
+   "status": "OFFICIAL",
+   "caption": "Oct 9, 2026: Trump sanctioned the entire International Criminal Court.",
+   "outlet": "Middle East Eye / Treasury OFAC",
+   "date": "2026-10-09",
+   "url": "https://www.middleeasteye.net/news/us-sanctions-international-criminal-court-major-escalation-after-former-judge-awarded-nobel",
+   "short": "Trump sanctioned the entire International Criminal Court",
+   "note": "OFAC designation under EO 14203, the same day Navi Pillay (ex-ICC judge, chair of the UN genocide inquiry) won the Nobel Peace Prize. Rubio: \"Either the ICC will end its threats, or we will end the ICC.\" Same-day news: re-check before publishing."
+  },
+  {
+   "id": "gz18",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "GOP Rep. Randy Fine on Gaza hunger reports: \"Release the hostages. Until then, starve away.\"",
+   "outlet": "The Daily Caller",
+   "date": "2025-07-22",
+   "url": "https://dailycaller.com/2025/07/22/republican-congressman-randy-fine-starving-children-gaza-strip-hamas-israel-conflict/",
+   "short": "GOP Rep. Randy Fine on Gaza: \"starve away\"",
+   "note": "Fine on X, Jul 22, 2025, replying to a report of 15 malnutrition deaths including four children: \"Release the hostages. Until then, starve away. (This is all a lie anyway...)\"",
+   "also": [
+    "https://x.com/RepFine/status/1947635219869139083",
+    "https://www.huffpost.com/entry/marjorie-taylor-greene-gaza-genocide_n_68890f9be4b08681ba5e56af"
+   ]
+  },
+  {
+   "id": "gz19",
+   "beat": "genocide",
+   "status": "REPORTED",
+   "caption": "Israel's war spread to Lebanon, Syria, Yemen, Iran and Qatar, a top US ally. In Iran, the US joined in.",
+   "outlet": "Los Angeles Times; AP",
+   "date": "2025-09-09",
+   "url": "https://www.latimes.com/world-nation/story/2025-09-09/gaza-daily",
+   "short": "Israel's war spread to 5 more countries. In Iran, the US joined in.",
+   "note": "LA Times (Sep 9, 2025): Doha strike; operations in Lebanon, Syria and Yemen; \"In June it launched a war on Iran.\" AP (Jun 21, 2025): the US struck Iran's nuclear sites (Midnight Hammer). Feb 28, 2026: the US and Israel jointly launched a new war on Iran.",
+   "also": "https://apnews.com/article/israel-iran-war-nuclear-talks-geneva-news-06-21-2025-a7b0cdaba28b5817467ccf712d214579"
+  },
+  {
+   "id": "gz20",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Rubio on why the US bombed Iran: \"We knew that there was going to be an Israeli action.\"",
+   "outlet": "Bloomberg Government",
+   "date": "2026-03-02",
+   "url": "https://news.bgov.com/bloomberg-government-news/rubio-spurs-backlash-with-latest-rationale-for-attacks-on-iran",
+   "short": "Rubio: the US hit Iran because of a coming \"Israeli action\"",
+   "note": "\"...We knew that that would precipitate an attack against American forces...\" Rubio later said he was taken out of context."
+  },
+  {
+   "id": "gz21",
+   "beat": "genocide",
+   "status": "REPORTED",
+   "caption": "The world's largest association of genocide scholars: Israel's actions in Gaza \"meet the legal definition of genocide.\"",
+   "outlet": "JTA",
+   "date": "2025-09-02",
+   "url": "https://www.jta.org/2025/09/02/israel/international-association-of-genocide-scholars-says-israels-war-in-gaza-constitutes-genocide",
+   "note": "IAGS resolution: 86% of votes cast (108-18-3); about 28% of ~500 members voted."
+  },
+  {
+   "id": "gz22",
+   "beat": "genocide",
+   "status": "REPORTED",
+   "caption": "Amnesty International: Israel is committing genocide in Gaza.",
+   "outlet": "Al-Monitor",
+   "date": "2024-12-05",
+   "url": "https://www.al-monitor.com/originals/2024/12/amnesty-accuses-israel-genocide-gaza"
+  },
+  {
+   "id": "gz23",
+   "beat": "genocide",
+   "status": "REPORTED",
+   "caption": "Human Rights Watch: \"extermination and acts of genocide\" by depriving Gaza of water.",
+   "outlet": "Al-Monitor",
+   "date": "2024-12-19",
+   "url": "https://www.al-monitor.com/originals/2024/12/hrw-accuses-israel-acts-genocide-gaza-water-access"
+  },
+  {
+   "id": "gz24",
+   "beat": "genocide",
+   "status": "REPORTED",
+   "caption": "Israel's own leading rights groups, B'Tselem and Physicians for Human Rights: it's genocide.",
+   "outlet": "JURIST",
+   "date": "2025-07-28",
+   "url": "https://www.jurist.org/news/2025/07/israeli-rights-groups-accuse-israel-of-genocide-in-gaza/"
+  },
+  {
+   "id": "gz25",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Trump: \"The U.S. will take over the Gaza Strip... We'll own it.\" \"The Riviera of the Middle East.\"",
+   "outlet": "White House transcript (GovInfo)",
+   "date": "2025-02-04",
+   "url": "https://www.govinfo.gov/content/pkg/DCPD-202500225/html/DCPD-202500225.htm",
+   "also": "https://www.jns.org/kushner-unveils-new-gaza-plan-at-davos-forum/"
+  },
+  {
+   "id": "gz26",
+   "beat": "genocide",
+   "status": "OFFICIAL",
+   "caption": "House Republicans voted 198-0 to sanction the International Criminal Court.",
+   "outlet": "House roll call 7",
+   "date": "2025-01-09",
+   "url": "https://clerk.house.gov/Votes/2025007",
+   "note": "H.R. 23 passed 243-140; Massie voted present."
+  },
+  {
+   "id": "gz27",
+   "beat": "genocide",
+   "status": "OFFICIAL",
+   "caption": "Sept 2026: 50 Senate Republicans voted down even asking for a human-rights report on Israel.",
+   "outlet": "U.S. Senate roll call 252",
+   "date": "2026-09-29",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00252.htm",
+   "note": "S.Res. 852 failed 47-51; Rand Paul was the lone Republican yes."
+  },
+  {
+   "id": "gz28",
+   "beat": "genocide",
+   "status": "REPORTED",
+   "caption": "March 2026: Rubio declared an \"emergency\" to skip Congress and send 20,000+ bombs.",
+   "outlet": "Times of Israel",
+   "date": "2026-03-07",
+   "url": "https://www.timesofisrael.com/us-bypasses-congressional-review-to-approve-munitions-sale-to-israel/",
+   "note": "About $650M; first formal emergency declaration under the arms-export law in Trump's second term (NYT)."
+  },
+  {
+   "id": "gz29",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "March 2025, Israel's heaviest strikes since the truce. White House: \"consulted by the Israelis on their attacks in Gaza.\"",
+   "outlet": "Reuters (Leavitt on Fox News)",
+   "date": "2025-03-18",
+   "url": "https://www.reuters.com/world/middle-east/israel-consulted-us-its-strikes-gaza-white-house-told-fox-news-2025-03-18/",
+   "also": "https://www.freemalaysiatoday.com/category/world/2025/03/18/white-house-says-israel-consulted-us-on-its-strikes-in-gaza"
+  },
+  {
+   "id": "gz30",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Trump on Netanyahu: he \"will do whatever I want him to do.\"",
+   "outlet": "Times of Israel",
+   "date": "2026-05-20",
+   "url": "https://www.timesofisrael.com/irgc-threatens-war-will-spread-far-beyond-the-region-if-us-renews-attacks-on-iran/"
+  },
+  {
+   "id": "gz31",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "GOP Sen. Lindsey Graham: \"So, Israel, do whatever you have to do.\" \"Give Israel the bombs they need.\"",
+   "outlet": "NBC News, Meet the Press",
+   "date": "2024-05-12",
+   "url": "https://www.nbcnews.com/politics/politics-news/sen-lindsey-graham-says-israel-whatever-comparing-war-gaza-hiroshima-n-rcna151828",
+   "note": "Compared Gaza to Hiroshima and Nagasaki. Graham died Jul 11, 2026 (NPR): use the past tense."
+  },
+  {
+   "id": "gz32",
+   "beat": "genocide",
+   "status": "QUOTE",
+   "caption": "Trump's ambassador to Israel, on land from the Nile to the Euphrates: \"It would be fine if they took it all.\"",
+   "outlet": "Axios",
+   "date": "2026-02-20",
+   "url": "https://www.axios.com/2026/02/20/tucker-carlson-mike-huckabee-israel-middle-east",
+   "note": "Mike Huckabee to Tucker Carlson; he later called it \"hyperbolic.\""
+  },
+  {
+   "id": "w10",
+   "beat": "war",
+   "status": "OFFICIAL",
+   "caption": "Sept 2026: 49 of 53 Senate Republicans voted against ending the Iran war.",
+   "outlet": "U.S. Senate roll call 244",
+   "date": "2026-09-24",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00244.htm",
+   "short": "49 of 53 Senate Republicans voted against ending the Iran war",
+   "note": "Resolution to end US hostilities with Iran failed 49-50: the 14th Senate Iran war-powers vote since Mar 5, 2026. The war began Feb 28, 2026 without congressional authorization."
+  },
+  {
+   "id": "w11",
+   "beat": "war",
+   "status": "QUOTE",
+   "caption": "Trump, Oct 8: \"we will not be attacking Iran at any time prior to the Midterm Elections.\"",
+   "outlet": "CBS News",
+   "date": "2026-10-08",
+   "url": "https://www.cbsnews.com/live-updates/iran-war-nuclear-donald-trump-vance-rubio-strait-of-hormuz/",
+   "short": "Trump: no attacks on Iran \"prior to the Midterm Elections\"",
+   "note": "\"...to be held in the United States on November 3rd.\" AP reports he has threatened escalation after the election."
+  },
+  {
+   "id": "w12",
+   "beat": "war",
+   "status": "REPORTED",
+   "caption": "First day of the Iran truce: Israel bombed central Beirut, 182+ killed. Trump: \"a separate skirmish.\"",
+   "outlet": "AP",
+   "date": "2026-04-08",
+   "url": "https://apnews.com/article/israel-lebanon-hezbollah-beirut-strikes-9402965418687c634d4a157c966ec6ea"
+  }
+ ],
+ "playbook": [
+  {
+   "id": "p3",
+   "n": 1,
+   "trick": "PURGE THE ROLLS",
+   "counter": "CHECK YOUR REGISTRATION TODAY. VOTE.ORG",
+   "receipts": [
+    {
+     "status": "COURT RULING",
+     "caption": "DOJ sued 30 states + DC for your voter data. Lost 26. Won none.",
+     "outlet": "CBS News",
+     "date": "2026-10-01",
+     "url": "https://www.cbsnews.com/news/trump-lawsuits-state-voter-rolls-justice-department/",
+     "win": true
+    },
+    {
+     "status": "REPORTED",
+     "caption": "Texas: ~1 in 5 flagged \"noncitizens\" were citizens",
+     "outlet": "NPR/MPR",
+     "date": "2026-09-25",
+     "url": "https://www.mprnews.org/story/2026/09/25/npr-supreme-court-trump-save-noncitizen-voting"
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "n": 2,
+   "trick": "KILL THE MAIL BALLOT",
+   "counter": "BLOCKED. MAIL YOURS EARLY.",
+   "receipts": [
+    {
+     "status": "COURT RULING",
+     "caption": "Supreme Court keeps Trump's mail-ballot rules blocked for November",
+     "outlet": "Votebeat",
+     "date": "2026-09-15",
+     "url": "https://www.votebeat.org/national/2026/09/15/trump-mail-voting-executive-order-supreme-court-decision-2026-election/",
+     "win": true
+    },
+    {
+     "status": "COURT RULING",
+     "caption": "5–4: ballots postmarked by Election Day still count (RNC lost)",
+     "outlet": "Venable",
+     "date": "2026-07",
+     "url": "https://www.venable.com/insights/publications/2026/07/count-the-votes-supreme-court-holds-states",
+     "win": true
+    },
+    {
+     "status": "QUOTE",
+     "caption": "Moved Space Command out of Colorado: mail voting \"a big factor\"",
+     "outlet": "AP",
+     "date": "2025-09-02",
+     "url": "https://apnews.com/article/space-command-trump-alabama-colorado-96589ce26df5ddaf59e2fc856084a8ca"
+    }
+   ]
+  },
+  {
+   "id": "p5",
+   "n": 3,
+   "trick": "FAKE TEXTS. WRONG DAY. WRONG PLACE.",
+   "counter": "ELECTION DAY: TUESDAY, NOV 3. TEXTS SAYING OTHERWISE ARE LYING.",
+   "framing": "never render a wrong date",
+   "receipts": [
+    {
+     "status": "OFFICIAL",
+     "caption": "California AG warns of false claims about \"where, when, and how to vote,\" including texts",
+     "outlet": "CA Attorney General",
+     "date": "2026-05-05",
+     "url": "https://oag.ca.gov/system/files/attachments/press-docs/Consumer%20Alert%20-%20Election%20Misinformation.pdf"
+    }
+   ]
+  },
+  {
+   "id": "p6",
+   "n": 4,
+   "trick": "SCARE YOU AT THE POLLS",
+   "counter": "TROOPS AT THE POLLS? INTIMIDATING VOTERS? FEDERAL CRIMES. STAY IN LINE.",
+   "receipts": [
+    {
+     "status": "REPORTED",
+     "caption": "Trump's DOJ plans to deploy federal election \"monitors\" nationwide",
+     "outlet": "TNND/WJLA",
+     "date": "2026-10-05",
+     "url": "https://wjla.com/news/nation-world/justice-department-to-deploy-election-monitors-nationwide-as-critics-warn-of-intimidation-ice-agents-trump-administration-national-guard"
+    },
+    {
+     "status": "QUOTE",
+     "caption": "Bannon: \"We're gonna have ICE surround the polls\"",
+     "outlet": "Media Matters",
+     "date": "2026-02-03",
+     "url": "https://www.mediamatters.org/steve-bannon/steve-bannon-youre-damn-right-were-gonna-have-ice-surround-polls-come-november"
+    },
+    {
+     "status": "REPORTED",
+     "caption": "Guard or ICE at the polls? Trump: \"anything necessary\"",
+     "outlet": "TNND/WJLA",
+     "date": "2026-10-05",
+     "url": "https://wjla.com/news/nation-world/justice-department-to-deploy-election-monitors-nationwide-as-critics-warn-of-intimidation-ice-agents-trump-administration-national-guard"
+    },
+    {
+     "status": "LAW",
+     "caption": "18 U.S.C. § 592: troops or armed men at the polls — up to 5 years",
+     "outlet": "Cornell LII",
+     "date": "",
+     "url": "https://www.law.cornell.edu/uscode/text/18/592"
+    }
+   ]
+  },
+  {
+   "id": "p7",
+   "n": 5,
+   "trick": "GUT THE PEOPLE WHO PROTECT YOUR VOTE",
+   "counter": "THEN WE MAKE IT\nTOO BIG TO RIG.",
+   "receipts": [
+    {
+     "status": "REPORTED",
+     "caption": "~1,000 CISA jobs gone; election security staff sidelined",
+     "outlet": "AP",
+     "date": "2025-11-23",
+     "url": "https://apnews.com/article/election-security-cisa-2026-secretaries-state-midterms-6d18799c6c5fdd1bc001544b2dca12bf"
+    },
+    {
+     "status": "ESTIMATE",
+     "caption": "By May 2025: DOJ voting-rights lawyers down from ~30 to 3",
+     "outlet": "Democracy Docket",
+     "date": "2025-05-12",
+     "url": "https://www.democracydocket.com/news-alerts/doj-voting-section-has-just-three-lawyers-left-watchdog-estimates/"
+    },
+    {
+     "status": "REPORTED",
+     "caption": "FBI foreign-influence task force shut down",
+     "outlet": "NBC News",
+     "date": "2025-02",
+     "url": "https://www.nbcnews.com/politics/national-security/bondi-ends-fbi-effort-combat-foreign-influence-us-politics-rcna191012"
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "n": 6,
+   "trick": "\"IT'S ALREADY DECIDED.\"",
+   "counter": "POLLS DON'T VOTE. YOU DO.",
+   "framing": "narrative — 'you'll hear'; 2022 example only",
+   "receipts": [
+    {
+     "status": "REPORTED",
+     "caption": "2022: GOP-sponsored polls sold a \"red wave\"",
+     "outlet": "Semafor",
+     "date": "2022-10-31",
+     "url": "https://www.semafor.com/article/10/31/2022/democrats-hope-tidal-wave-of-republican-sponsored-polls-arent-midterm-reality"
+    },
+    {
+     "status": "REPORTED",
+     "caption": "Then the \"red wave\" failed to materialize",
+     "outlet": "AP via Bangor Daily News",
+     "date": "2022-11-09",
+     "url": "https://www.bangordailynews.com/2022/11/09/national-politics/republican-red-wave-failed-to-materialize/"
+    }
+   ]
+  },
+  {
+   "id": "p8",
+   "n": 7,
+   "trick": "\"NATIONALIZE THE VOTING\"",
+   "counter": "YOUR STATE RUNS YOUR ELECTION. NOT HIM.",
+   "receipts": [
+    {
+     "status": "QUOTE",
+     "caption": "Trump: Republicans should \"nationalize the voting\"",
+     "outlet": "Spotlight PA",
+     "date": "2026-02",
+     "url": "https://www.spotlightpa.org/news/2026/02/trump-nationalize-voting-elections-2026-republicans/"
+    },
+    {
+     "status": "QUOTE",
+     "caption": "Asked about an election emergency to impose his voting rules: \"Stranger things have happened.\"",
+     "outlet": "CNN",
+     "date": "2026-08-11",
+     "url": "https://www.cnn.com/2026/08/11/politics/trump-national-emergency-election"
+    },
+    {
+     "status": "COURT RULING",
+     "caption": "Judge permanently blocks his proof-of-citizenship rules",
+     "outlet": "PBS",
+     "date": "2026-01",
+     "url": "https://www.pbs.org/newshour/politics/judge-blocks-additional-citizenship-provisions-in-latest-setback-to-trumps-wide-ranging-election-executive-order",
+     "win": true
+    }
+   ]
+  }
+ ],
+ "facts": {
+  "hotline": {
+   "en": "866-OUR-VOTE",
+   "es": "888-VE-Y-VOTA",
+   "source": "https://866ourvote.org",
+   "verify_before_air": true
+  },
+  "in_line": {
+   "text": "In line when polls close? Stay in line. You can still vote.",
+   "source": "https://bookofthestates.org/tables/2022-6-5"
+  },
+  "provisional": {
+   "text": "Not on the list? Ask for a provisional ballot.",
+   "source": "https://www.law.cornell.edu/uscode/text/52/21082"
+  },
+  "intimidation": {
+   "text": "Voter intimidation is a federal crime.",
+   "source": "https://www.govinfo.gov/link/uscode/52/20511"
+  },
+  "turnout_2018": {
+   "text": "2018: highest midterm turnout in over 100 years",
+   "source": "https://www.census.gov/library/stories/2019/04/behind-2018-united-states-midterm-election-turnout.html",
+   "verify_before_air": true
+  }
+ },
+ "clips": [
+  {
+   "id": "k0",
+   "use": "cold open",
+   "speaker": "Donald Trump",
+   "date": "2024-07-26",
+   "event": "Turning Point Action Believers' Summit",
+   "quote": "Christians, get out and vote. Just this time. You won't have to do it anymore. Four more years, you know what? It'll be fixed. It'll be fine. You won't have to vote anymore, my beautiful Christians.",
+   "cut_note": "cut BEFORE 'I love you, Christians' (disputed transcription); don't merge with the later 'in four years' line",
+   "rights": "fair use (C-SPAN camera; expect Content ID claim; keep rationale)",
+   "transcript": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-turning-point-summit-west-palm-beach-florida-july-27-2024/",
+   "video": "https://www.c-span.org/clip/campaign-2024/user-clip-itll-be-fixed-itll-be-fine-you-wont-have-to-vote-anymore-my-beautiful-christians/5126018"
+  },
+  {
+   "id": "k1",
+   "use": "troops beat",
+   "speaker": "Gen. Mark Milley",
+   "date": "2023-09-29",
+   "quote": "We don't take an oath to a king, or queen, or a tyrant or a dictator. And we don't take an oath to a wannabe dictator.",
+   "verify": "take exact wording from DVIDS transcript/audio",
+   "rights": "public domain (DoD); DVIDS: add 'no endorsement implied'",
+   "video": "https://www.dvidshub.net/video/898948",
+   "needs": "free DVIDS account to download"
+  },
+  {
+   "id": "k2",
+   "use": "rioters beat / turn",
+   "speaker": "VP Mike Pence (R)",
+   "date": "2021-01-06",
+   "quote": "To those who wreaked havoc in our Capitol today, you did not win. Violence never wins. Freedom wins. And this is still the People's House.",
+   "rights": "public domain (Senate floor feed)",
+   "transcript": "Congressional Record CREC-2021-01-06 S18-S38"
+  },
+  {
+   "id": "k3",
+   "use": "rioters/epstein beat",
+   "speaker": "Rep. Liz Cheney (R)",
+   "date": "2022-06-09",
+   "quote": "There will come a day when Donald Trump is gone, but your dishonor will remain.",
+   "rights": "public domain (committee feed; use only her dais shot)",
+   "transcript": "https://www.govinfo.gov/content/pkg/CHRG-117hhrg48998/html/CHRG-117hhrg48998.htm"
+  },
+  {
+   "id": "k4",
+   "use": "the turn",
+   "speaker": "Rep. John Lewis",
+   "date": "2019-03-08",
+   "quote": "The right to vote is precious--almost sacred. In a democratic society, it [is] the most powerful nonviolent instrument or tool that we have.",
+   "rights": "public domain (House floor feed)",
+   "transcript": "Congressional Record H2599-H2600"
+  },
+  {
+   "id": "k5",
+   "use": "rioters beat",
+   "speaker": "Sen. Mitch McConnell (R)",
+   "date": "2021-02-13",
+   "quote": "There is no question--none--that President Trump is practically and morally responsible for provoking the events of the day.",
+   "rights": "public domain (Senate floor feed)",
+   "transcript": "Congressional Record S735-S736"
+  },
+  {
+   "id": "k6",
+   "use": "the turn (alt)",
+   "speaker": "Lyndon B. Johnson",
+   "date": "1965-08-06",
+   "quote": "The vote is the most powerful instrument ever devised by man for breaking down injustice",
+   "rights": "likely public domain; confirm footage provenance (White House/Navy vs network)",
+   "transcript": "https://lbjlibrary.org/artifact/152"
+  },
+  {
+   "id": "k7",
+   "use": "playbook/turn (alt)",
+   "speaker": "Ronald Reagan",
+   "date": "1989-01-11",
+   "quote": "'We the People' tell the government what to do; it doesn't tell us.",
+   "rights": "public domain (White House footage via reaganlibrary.gov; avoid Foundation YouTube)",
+   "transcript": "Miller Center"
+  }
+ ],
+ "confessions": [
+  {
+   "id": "cf1",
+   "said": {
+    "text": "\"DRAIN THE SWAMP.\"",
+    "who": "Trump's 2016 ethics pledge",
+    "status": "QUOTE",
+    "outlet": "UPI",
+    "date": "2016-10-18",
+    "url": "https://www.upi.com/Top_News/US/2016/10/18/Donald-Trump-pledges-to-drain-the-swamp-in-Washington-with-ethics-reform/6421476800793/"
+   },
+   "did": {
+    "text": "$2 BILLION Abu Dhabi deal — paid in his family's stablecoin",
+    "status": "REPORTED",
+    "outlet": "Reuters",
+    "date": "2025-05-01",
+    "url": "https://www.reuters.com/world/middle-east/wlfs-zach-witkoff-usd1-selected-official-stablecoin-mgx-investment-binance-2025-05-01/"
+   }
+  },
+  {
+   "id": "cf2",
+   "said": {
+    "text": "\"We can't have someone in the Oval Office who doesn't understand the meaning of the word confidential or classified.\"",
+    "who": "Trump, 2016",
+    "status": "QUOTE",
+    "outlet": "Quoted in US v. Trump indictment ¶22",
+    "date": "2016-09-06",
+    "url": "https://www.justice.gov/storage/US_v_Trump-Nauta_23-80101.pdf"
+   },
+   "did": {
+    "text": "His boxes of classified documents: stored in a shower",
+    "status": "COURT FILING",
+    "outlet": "US v. Trump indictment ¶5 (case dismissed 2024)",
+    "date": "2023-06-08",
+    "url": "https://www.justice.gov/storage/US_v_Trump-Nauta_23-80101.pdf"
+   }
+  },
+  {
+   "id": "cf3",
+   "said": {
+    "text": "\"ENDING THE WEAPONIZATION OF THE FEDERAL GOVERNMENT\"",
+    "who": "His executive order",
+    "status": "OFFICIAL",
+    "outlet": "whitehouse.gov",
+    "date": "2025-01-20",
+    "url": "https://www.whitehouse.gov/presidential-actions/2025/01/ending-the-weaponization-of-the-federal-government/"
+   },
+   "did": {
+    "text": "\"Pam… They're all guilty as hell… JUSTICE MUST BE SERVED, NOW!!!\"",
+    "sub": "Within weeks: Comey and Letitia James indicted. Both thrown out.",
+    "status": "QUOTE",
+    "outlet": "Truth Social",
+    "date": "2025-09-20",
+    "url": "https://truthsocial.com/@realDonaldTrump/115239044548033727"
+   }
+  },
+  {
+   "id": "cf4",
+   "said": {
+    "text": "\"RESTORING FREEDOM OF SPEECH AND ENDING FEDERAL CENSORSHIP\"",
+    "who": "His executive order",
+    "status": "OFFICIAL",
+    "outlet": "whitehouse.gov",
+    "date": "2025-01-20",
+    "url": "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-freedom-of-speech-and-ending-federal-censorship/"
+   },
+   "did": {
+    "text": "\"Effective immediately, I am banning\" CNN, MS NOW and Politico from the White House",
+    "status": "QUOTE",
+    "outlet": "KTVU FOX 2",
+    "date": "2026-09-18",
+    "url": "https://www.ktvu.com/news/trump-banning-cnn-msnow-politico-white-house",
+    "sub": "A judge blocked it.",
+    "also": [
+     "https://www.aljazeera.com/news/2026/9/24/us-judge-blocks-trumps-white-house-ban-on-cnn-ms-now-and-politico"
+    ]
+   }
+  },
+  {
+   "id": "cf5",
+   "said": {
+    "text": "\"RIGGED!\" — at least 107 times in six months",
+    "who": "Trump on 2020",
+    "status": "REPORTED",
+    "outlet": "Reuters",
+    "date": "2026-05-26",
+    "url": "https://www.reuters.com/world/us/trump-claims-2020-election-rigged-least-107-times-six-months-midterms-loom-2026-05-26/"
+   },
+   "did": {
+    "text": "\"I just want to find 11,780 votes.\"",
+    "sub": "Trump to Georgia's secretary of state, on tape",
+    "status": "QUOTE",
+    "outlet": "Washington Post (audio)",
+    "date": "2021-01-02",
+    "url": "https://www.washingtonpost.com/politics/trump-raffensperger-call-transcript-georgia-vote/2021/01/03/2768e0cc-4ddd-11eb-83e3-322644d82356_story.html",
+    "clip": "assets/clips/trump-11780.wav",
+    "clip_from": 3.3,
+    "clip_len": 11.044,
+    "hl": [
+     {
+      "match": "11,780",
+      "at": 6.58
+     },
+     {
+      "match": "votes",
+      "at": 10.54
+     }
+    ]
+   }
+  }
+ ],
+ "scoreboard": [
+  {
+   "hero": true,
+   "big": "+41",
+   "label": "2018, TRUMP'S FIRST MIDTERM: HIGHEST TURNOUT IN 100 YEARS. DEMOCRATS GAINED 41 HOUSE SEATS.",
+   "text": "2018 MIDTERM: HIGHEST TURNOUT IN 100 YEARS",
+   "result": "DEMS +41 HOUSE SEATS",
+   "outlet": "Pew Research Center",
+   "date": "2020-09-08",
+   "url": "https://www.pewresearch.org/methods/2020/09/08/democrats-made-gains-from-multiple-sources-in-2018-midterm-victories/"
+  },
+  {
+   "hero": true,
+   "big": "+14",
+   "label": "2025: VIRGINIA & NEW JERSEY GOVERNORS. BOTH WON BY 14+ POINTS.",
+   "text": "VIRGINIA & NEW JERSEY GOVERNORS",
+   "result": "WON BY 14+",
+   "outlet": "Certified results, VA + NJ",
+   "date": "2025-12",
+   "url": "https://cvillerightnow.com/news/208802-virginia-election-results-certified-spanberger-defeated-earle-sears-by-over-520000-votes/",
+   "also": [
+    "https://nj.gov/state/elections/assets/pdf/election-results/2025/2025-official-general-results-governor.pdf"
+   ]
+  },
+  {
+   "hero": true,
+   "big": "31–0",
+   "label": "STATE LEGISLATIVE SEATS FLIPPED SINCE 2025: DEMOCRATS 31, REPUBLICANS 0.",
+   "text": "STATE LEGISLATIVE SEATS FLIPPED",
+   "result": "31 — ALL BLUE",
+   "outlet": "The Downballot",
+   "date": "2026-08-19",
+   "url": "https://www.the-downballot.com/p/100-specials-since-trumps-return"
+  },
+  {
+   "text": "110 SPECIAL ELECTIONS SINCE 2025",
+   "result": "DEMS RAN 12.5 PTS AHEAD OF 2024",
+   "url": "https://www.the-downballot.com/p/100-specials-since-trumps-return"
+  },
+  {
+   "text": "TRUMP'S MAIL-BALLOT ORDER",
+   "result": "BLOCKED",
+   "url": "https://www.votebeat.org/national/2026/09/15/trump-mail-voting-executive-order-supreme-court-decision-2026-election/"
+  },
+  {
+   "text": "DOJ GRAB FOR YOUR VOTER DATA",
+   "result": "LOST 26, WON 0",
+   "url": "https://www.cbsnews.com/news/trump-lawsuits-state-voter-rolls-justice-department/"
+  },
+  {
+   "text": "INDIANA GERRYMANDER",
+   "result": "KILLED 31–19",
+   "url": "https://www.axios.com/local/indianapolis/2025/12/11/indiana-senate-rejects-trump-redistricting"
+  },
+  {
+   "text": "\"PUNISHABLE BY DEATH\"",
+   "result": "GRAND JURY SAID NO",
+   "url": "https://time.com/7377620/doj-grand-jury-slotkin-goodlander-kelly-indictment-illegal-orders-trump/"
+  },
+  {
+   "text": "EPSTEIN FILES LAW",
+   "result": "PASSED 427–1",
+   "url": "https://www.jurist.org/news/2025/11/trump-signs-epstein-files-transparency-act-into-law/"
+  }
+ ],
+ "scripture": [
+  {
+   "ref": "Romans 12:19",
+   "kjv": "Vengeance is mine; I will repay, saith the Lord.",
+   "vs": "rv1",
+   "note": "vs \"I am your retribution.\""
+  },
+  {
+   "ref": "Matthew 5:44",
+   "kjv": "But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you",
+   "vs": "h12",
+   "note": "VERIFY KJV text before use"
+  },
+  {
+   "ref": "Matthew 5:38–39",
+   "kjv": "Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth: But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also.",
+   "vs": "h5"
+  },
+  {
+   "ref": "Matthew 25:35",
+   "kjv": "I was a stranger, and ye took me in",
+   "vs": "x1"
+  },
+  {
+   "ref": "Leviticus 19:34",
+   "kjv": "But the stranger that dwelleth with you shall be unto you as one born among you, and thou shalt love him as thyself",
+   "vs": "x4"
+  },
+  {
+   "ref": "Matthew 21:12–13",
+   "kjv": "…overthrew the tables of the moneychangers… ye have made it a den of thieves.",
+   "vs": "g17"
+  },
+  {
+   "ref": "Exodus 20:16",
+   "kjv": "Thou shalt not bear false witness against thy neighbour.",
+   "vs": "h10"
+  },
+  {
+   "ref": "Isaiah 10:1–2",
+   "kjv": "Woe unto them that decree unrighteous decrees… To turn aside the needy from judgment, and to take away the right from the poor of my people",
+   "vs": "m2"
+  },
+  {
+   "ref": "Matthew 6:5",
+   "kjv": "when thou prayest, thou shalt not be as the hypocrites are: for they love to pray… that they may be seen of men.",
+   "vs": "h4"
+  },
+  {
+   "ref": "Matthew 7:20",
+   "kjv": "Wherefore by their fruits ye shall know them.",
+   "vs": null,
+   "note": "title / closer"
+  }
+ ],
+ "finale": {
+  "protest_source": {
+   "name": "Crowd Counting Consortium (Harvard Ash Center / UConn), US Protest Event Data v18",
+   "license": "CC0 1.0",
+   "url": "https://doi.org/10.7910/DVN/RI9JFU"
+  },
+  "largest": {
+   "text": "AMONG THE LARGEST SINGLE-DAY PROTESTS IN AMERICAN HISTORY",
+   "source": "https://ash.harvard.edu/programs/crowd-counting-consortium/"
+  },
+  "turnout_2018": {
+   "text": "2018: HIGHEST MIDTERM TURNOUT SINCE 1914",
+   "source": "https://fortune.com/2018/11/14/voter-turnout-highest-level-since-1914/"
+  },
+  "next_action": {
+   "text": "No Kings: Vote Early — Saturday, Oct 17, 2026 (Nationwide Day of Action)",
+   "source": "https://www.nokings.org/",
+   "use": "on screen in the finale map (until Oct 17; build with --after-oct17 afterwards) + description/pinned comment",
+   "also": [
+    "https://www.citizen.org/news/no-kings-coalition-sets-nationwide-early-voting-day-of-action-for-october-17/",
+    "https://msmagazine.com/2026/09/18/next-no-kings-october-17-early-voting/",
+    "https://www.nokings.org/nkve-resources"
+   ],
+   "caveats": "Early in-person voting is open Oct 17 only in some states (e.g., GA, NV, MA, NC, TN; varies by county in AZ, CA, MN, IL, VA, IN, IA); NOT open in TX, FL, OH, MI, WI, NY, NJ, MD, KY, PA, AL, MS, NH. Never imply it is open everywhere. Never show protest activity at polling places, lines or drop boxes (state buffer zones, typically 50-200 ft; NCSL).",
+   "on_screen": {
+    "kicker": "NEXT NO KINGS DAY",
+    "date": "SATURDAY, OCT 17",
+    "title": "NO KINGS: VOTE EARLY",
+    "line": "THIS TIME, THE PROTEST IS THE VOTE.",
+    "url": "NOKINGS.ORG",
+    "note": "Vote early where you can, or make your plan. Early voting dates vary by state: vote.org"
+   }
+  }
+ }
+}

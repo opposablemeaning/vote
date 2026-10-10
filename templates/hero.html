@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Anton"; src: url("assets/fonts/Anton-Regular.ttf"); }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter.ttf"); font-weight: 100 900; }
+      @font-face { font-family: "JetBrains Mono"; src: url("assets/fonts/JetBrainsMono.ttf"); font-weight: 100 800; }
+      @font-face { font-family: "Special Elite"; src: url("assets/fonts/SpecialElite-Regular.ttf"); }
+
+      :root {
+        --ink: #0b0b0c;
+        --paper: #f3efe6;
+        --manila: #e8d8ad;
+        --red: #e3122b;
+        --white: #f5f5f4;
+        --tag: #ffd400;
+        --win: #22c55e;
+        --gold: #d4af37;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--ink); }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "Inter", sans-serif; color: var(--white); }
+
+      #stage { position: absolute; inset: 0; }
+      .layer { position: absolute; inset: 0; }
+      .center { display: flex; align-items: center; justify-content: center; text-align: center; }
+
+      #vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.75) 100%); }
+      #grain { position: absolute; inset: -50%; width: 200%; height: 200%; opacity: 0.09; pointer-events: none; }
+      #flash { position: absolute; inset: 0; background: var(--white); opacity: 0; pointer-events: none; }
+      #redflash { position: absolute; inset: 0; background: var(--red); opacity: 0; mix-blend-mode: screen; pointer-events: none; }
+
+      /* cold open */
+      .coldbox { display: flex; flex-direction: column; align-items: center; max-width: 1700px; }
+      .coldline { text-align: center; }
+      .coldline .w { display: inline-block; margin: 0 0.12em; opacity: 0; }
+      .cl0 { font-family: "Inter"; font-weight: 800; font-size: 70px; color: #d6d3d1; }
+      .cl1 { font-family: "Anton"; font-size: 160px; line-height: 1.0; color: #fff; margin: 14px 0 10px; }
+      .cl2 { font-family: "Inter"; font-weight: 800; font-size: 60px; color: #a8a29e; }
+      .attr { font-family: "JetBrains Mono"; font-size: 30px; color: #a8a29e; margin-top: 40px; letter-spacing: 0.04em; }
+
+      /* slams */
+      .slambox { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+      .slamline { font-family: "Anton"; line-height: 1.02; opacity: 0; text-align: center; max-width: 1820px; display: block; }
+
+      /* segment header */
+      .seghead { position: absolute; left: 0; right: 0; top: 46px; text-align: center; font-family: "Inter"; font-weight: 900; font-size: 44px; letter-spacing: 0.06em; opacity: 0; }
+      .seghead.tw { font-family: "Special Elite"; font-weight: 400; font-size: 60px; color: var(--tag); letter-spacing: 0.08em; }
+
+      /* act 1 ticker */
+      #header { position: absolute; left: 0; right: 0; top: 56px; text-align: center; font-family: "Inter"; font-weight: 900; font-size: 54px; letter-spacing: 0.06em; opacity: 0; }
+      #reelwin { position: absolute; left: 80px; right: 80px; top: 130px; height: 230px; overflow: hidden; opacity: 0; }
+      #reelstrip { position: absolute; left: 0; right: 0; top: 0; }
+      .reelword { height: 230px; display: flex; align-items: center; justify-content: center; font-family: "Anton"; font-size: 200px; color: var(--red); white-space: nowrap; line-height: 1; }
+      #reelwin::before, #reelwin::after { content: ""; position: absolute; left: 0; right: 0; height: 40px; z-index: 2; }
+      #reelwin::before { top: 0; background: linear-gradient(var(--ink), rgba(11,11,12,0)); }
+      #reelwin::after { bottom: 0; background: linear-gradient(rgba(11,11,12,0), var(--ink)); }
+
+      /* exhibit cards */
+      #cards { position: absolute; left: 0; right: 0; top: 390px; bottom: 0; }
+      .card { position: absolute; width: 820px; padding: 34px 40px 28px; background: var(--paper); color: var(--ink); box-shadow: 0 30px 60px rgba(0,0,0,0.55), 0 4px 0 rgba(0,0,0,0.2); opacity: 0; }
+      .card.c3 { width: 580px; padding: 26px 30px 22px; }
+      .card.c3 .cap { font-size: 37px; }
+      .card.c3 .src { font-size: 21px; margin-top: 12px; }
+      .card.c3 .stampmark { font-size: 34px; right: 18px; top: 16px; }
+      .card.mini2 { width: 600px; padding: 24px 28px 20px; }
+      .card.mini2 .cap { font-size: 32px; }
+      .card.mini2 .src { font-size: 19px; }
+      .card.mini2 .status { font-size: 17px; }
+      .tag { position: absolute; top: -22px; left: -18px; background: var(--tag); color: var(--ink); font-family: "JetBrains Mono"; font-weight: 800; font-size: 24px; padding: 6px 14px; box-shadow: 0 6px 12px rgba(0,0,0,0.35); }
+      .status { display: inline-block; font-family: "JetBrains Mono"; font-weight: 800; font-size: 22px; letter-spacing: 0.08em; padding: 4px 12px; border: 3px solid currentColor; margin-bottom: 14px; }
+      .cap { font-family: "Inter"; font-weight: 800; font-size: 44px; line-height: 1.12; letter-spacing: -0.01em; }
+      .src { font-family: "JetBrains Mono"; font-size: 24px; color: #57534e; margin-top: 16px; }
+      .stampmark { position: absolute; right: 26px; top: 22px; font-family: "Special Elite"; font-size: 44px; color: var(--red); border: 5px solid var(--red); padding: 2px 16px; opacity: 0; }
+      .win .stampmark, .stampmark.win { color: #15803d; border-color: #15803d; }
+      .st-QUOTE { color: #b45309; } .st-COURT { color: #1d4ed8; } .st-REPORTED { color: #44403c; } .st-DATA { color: #0f766e; }
+      .st-ESTIMATE { color: #7e22ce; } .st-OFFICIAL { color: #15803d; } .st-PROPOSED { color: #c2410c; } .st-LAW { color: #1e3a8a; }
+
+      #counter { position: absolute; right: 48px; bottom: 34px; font-family: "JetBrains Mono"; font-weight: 800; font-size: 30px; color: var(--white); opacity: 0; letter-spacing: 0.06em; }
+      #counter b { color: var(--tag); }
+
+      /* flip cards */
+      .fliplayer { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; perspective: 2400px; opacity: 0; padding-top: 60px; }
+      .flipcard { position: relative; width: 1520px; height: 640px; transform-style: preserve-3d; }
+      .face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; background: var(--paper); color: var(--ink); padding: 56px 72px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 40px 90px rgba(0,0,0,0.6); }
+      .face.back { transform: rotateY(180deg); }
+      .lbl { font-family: "Inter"; font-weight: 900; font-size: 36px; letter-spacing: 0.14em; padding: 8px 20px; background: var(--ink); color: var(--paper); align-self: flex-start; margin-bottom: 26px; }
+      .face.back .lbl { background: var(--red); color: #fff; }
+      .quote { font-family: "Inter"; font-weight: 800; font-size: 60px; line-height: 1.1; letter-spacing: -0.01em; }
+      .face.back .quote { font-weight: 900; font-size: 70px; }
+      .sub { font-family: "Inter"; font-weight: 700; font-size: 34px; color: #44403c; margin-top: 18px; }
+      .face .src { font-size: 26px; margin-top: 24px; }
+
+      /* playbook */
+      .tricklayer { position: absolute; inset: 0; opacity: 0; }
+      .pbpage { position: absolute; left: 210px; top: 140px; width: 1500px; height: 680px; background: var(--manila); color: #1c1917; padding: 54px 64px; box-shadow: 0 40px 90px rgba(0,0,0,0.6); }
+      .tnum { display: inline-block; font-family: "Special Elite"; color: var(--red); border: 6px solid var(--red); font-size: 54px; padding: 2px 18px; }
+      .ttitle { font-family: "Special Elite"; font-size: 96px; line-height: 1.04; margin-top: 30px; max-width: 1360px; }
+      .minis { position: absolute; left: 64px; right: 64px; bottom: 46px; display: flex; gap: 26px; align-items: flex-end; }
+      .mini { position: relative; flex: 1; background: var(--paper); color: var(--ink); padding: 18px 22px; box-shadow: 0 12px 26px rgba(0,0,0,0.35); opacity: 0; }
+      .mini .status { font-size: 16px; padding: 2px 8px; border-width: 2px; margin-bottom: 8px; }
+      .mini .cap { font-size: 27px; line-height: 1.15; }
+      .mini .src { font-size: 17px; margin-top: 8px; }
+      .mini .tag { font-size: 16px; padding: 3px 8px; top: -14px; left: -10px; }
+      .counterban { position: absolute; left: -60px; right: -60px; top: 420px; min-height: 250px; background: var(--red); color: #fff; display: flex; align-items: center; justify-content: center; text-align: center; font-family: "Anton"; line-height: 1.02; padding: 26px 120px; opacity: 0; box-shadow: 0 30px 80px rgba(0,0,0,0.65); white-space: pre-line; }
+
+      /* scoreboard */
+      .sblayer { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column; align-items: center; padding-top: 96px; }
+      .sbtitle { font-family: "Anton"; font-size: 110px; color: #fff; line-height: 1; }
+      .sbsub { font-family: "Inter"; font-weight: 900; font-size: 40px; color: var(--win); letter-spacing: 0.08em; margin: 8px 0 22px; }
+      .sbgrid { display: flex; gap: 60px; margin-top: 64px; align-items: flex-start; }
+      .sbitem { position: relative; width: 540px; text-align: center; opacity: 0; }
+      .sbtag { display: inline-block; background: var(--tag); color: var(--ink); font-family: "JetBrains Mono"; font-weight: 800; font-size: 22px; padding: 4px 12px; }
+      .sbbig { font-family: "Anton"; font-size: 220px; line-height: 1; color: var(--win); margin-top: 6px; }
+      .sblabel { font-family: "Inter"; font-weight: 900; font-size: 37px; line-height: 1.16; color: #fff; margin-top: 12px; }
+      .sbsrc { font-family: "JetBrains Mono"; font-size: 21px; color: #a8a29e; margin-top: 16px; }
+
+      /* finale */
+      .clocklayer { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 56px; }
+      .clocktext { font-family: "Inter"; font-weight: 800; font-size: 54px; color: #a8a29e; white-space: nowrap; }
+      .sirenlayer { position: absolute; inset: 0; opacity: 0; overflow: hidden; }
+      .sirenlayer svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .beacon { position: absolute; left: 50%; top: 50%; width: 3200px; height: 3200px; margin-left: -1600px; margin-top: -1600px; mix-blend-mode: screen;
+        background: conic-gradient(from 0deg, rgba(227,18,43,0.34), rgba(227,18,43,0) 20%, rgba(227,18,43,0) 50%, rgba(227,18,43,0.34) 52%, rgba(227,18,43,0) 72%, rgba(227,18,43,0) 100%); }
+      .slines { position: absolute; left: 80px; top: 60px; display: flex; flex-direction: column; gap: 4px; }
+      .sl { font-family: "Anton"; color: #fff; line-height: 1.02; opacity: 0; text-shadow: 0 4px 24px rgba(0,0,0,0.9); }
+      .sl.big { font-size: 150px; }
+      .sl.mid { font-size: 76px; color: var(--tag); }
+      .sl.small { font-family: "Inter"; font-weight: 900; font-size: 40px; letter-spacing: 0.02em; }
+      .sl.red { color: var(--red); }
+      .scenter { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+      .scenter .sl { font-size: 120px; }
+      .npanel { position: absolute; left: 260px; right: 260px; top: 150px; padding: 36px 56px 40px; background: rgba(11,11,12,0.9); border: 10px solid var(--red); text-align: center; opacity: 0; box-shadow: 0 30px 90px rgba(0,0,0,0.8); }
+      .nkick { font-family: "Inter"; font-weight: 900; font-size: 44px; letter-spacing: 0.12em; color: var(--tag); }
+      .ndate { font-family: "Anton"; font-size: 168px; line-height: 1; color: #fff; margin-top: 8px; }
+      .ntitle { font-family: "Anton"; font-size: 96px; line-height: 1.02; color: var(--red); margin-top: 6px; }
+      .nline { font-family: "Inter"; font-weight: 900; font-size: 50px; color: #fff; margin-top: 14px; }
+      .nurl { display: inline-block; font-family: "JetBrains Mono"; font-weight: 800; font-size: 76px; color: var(--ink); background: #fff; padding: 4px 26px; margin-top: 26px; opacity: 0; }
+      .nnote { font-family: "Inter"; font-weight: 800; font-size: 42px; line-height: 1.22; color: #f5f5f4; margin-top: 22px; opacity: 0; }
+      .ssource { position: absolute; left: 80px; bottom: 30px; font-family: "JetBrains Mono"; font-size: 20px; color: #a8a29e; opacity: 0; }
+      .draftnote { position: absolute; right: 40px; bottom: 30px; font-family: "JetBrains Mono"; font-size: 22px; color: #f87171; }
+      .reelslayer { position: absolute; inset: 0; opacity: 0; display: flex; align-items: center; justify-content: center; gap: 40px; }
+      .rwin { position: relative; width: 540px; height: 300px; overflow: hidden; background: #070708; border: 10px solid var(--gold); border-radius: 18px; box-shadow: inset 0 0 50px rgba(0,0,0,0.95), 0 0 70px rgba(255,212,0,0.22); }
+      .rword { height: 280px; display: flex; align-items: center; justify-content: center; font-family: "Anton"; font-size: 200px; color: #fff; line-height: 1; }
+      .rword.final.red { color: var(--red); }
+      .bulb { position: absolute; width: 22px; height: 22px; border-radius: 50%; background: #ffe680; box-shadow: 0 0 16px #ffd400; opacity: 0.25; }
+      .cblayer { position: absolute; inset: 0; opacity: 0; display: flex; align-items: center; justify-content: center; }
+      .cbcard { position: relative; width: 1400px; padding: 70px 80px 90px; margin-top: -80px; background: var(--paper); color: var(--ink); box-shadow: 0 40px 90px rgba(0,0,0,0.6); }
+      .cbquote { font-family: "Inter"; font-weight: 900; font-size: 92px; line-height: 1.05; }
+      .cbattr { font-family: "JetBrains Mono"; font-size: 30px; color: #57534e; margin-top: 26px; }
+      .cbstamp { position: absolute; right: -50px; bottom: -110px; font-family: "Anton"; font-size: 170px; color: var(--red); border: 14px solid var(--red); padding: 0 34px; line-height: 1.1; opacity: 0; }
+      .endlayer { position: absolute; inset: 0; opacity: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+      .evote { font-family: "Anton"; font-size: 290px; color: #fff; line-height: 0.95; opacity: 0; }
+      .echeck { font-family: "Inter"; font-weight: 900; font-size: 54px; color: var(--tag); letter-spacing: 0.06em; opacity: 0; }
+      .eday { font-family: "Anton"; font-size: 130px; color: var(--red); margin-top: 34px; line-height: 1; opacity: 0; }
+      .ename { font-family: "Inter"; font-weight: 900; font-size: 56px; color: #fff; margin-top: 30px; opacity: 0; }
+      .efriends { font-family: "Anton"; font-size: 96px; color: var(--tag); line-height: 1.05; margin-top: 4px; opacity: 0; }
+      .efoot { position: absolute; bottom: 48px; left: 0; right: 0; font-family: "JetBrains Mono"; font-weight: 800; font-size: 44px; color: #d6d3d1; letter-spacing: 0.02em; opacity: 0; }
+      .efoot b { color: #fff; }
+      .hl { display: inline-block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="__DURATION__" data-width="1920" data-height="1080">
+      <div id="stage" data-layout-allow-occlusion data-layout-allow-overlap>
+        <div id="cold" class="layer center"></div>
+        <div id="header" data-layout-allow-occlusion></div>
+        <div id="reelwin"><div id="reelstrip"></div></div>
+        <div id="cards" data-layout-allow-overlap></div>
+      </div>
+      <svg id="grain" data-layout-allow-occlusion xmlns="http://www.w3.org/2000/svg">
+        <filter id="n"><feTurbulence id="turb" type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="1" /></filter>
+        <rect width="100%" height="100%" filter="url(#n)" />
+      </svg>
+      <div id="vignette" data-layout-allow-occlusion></div>
+      <div id="redflash" data-layout-allow-occlusion></div>
+      <div id="flash" data-layout-allow-occlusion></div>
+      <div id="counter">RECEIPTS: <b id="count">000</b></div>
+      <audio id="mix" src="assets/audio/mix.wav" data-start="0" data-duration="__DURATION__" data-volume="1"></audio>
+    </div>
+
+    <script>
+      const VIS = __VIS__;
+      const BEAT = __BEAT__;
+      const SVGNS = "http://www.w3.org/2000/svg";
+
+      // seeded PRNG (determinism: no Math.random)
+      let seed = 1337;
+      const rand = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;
+
+      const $ = (s) => document.querySelector(s);
+      const el = (tag, cls, text) => {
+        const e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (text != null) e.textContent = text;
+        return e;
+      };
+      const svgEl = (tag, attrs) => {
+        const e = document.createElementNS(SVGNS, tag);
+        for (const k in attrs) e.setAttribute(k, attrs[k]);
+        return e;
+      };
+      const stage = $("#stage");
+      const addLayer = (cls) => { const L = el("div", cls); stage.appendChild(L); return L; };
+
+      const tl = gsap.timeline({ paused: true });
+      const D = parseFloat(document.getElementById("root").dataset.duration);
+
+      function shake(at, amt = 18, dur = 0.35, steps = 7) {
+        for (let i = 0; i < steps; i++) {
+          const k = 1 - i / steps;
+          tl.to("#stage", { x: (rand() - 0.5) * 2 * amt * k, y: (rand() - 0.5) * 2 * amt * k, duration: dur / steps, ease: "none" }, at + (i * dur) / steps);
+        }
+        tl.to("#stage", { x: 0, y: 0, duration: 0.05 }, at + dur);
+      }
+      function flash(at, which = "#flash", peak = 0.85) {
+        tl.fromTo(which, { opacity: peak }, { opacity: 0, duration: 0.18, ease: "power2.out", immediateRender: false }, at);
+      }
+      function setCount(n, at) { tl.set("#count", { textContent: String(n).padStart(3, "0") }, at); }
+      function slamIn(node, at, from = 2.3, rot = 0, dur = 0.12) {
+        tl.fromTo(node, { scale: from, opacity: 0, rotation: rot * 3 }, { scale: 1, opacity: 1, rotation: rot, duration: dur, ease: "power4.in", immediateRender: false }, at - dur);
+      }
+      const fitSize = (text, maxPx, widthPx, perChar = 0.5) => Math.min(maxPx, Math.floor(widthPx / (Math.max(1, text.length) * perChar)));
+      const STAMP = { QUOTE: "QUOTED", "COURT RULING": "RULED", "COURT ORDER": "ORDERED", "COURT FILING": "FILED", REPORTED: "RECEIPT", DATA: "RECEIPT", ESTIMATE: "ESTIMATE", OFFICIAL: "ON RECORD", PROPOSED: "PROPOSED", LAW: "LAW" };
+
+      function buildCard(r, exhibit, cls = "card") {
+        const c = el("div", cls + (r.win ? " win" : ""));
+        c.setAttribute("data-layout-allow-overlap", "");
+        c.setAttribute("data-layout-allow-occlusion", "");
+        const tag = el("div", "tag", "EXHIBIT " + String(exhibit).padStart(2, "0"));
+        tag.setAttribute("data-layout-allow-overlap", "");
+        c.appendChild(tag);
+        const status = el("div", "status st-" + r.status.split(" ")[0], r.status);
+        status.setAttribute("data-layout-allow-overlap", "");
+        c.appendChild(status);
+        const cap = el("div", "cap", r.caption);
+        cap.setAttribute("data-layout-allow-overlap", "");
+        c.appendChild(cap);
+        const src = el("div", "src", r.outlet + (r.date ? " · " + r.date : ""));
+        src.setAttribute("data-layout-allow-overlap", "");
+        c.appendChild(src);
+        const stamp = el("div", "stampmark", r.win ? "WON ✓" : STAMP[r.status] || "RECEIPT");
+        stamp.setAttribute("data-layout-allow-overlap", "");
+        c.appendChild(stamp);
+        return { c, stamp };
+      }
+
+      function reelSpin(parent, fillers, finalWord, t0, landAt, opts = {}) {
+        const h = opts.h || 230;
+        const block = el("div");
+        block.style.cssText = "position:absolute;left:0;right:0;top:0;opacity:0";
+        fillers.forEach((w) => block.appendChild(el("div", opts.cls || "reelword", w)));
+        const fin = el("div", (opts.cls || "reelword") + " final" + (opts.red ? " red" : ""), finalWord);
+        if (opts.maxFont) fin.style.fontSize = fitSize(finalWord, opts.maxFont, opts.width || 1700, 0.48) + "px";
+        block.appendChild(fin);
+        parent.appendChild(block);
+        tl.set(block, { opacity: 1, y: 0, filter: "blur(14px)" }, t0);
+        tl.to(block, { y: -h * fillers.length, duration: landAt - t0, ease: opts.ease || "power2.in" }, t0);
+        tl.to(block, { filter: "blur(0px)", duration: 0.06 }, landAt - 0.06);
+        tl.fromTo(fin, { scale: 1.35 }, { scale: 1, duration: 0.25, ease: "back.out(3)", immediateRender: false }, landAt);
+        return block;
+      }
+
+      // grain: step the turbulence seed every 2 frames, deterministically
+      for (let i = 0; i < Math.floor(D * 15); i++) {
+        tl.set("#turb", { attr: { seed: (i * 7) % 97 } }, i / 15);
+        tl.set("#grain", { x: ((i * 37) % 200) - 100, y: ((i * 53) % 200) - 100 }, i / 15);
+      }
+
+      // up to 4 cards: a 2x2 grid; 5-6 cards: 3 across (smaller cards), so every card stays readable
+      const SLOTS = [{ x: 120, y: 40, r: -3.5 }, { x: 980, y: 20, r: 2.5 }, { x: 170, y: 340, r: 2 }, { x: 1000, y: 330, r: -2.5 }];
+      const GRID3 = [{ x: 40, y: 20, r: -2.5 }, { x: 670, y: 4, r: 1.5 }, { x: 1300, y: 24, r: -1.5 }, { x: 60, y: 330, r: 2 }, { x: 690, y: 318, r: -2 }, { x: 1310, y: 334, r: 2.5 }];
+      const GRID3_5 = GRID3.slice(0, 3).concat([{ x: 360, y: 330, r: 2 }, { x: 990, y: 322, r: -2 }]);
+      const slotFor = (k, n) => (n <= 4 ? SLOTS[k % 4] : (n === 5 ? GRID3_5 : GRID3)[k % 6]);
+      const refs = {};
+      const FILLERS = ["CORRUPTION", "CRUELTY", "WAR", "LIES", "FASCISM", "GREED", "CHAOS", "THEFT", "TARIFFS", "GRIFT"];
+
+      for (const ev of VIS) {
+        switch (ev.kind) {
+          case "coldline": {
+            // verbatim captions, each word appearing as he says it
+            const box = el("div", "coldbox");
+            const lines = [0, 1, 2].map((k) => { const ln = el("div", "coldline cl" + k); box.appendChild(ln); return ln; });
+            const attr = el("div", "attr", ev.attr);
+            box.appendChild(attr);
+            $("#cold").appendChild(box);
+            const reds = [];
+            ev.words.forEach((w, i) => {
+              const text = (i === 0 ? "“" : "") + w.text + (i === ev.words.length - 1 ? "”" : "");
+              const span = el("span", "w", text);
+              lines[w.line].appendChild(span);
+              tl.fromTo(span, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.1, ease: "power3.out", immediateRender: false }, Math.max(0, w.t - 0.04));
+              if (w.red) reds.push(span);
+            });
+            tl.fromTo(attr, { opacity: 0 }, { opacity: 1, duration: 0.3, immediateRender: false }, ev.t + 0.2);
+            tl.to(reds, { color: "#e3122b", duration: 0.05 }, ev.redAt);
+            tl.fromTo(lines[1], { scale: 1 }, { scale: 1.04, duration: ev.end - ev.redAt, ease: "none", immediateRender: false }, ev.redAt);
+            tl.to(box, { opacity: 0, duration: 0.06 }, ev.end - 0.06);
+            break;
+          }
+          case "slam": {
+            const box = addLayer("slambox");
+            ev.lines.forEach((ln, i) => {
+              const s = el("div", "slamline", ln.text);
+              s.style.fontSize = ln.size + "px";
+              s.style.color = ln.color === "red" ? "#e3122b" : ln.color === "white" ? "#f5f5f4" : ln.color;
+              box.appendChild(s);
+              const at = ev.t + (ev.stagger || 0) * i;
+              slamIn(s, at, 2.4);
+              tl.to(s, { scale: 1.04, duration: Math.max(0.1, ev.hold - (ev.stagger || 0) * i), ease: "none" }, at);
+              if (i === 0 || ln.color === "red") shake(at, ln.color === "red" ? 24 : 14, 0.4);
+            });
+            if (ev.lines.some((l) => l.color === "red")) flash(ev.t + (ev.stagger || 0) * (ev.lines.length - 1), "#redflash", 0.5);
+            tl.set(box, { opacity: 0 }, ev.t + ev.hold);
+            break;
+          }
+          case "header": {
+            $("#header").textContent = ev.text;
+            tl.fromTo("#header", { opacity: 0, scaleX: 1.25 }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out", immediateRender: false }, ev.t);
+            tl.set("#reelwin", { opacity: 1 }, ev.t);
+            break;
+          }
+          case "counter": tl.to("#counter", { opacity: 1, duration: 0.3 }, ev.t); break;
+          case "counterend": tl.set("#counter", { opacity: 0 }, ev.t); break;
+          case "reel": {
+            const fill = Array.from({ length: 6 }, (_, i) => FILLERS[(i * 3 + VIS.indexOf(ev)) % FILLERS.length]);
+            const block = reelSpin($("#reelstrip"), fill, ev.word, ev.t, ev.landAt, { maxFont: 200, width: 1700 });
+            flash(ev.landAt, "#flash", 0.35);
+            shake(ev.landAt, 20, 0.4);
+            const next = VIS.find((e) => (e.kind === "reel" || e.kind === "overload") && e.t > ev.t);
+            tl.set(block, { opacity: 0 }, next ? next.t : D);
+            break;
+          }
+          case "card": {
+            const s = slotFor(ev.slot, ev.of || 4);
+            const { c, stamp } = buildCard(ev.r, ev.exhibit, ev.of > 4 ? "card c3" : "card");
+            c.style.left = s.x + "px"; c.style.top = s.y + "px";
+            $("#cards").appendChild(c);
+            tl.fromTo(c, { opacity: 0, scale: 1.7, rotation: s.r * 4, y: -60 }, { opacity: 1, scale: 1, rotation: s.r, y: 0, duration: 0.13, ease: "power4.in", immediateRender: false }, ev.t - 0.13);
+            tl.fromTo(stamp, { opacity: 0, scale: 2.2, rotation: -9 }, { opacity: 0.85, scale: 1, rotation: -9, duration: 0.1, ease: "power4.in", immediateRender: false }, ev.t + 0.12);
+            shake(ev.t, 8, 0.2);
+            setCount(ev.exhibit, ev.t);
+            break;
+          }
+          case "clear": {
+            const live = Array.from(document.querySelectorAll("#cards .card")).filter((c) => !c.dataset.cleared);
+            tl.to(live, { y: 900, rotation: "+=12", opacity: 0, duration: 0.22, ease: "power3.in", stagger: 0.02 }, ev.t);
+            live.forEach((c) => (c.dataset.cleared = "1"));
+            break;
+          }
+          case "overload": {
+            refs.overloadBlock = reelSpin($("#reelstrip"), ev.words.concat(ev.words), "ALL OF THE ABOVE.", ev.t, ev.landAt, { maxFont: 200, width: 1700, ease: "power1.in" });
+            ev.cards.forEach((k) => {
+              const { c, stamp } = buildCard(k.r, k.exhibit, "card mini2");
+              const x = 40 + rand() * (1920 - 680);
+              const y = -30 + rand() * (690 - 260);
+              const r = (rand() - 0.5) * 12;
+              c.style.left = x + "px"; c.style.top = y + "px";
+              $("#cards").appendChild(c);
+              tl.fromTo(c, { opacity: 0, scale: 1.6, rotation: r * 3 }, { opacity: 1, scale: 1, rotation: r, duration: 0.1, ease: "power4.in", immediateRender: false }, k.t - 0.1);
+              tl.set(stamp, { opacity: 0.85, rotation: -9 }, k.t);
+              setCount(k.exhibit, k.t);
+            });
+            tl.fromTo("#grain", { opacity: 0.09 }, { opacity: 0.35, duration: ev.landAt - ev.t, ease: "power2.in", immediateRender: false }, ev.t);
+            tl.set("#grain", { opacity: 0.09 }, ev.landAt + 0.05);
+            flash(ev.landAt, "#flash", 0.9);
+            shake(ev.landAt, 30, 0.5);
+            break;
+          }
+          case "against": {
+            // FOR -> AGAINST: the header glitches, the wall falls away, the reel lands on the viewer
+            const h = $("#header");
+            for (let i = 0; i < 8; i++) {
+              const at = ev.t + i * 0.045;
+              tl.set(h, { x: (rand() - 0.5) * 44, textShadow: `${((rand() - 0.5) * 26).toFixed(1)}px 0 #e3122b, ${((rand() - 0.5) * 26).toFixed(1)}px 0 #22d3ee` }, at);
+            }
+            tl.set(h, { innerHTML: ev.text + '<span style="color:#e3122b">' + ev.word + "</span>" }, ev.t + 0.18);
+            tl.set(h, { x: 0, textShadow: "0 0 0 rgba(0,0,0,0)" }, ev.t + 0.36);
+            const live = Array.from(document.querySelectorAll("#cards .card")).filter((c) => !c.dataset.cleared);
+            tl.to(live, { y: 900, rotation: "+=10", opacity: 0, duration: 0.3, ease: "power3.in", stagger: 0.008 }, ev.t);
+            live.forEach((c) => (c.dataset.cleared = "1"));
+            if (refs.overloadBlock) tl.set(refs.overloadBlock, { opacity: 0 }, ev.spinAt);
+            reelSpin($("#reelstrip"), ["CORRUPTION", "WAR", "CRUELTY", "GREED"], ev.you, ev.spinAt, ev.landAt, { maxFont: 210, width: 1700 });
+            flash(ev.landAt, "#flash", 0.6);
+            flash(ev.landAt + 0.06, "#redflash", 0.45);
+            shake(ev.landAt, 36, 0.6);
+            tl.fromTo(h, { scale: 1.1 }, { scale: 1, duration: 0.3, ease: "power3.out", immediateRender: false }, ev.landAt);
+            break;
+          }
+          case "act1end": tl.set(["#header", "#reelwin", "#cards"], { opacity: 0 }, ev.t); break;
+          case "seghead": {
+            const h = addLayer("seghead" + (ev.typewriter ? " tw" : ""));
+            h.setAttribute("data-layout-allow-occlusion", "");
+            h.textContent = ev.text;
+            refs["seg-" + ev.id] = h;
+            tl.fromTo(h, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, immediateRender: false }, ev.t);
+            break;
+          }
+          case "segend": if (refs["seg-" + ev.id]) tl.set(refs["seg-" + ev.id], { opacity: 0 }, ev.t); break;
+          case "flip": {
+            const L = addLayer("fliplayer");
+            L.setAttribute("data-layout-allow-overlap", "");
+            L.setAttribute("data-layout-allow-occlusion", "");
+            const cardEl = el("div", "flipcard");
+            cardEl.setAttribute("data-layout-allow-overlap", "");
+            cardEl.setAttribute("data-layout-allow-occlusion", "");
+            const front = el("div", "face front");
+            front.setAttribute("data-layout-allow-overlap", "");
+            front.setAttribute("data-layout-allow-occlusion", "");
+            const back = el("div", "face back");
+            back.setAttribute("data-layout-allow-overlap", "");
+            back.setAttribute("data-layout-allow-occlusion", "");
+            const tag1 = el("div", "tag", "EXHIBIT " + String(ev.ex1).padStart(2, "0"));
+            tag1.setAttribute("data-layout-allow-overlap", "");
+            front.appendChild(tag1);
+            const lbl1 = el("div", "lbl", "THEY SAID");
+            lbl1.setAttribute("data-layout-allow-overlap", "");
+            front.appendChild(lbl1);
+            const q = el("div", "quote", ev.said.text);
+            q.setAttribute("data-layout-allow-overlap", "");
+            front.appendChild(q);
+            const src1 = el("div", "src", [ev.said.who, ev.said.outlet, ev.said.date].filter(Boolean).join(" · "));
+            src1.setAttribute("data-layout-allow-overlap", "");
+            front.appendChild(src1);
+            const tag2 = el("div", "tag", "EXHIBIT " + String(ev.ex2).padStart(2, "0"));
+            tag2.setAttribute("data-layout-allow-overlap", "");
+            back.appendChild(tag2);
+            const lbl2 = el("div", "lbl", "THEY DID");
+            lbl2.setAttribute("data-layout-allow-overlap", "");
+            back.appendChild(lbl2);
+            const qb = el("div", "quote", ev.did.text);
+            qb.setAttribute("data-layout-allow-overlap", "");
+            // wrap the words he is about to say so they can light up on cue
+            const full = ev.did.text;
+            const marks = (ev.hl || []).map((h) => ({ ...h, i: full.indexOf(h.match) })).filter((h) => h.i >= 0).sort((a, b) => a.i - b.i);
+            const hls = [];
+            if (marks.length) {
+              qb.textContent = "";
+              let pos = 0;
+              marks.forEach((h) => {
+                qb.append(full.slice(pos, h.i));
+                const sp = el("span", "hl", h.match);
+                qb.append(sp);
+                hls.push({ sp, at: h.at });
+                pos = h.i + h.match.length;
+              });
+              qb.append(full.slice(pos));
+            }
+            back.appendChild(qb);
+            if (ev.did.sub) {
+              const sub = el("div", "sub", ev.did.sub);
+              sub.setAttribute("data-layout-allow-overlap", "");
+              back.appendChild(sub);
+            }
+            const src2 = el("div", "src", [ev.did.outlet, ev.did.date].filter(Boolean).join(" · "));
+            src2.setAttribute("data-layout-allow-overlap", "");
+            back.appendChild(src2);
+            const stamp = el("div", "stampmark", "CONFESSION");
+            back.appendChild(stamp);
+            cardEl.appendChild(front); cardEl.appendChild(back);
+            L.appendChild(cardEl);
+            const qsize = (n) => (n <= 22 ? 128 : n <= 40 ? 104 : n <= 64 ? 86 : n <= 95 ? 70 : 60);
+            q.style.fontSize = qsize(ev.said.text.length) + "px";
+            qb.style.fontSize = qsize(ev.did.text.length) + "px";
+            tl.set(L, { opacity: 1 }, ev.t - 0.16);
+            tl.fromTo(cardEl, { y: -900, rotation: -8, rotationY: 0 }, { y: 0, rotation: -1.2, rotationY: 0, duration: 0.16, ease: "power4.in", immediateRender: false }, ev.t - 0.16);
+            shake(ev.t, 12, 0.25);
+            setCount(ev.ex1, ev.t);
+            tl.to(cardEl, { rotationY: 180, rotation: 1.2, duration: 0.3, ease: "power2.inOut" }, ev.flipAt);
+            const stampAt = ev.stampAt ?? ev.flipAt + 0.6;
+            if (ev.pushIn) tl.fromTo(cardEl, { scale: 1 }, { scale: 1.08, duration: stampAt - ev.flipAt - 0.3, ease: "none", immediateRender: false }, ev.flipAt + 0.3);
+            hls.forEach((h) => {
+              if (!h) return;
+              tl.to(h.sp, { color: "#e3122b", duration: 0.06 }, h.at);
+              tl.fromTo(h.sp, { scale: 1.3 }, { scale: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, h.at);
+            });
+            tl.fromTo(stamp, { opacity: 0, scale: 2.4, rotation: -9 }, { opacity: 0.9, scale: 1, rotation: -9, duration: 0.1, ease: "power4.in", immediateRender: false }, stampAt);
+            flash(stampAt, "#redflash", ev.pushIn ? 0.55 : 0.4);
+            shake(stampAt, ev.pushIn ? 28 : 18, 0.35);
+            setCount(ev.ex2, ev.flipAt);
+            tl.to(cardEl, { x: -2300, rotation: -14, duration: 0.2, ease: "power3.in" }, ev.end - 0.2);
+            tl.set(L, { opacity: 0 }, ev.end);
+            break;
+          }
+          case "trick": {
+            const L = addLayer("tricklayer");
+            const page = el("div", "pbpage");
+            const tnum = el("div", "tnum", "TRICK #" + ev.n);
+            page.appendChild(tnum);
+            page.appendChild(el("div", "ttitle", ev.trick));
+            const minis = el("div", "minis");
+            const miniEls = ev.minis.map((m) => {
+              const { c } = buildCard(m.r, m.exhibit, "mini");
+              c.querySelector(".stampmark").remove();
+              minis.appendChild(c);
+              return c;
+            });
+            page.appendChild(minis);
+            L.appendChild(page);
+            const ban = el("div", "counterban", ev.counter);
+            if (ev.trick.length > 24) ban.style.top = "530px"; // two-line title: land below it
+            const lines = ev.counter.length > 24 ? 2 : 1;
+            ban.style.fontSize = Math.max(76, Math.min(150, Math.floor(1700 / (Math.ceil(ev.counter.length / lines) * 0.47)))) + "px";
+            L.appendChild(ban);
+            tl.set(L, { opacity: 1 }, ev.t - 0.12);
+            tl.fromTo(page, { scale: 1.25, rotation: 3, opacity: 0 }, { scale: 1, rotation: -0.6, opacity: 1, duration: 0.12, ease: "power4.in", immediateRender: false }, ev.t - 0.12);
+            tl.fromTo(tnum, { scale: 2.2, rotation: -4 }, { scale: 1, rotation: -4, duration: 0.1, ease: "power4.in", immediateRender: false }, ev.t + 0.1);
+            shake(ev.t, 10, 0.25);
+            miniEls.forEach((c, k) => {
+              const m = ev.minis[k];
+              const r = (k - 1) * 1.6;
+              tl.fromTo(c, { opacity: 0, y: -40, scale: 1.3, rotation: r * 3 }, { opacity: 1, y: 0, scale: 1, rotation: r, duration: 0.1, ease: "power4.in", immediateRender: false }, m.t - 0.1);
+              setCount(m.exhibit, m.t);
+            });
+            tl.fromTo(ban, { xPercent: -110, rotation: -2.5, opacity: 1 }, { xPercent: 0, rotation: -2.5, opacity: 1, duration: 0.14, ease: "power4.in", immediateRender: false }, ev.counterAt - 0.14);
+            flash(ev.counterAt, "#redflash", 0.45);
+            shake(ev.counterAt, 26, 0.45);
+            tl.set(L, { opacity: 0 }, ev.end);
+            break;
+          }
+          case "scoreboard": {
+            const L = addLayer("sblayer");
+            L.appendChild(el("div", "sbtitle", "THE SCOREBOARD"));
+            L.appendChild(el("div", "sbsub", "WHEN WE SHOW UP, WE WIN."));
+            tl.set(L, { opacity: 1 }, ev.t);
+            const grid = el("div", "sbgrid");
+            L.appendChild(grid);
+            ev.items.forEach((w) => {
+              const it = el("div", "sbitem");
+              it.appendChild(el("div", "sbtag", "EXHIBIT " + String(w.exhibit).padStart(2, "0")));
+              it.appendChild(el("div", "sbbig", w.big));
+              it.appendChild(el("div", "sblabel", w.label));
+              it.appendChild(el("div", "sbsrc", w.src));
+              grid.appendChild(it);
+              slamIn(it, w.t, 1.7);
+              shake(w.t, 14, 0.3);
+              setCount(w.exhibit, w.t);
+            });
+            tl.set(L, { opacity: 0 }, ev.end);
+            break;
+          }
+          case "clock": {
+            const L = addLayer("clocklayer");
+            const svg = svgEl("svg", { width: 420, height: 420, viewBox: "-210 -210 420 420" });
+            svg.appendChild(svgEl("circle", { r: 190, fill: "none", stroke: "#a8a29e", "stroke-width": 8 }));
+            for (let k = 0; k < 12; k++) {
+              const a = (k / 12) * Math.PI * 2;
+              svg.appendChild(svgEl("line", { x1: 160 * Math.sin(a), y1: -160 * Math.cos(a), x2: 178 * Math.sin(a), y2: -178 * Math.cos(a), stroke: "#a8a29e", "stroke-width": k % 3 ? 4 : 9 }));
+            }
+            svg.appendChild(svgEl("line", { x1: 0, y1: 0, x2: 0, y2: -95, stroke: "#e7e5e4", "stroke-width": 12, "stroke-linecap": "round", transform: "rotate(-60)" }));
+            svg.appendChild(svgEl("line", { x1: 0, y1: 0, x2: 0, y2: -140, stroke: "#e7e5e4", "stroke-width": 7, "stroke-linecap": "round", transform: "rotate(-8)" }));
+            const secG = svgEl("g", {});
+            secG.appendChild(svgEl("line", { x1: 0, y1: 30, x2: 0, y2: -170, stroke: "#e3122b", "stroke-width": 4 }));
+            svg.appendChild(secG);
+            L.appendChild(svg);
+            const txt = el("div", "clocktext", ev.text);
+            L.appendChild(txt);
+            refs.clocktext = txt;
+            tl.fromTo(L, { opacity: 0 }, { opacity: 1, duration: 0.5, immediateRender: false }, ev.t);
+            for (let k = 0; k < ev.ticks; k++) tl.to(secG, { rotation: (k + 1) * 6, svgOrigin: "0 0", duration: 0.08, ease: "back.out(4)" }, ev.t + k * BEAT);
+            if (ev.slideAt) {
+              // the silence: the clock fades, the line takes the center of the screen
+              const lift = (420 + 56) / 2;
+              tl.to(svg, { opacity: 0, duration: 0.7, ease: "power2.out" }, ev.slideAt);
+              tl.to(txt, { y: -lift, scale: 1.08, color: "#f5f5f4", duration: 1.2, ease: "power3.inOut" }, ev.slideAt + 0.1);
+            }
+            tl.set(L, { opacity: 0 }, ev.end);
+            break;
+          }
+          case "alarm": {
+            const t = refs.clocktext;
+            const steps = Math.floor((ev.end - ev.t) / 0.045);
+            for (let i = 0; i < steps; i++) {
+              const at = ev.t + i * 0.045;
+              tl.set("#stage", { x: (rand() - 0.5) * 34, y: (rand() - 0.5) * 22 }, at);
+              if (t) tl.set(t, { textShadow: `${((rand() - 0.5) * 16).toFixed(1)}px 0 #e3122b, ${((rand() - 0.5) * 16).toFixed(1)}px 0 #22d3ee` }, at);
+            }
+            tl.set("#stage", { x: 0, y: 0 }, ev.end);
+            if (t) tl.set(t, { color: "#ffffff", scale: 1.16 }, ev.t);
+            flash(ev.t, "#redflash", 0.55);
+            flash(ev.t + 0.5, "#redflash", 0.4);
+            break;
+          }
+          case "siren": {
+            const L = addLayer("sirenlayer");
+            const svg = svgEl("svg", { viewBox: "-200 -80 1375 770", preserveAspectRatio: "xMidYMid meet" });
+            const mapG = svgEl("g", {});
+            mapG.appendChild(svgEl("path", { d: ev.map.nation, fill: "#141418", stroke: "#52525b", "stroke-width": 1.2 }));
+            mapG.appendChild(svgEl("path", { d: ev.map.borders, fill: "none", stroke: "#2e2e36", "stroke-width": 0.8 }));
+            svg.appendChild(mapG);
+            const igniteSpan = ev.surgeAt - ev.t - 0.8;
+            const groupEls = ev.map.groups.map((g, gi) => {
+              const G = svgEl("g", { opacity: 0 });
+              g.forEach(([x, y]) => G.appendChild(svgEl("circle", { cx: x, cy: y, r: 2.1, fill: "#ffe66d" })));
+              svg.appendChild(G);
+              const at = ev.t + 0.5 + igniteSpan * ev.map.groupAt[gi];
+              tl.fromTo(G, { opacity: 0 }, { opacity: 0.95, duration: 0.18, immediateRender: false }, at);
+              return G;
+            });
+            const fly = svgEl("g", { opacity: 0 });
+            const flyEls = ev.map.flyers.map(([x, y]) => { const c = svgEl("circle", { cx: x, cy: y, r: 2.6, fill: "#fff6b0" }); fly.appendChild(c); return c; });
+            svg.appendChild(fly);
+            L.appendChild(svg);
+            const beacon = el("div", "beacon");
+            L.appendChild(beacon);
+            const lines = el("div", "slines");
+            const center = el("div", "scenter");
+            L.appendChild(lines); L.appendChild(center);
+            const src = el("div", "ssource", ev.source);
+            L.appendChild(src);
+            if (ev.map.placeholder) L.appendChild(el("div", "draftnote", "DRAFT: placeholder dots (county centroids), not event data"));
+
+            tl.set(L, { opacity: 1 }, ev.t);
+            tl.fromTo(mapG, { opacity: 0 }, { opacity: 1, duration: 0.6, immediateRender: false }, ev.t);
+            tl.fromTo(src, { opacity: 0 }, { opacity: 1, duration: 0.4, immediateRender: false }, ev.t + 1);
+            tl.fromTo(beacon, { rotation: 0 }, { rotation: 360 * ((ev.end - ev.t) / 1.6), duration: ev.end - ev.t, ease: "none", immediateRender: false }, ev.t);
+            ev.lines.forEach((ln) => {
+              const s = el("div", "sl " + ln.cls, ln.text);
+              if (ln.color) s.style.color = ln.color;
+              (ln.center ? center : lines).appendChild(s);
+              slamIn(s, ln.at, 1.8);
+              shake(ln.at, ln.cls.includes("big") ? 20 : 10, 0.3);
+              if (ln.center) tl.to(lines, { opacity: 0, duration: 0.15 }, ln.at - 0.15);
+            });
+            if (ev.next) {
+              // the next No Kings day: the protest is the vote
+              const P = el("div", "npanel");
+              P.appendChild(el("div", "nkick", ev.next.kicker));
+              P.appendChild(el("div", "ndate", ev.next.date));
+              P.appendChild(el("div", "ntitle", ev.next.title));
+              if (ev.next.line) P.appendChild(el("div", "nline", ev.next.line));
+              const url = el("div", "nurl", ev.next.url);
+              P.appendChild(url);
+              const note = el("div", "nnote", ev.next.note);
+              P.appendChild(note);
+              L.appendChild(P);
+              tl.to(lines, { opacity: 0, duration: 0.15 }, ev.next.at - 0.15);
+              tl.to(mapG, { opacity: 0.35, duration: 0.3 }, ev.next.at - 0.15);
+              tl.fromTo(P, { opacity: 0, scale: 1.5, rotation: -3 }, { opacity: 1, scale: 1, rotation: -1, duration: 0.14, ease: "power4.in", immediateRender: false }, ev.next.at - 0.14);
+              shake(ev.next.at, 22, 0.4);
+              flash(ev.next.at, "#redflash", 0.4);
+              tl.fromTo(url, { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.12, ease: "power4.in", immediateRender: false }, ev.next.urlAt - 0.12);
+              shake(ev.next.urlAt, 10, 0.25);
+              tl.fromTo(note, { opacity: 0 }, { opacity: 1, duration: 0.3, immediateRender: false }, ev.next.noteAt);
+              tl.to(P, { opacity: 0, scale: 0.92, duration: 0.15 }, ev.surgeAt - 0.15);
+            }
+            // the surge: the country empties into the ballot box
+            tl.to(groupEls, { opacity: 0, duration: 0.5, stagger: 0.01 }, ev.surgeAt + 0.2);
+            tl.set(fly, { opacity: 1 }, ev.surgeAt);
+            flyEls.forEach((c, i) => {
+              const go = ev.surgeAt + ((i * 7919) % 100) / 100 * 0.6;
+              tl.to(c, { attr: { cx: 487.5 + (((i * 31) % 70) - 35), cy: 305 + (((i * 17) % 40) - 20), r: 1.2 }, duration: 1.0, ease: "power3.in" }, go);
+            });
+            tl.to(fly, { opacity: 0, duration: 0.3 }, ev.end - 0.35);
+            tl.to([mapG, src], { opacity: 0, duration: 0.8 }, ev.surgeAt + 0.4);
+            tl.set(L, { opacity: 0 }, ev.end + 0.3);
+            break;
+          }
+          case "reels": {
+            const L = addLayer("reelslayer");
+            const wins = ev.words.map(() => { const w = el("div", "rwin"); L.appendChild(w); return w; });
+            tl.fromTo(L, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power3.out", immediateRender: false }, ev.t);
+            const fill = ["NOW", "LOUDER", "ALL", "OF", "US", "TODAY", "NOW", "LOUDER", "ALL", "OF", "US"];
+            ev.words.forEach((w, i) => {
+              reelSpin(wins[i], fill.slice(i, i + 8), w, ev.t, ev.lands[i], { cls: "rword", h: 280, red: i === 2 });
+              shake(ev.lands[i], 24 + i * 6, 0.4);
+              flash(ev.lands[i], i === 2 ? "#redflash" : "#flash", i === 2 ? 0.6 : 0.3);
+            });
+            // marquee bulbs (small-area chase lights; no full-screen strobe)
+            const bulbs = [];
+            for (let k = 0; k < 19; k++) { bulbs.push([70 + (k * 1780) / 18, 340]); bulbs.push([70 + (k * 1780) / 18, 740]); }
+            for (let k = 1; k < 5; k++) { bulbs.push([70, 340 + (k * 400) / 5]); bulbs.push([1850, 340 + (k * 400) / 5]); }
+            bulbs.forEach(([x, y], i) => {
+              const b = el("div", "bulb");
+              b.style.left = x - 11 + "px"; b.style.top = y - 11 + "px";
+              L.appendChild(b);
+              const cyc = 0.14;
+              const reps = Math.max(0, Math.floor((ev.end - ev.t) / cyc) - 1);
+              tl.fromTo(b, { opacity: 0.2 }, { opacity: 1, duration: cyc, ease: "steps(1)", repeat: reps, yoyo: true, immediateRender: false }, ev.t + (i % 2) * cyc);
+            });
+            tl.set(L, { opacity: 0 }, ev.end);
+            break;
+          }
+          case "callback": {
+            const L = addLayer("cblayer");
+            const c = el("div", "cbcard");
+            c.appendChild(el("div", "tag", "EXHIBIT 01"));
+            c.appendChild(el("div", "cbquote", ev.quote));
+            c.appendChild(el("div", "cbattr", ev.attr));
+            const st = el("div", "cbstamp", ev.stamp);
+            c.appendChild(st);
+            L.appendChild(c);
+            tl.set(L, { opacity: 1 }, ev.t - 0.13);
+            tl.fromTo(c, { y: -800, rotation: -6 }, { y: 0, rotation: -1.5, duration: 0.13, ease: "power4.in", immediateRender: false }, ev.t - 0.13);
+            tl.fromTo(st, { opacity: 0, scale: 2.6, rotation: -10 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.12, ease: "power4.in", immediateRender: false }, ev.stampAt - 0.12);
+            flash(ev.stampAt, "#redflash", 0.55);
+            shake(ev.stampAt, 30, 0.5);
+            tl.set(L, { opacity: 0 }, ev.end);
+            break;
+          }
+          case "endcard": {
+            const L = addLayer("endlayer");
+            const v = el("div", "evote", "VOTE.ORG");
+            const c = el("div", "echeck", "CHECK YOUR REGISTRATION TODAY");
+            const d = el("div", "eday", "TUESDAY, NOV 3");
+            const n = el("div", "ename", ev.plan);
+            const fr = el("div", "efriends", ev.friends);
+            const f = el("div", "efoot");
+            if (ev.site) f.innerHTML = "EVERY RECEIPT: <b>" + ev.site + "</b>";
+            [v, c, d, n, fr, f].forEach((x) => L.appendChild(x));
+            tl.set(L, { opacity: 1 }, ev.t);
+            slamIn(v, ev.t + 0.12, 1.8);
+            tl.fromTo(c, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.25, immediateRender: false }, ev.t + 0.4);
+            slamIn(d, ev.t + 0.9, 1.6);
+            tl.fromTo(n, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.25, immediateRender: false }, ev.t + 1.4);
+            slamIn(fr, ev.t + 1.9, 1.7);
+            if (ev.site) tl.fromTo(f, { opacity: 0 }, { opacity: 1, duration: 0.4, immediateRender: false }, ev.t + 2.3);
+            shake(ev.t + 0.12, 16, 0.3);
+            break;
+          }
+        }
+      }
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
