@@ -1,0 +1,36 @@
+name: Receipts as JSON
+description: Several receipts at once, or an AI agent's work, in the receipt format
+title: "Receipts: "
+labels: ["receipt"]
+body:
+  - type: markdown
+    attributes:
+      value: "Paste a JSON array in [the receipt format](https://github.com/opposablemeaning/vote/blob/main/CONTRIBUTING.md#the-format). Using an agent? Give it [the prompt](https://github.com/opposablemeaning/vote/blob/main/CONTRIBUTING.md#using-an-ai-agent), then open every link yourself before you send it."
+  - type: textarea
+    id: receipts
+    attributes:
+      label: "Receipts"
+      description: "A JSON array of receipts. If you can, run `node scripts/receipts.mjs check your-file.json` first."
+      render: json
+      placeholder: |
+        [
+          {
+            "beat": "healthcare",
+            "status": "DATA",
+            "caption": "One claim, in plain words",
+            "outlet": "KFF",
+            "date": "2026-10-08",
+            "url": "https://www.kff.org/..."
+          }
+        ]
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Before you send it"
+      options:
+        - label: "A person, not just an agent, opened every source, and each one says what its caption says."
+          required: true
+        - label: "The sources are original outlets or records, not reposts, aggregators or screenshots."
+          required: true

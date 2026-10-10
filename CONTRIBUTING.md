@@ -1,34 +1,165 @@
-# Contributing receipts
+# Add a receipt
 
-This list is public so it can be checked and corrected. A wrong receipt hurts the whole thing, so the bar is the source, not the outrage.
+This list is public so anyone can add to it and anyone can check it. One wrong receipt gives people an excuse to wave away all the others, so the bar is the source, not the outrage.
 
-## Rules
+## Three ways to send one
 
-1. **Every receipt needs a source URL.** Use the original outlet or the primary record (court opinion, roll call, agency release, transcript), not a repost, aggregator, or social screenshot. If the original is paywalled, link it anyway and add a second, open source in `also`.
-2. **Every receipt needs an honest status label:** `QUOTE`, `COURT RULING`, `OFFICIAL`, `REPORTED`, `DATA`, `ESTIMATE`, `PROPOSED`, or `LAW` (see the README). Projections are `ESTIMATE`. Allegations are `REPORTED`, and the caption says "alleged" where it matters.
-3. **The caption must say what the source says,** no more. Put exact quotes in quotation marks. Put caveats in `note`.
-4. **They're receipts, not verdicts.** Don't call anything a crime unless a court has. Don't name or imply wrongdoing by private individuals.
-5. **No content that targets people for who they are.** Receipts are about officials, governments, votes, money, and policy.
-6. **Corrections are as welcome as additions.** If a receipt is wrong, outdated, or overstated, open an issue or PR that fixes or removes it.
+1. **No code: [the receipt form](https://github.com/opposablemeaning/vote/issues/new?template=new-receipt.yml).** One receipt at a time. You need a free GitHub account.
+2. **Several at once, or your AI agent's work: [the JSON form](https://github.com/opposablemeaning/vote/issues/new?template=receipts-json.yml).** Paste a JSON array in [the format below](#the-format).
+3. **A pull request:** add one file to [`submissions/`](submissions/) that holds a JSON array in the same format. Name it for what it covers, like `submissions/medicaid-cuts.json`. Leave `data/receipts.json` alone; new receipts get their ids when they're merged.
 
-## Format
+Found a mistake? Use the **correct this** link under any receipt on [the page](https://opposablemeaning.com/vote/), or [the correction form](https://github.com/opposablemeaning/vote/issues/new?template=correction.yml), or fix it in `data/receipts.json` in a pull request. Corrections are as welcome as additions.
 
-Add an object to `receipts` in `data/receipts.json`:
+## The rules
+
+1. **Every receipt needs a source you've opened.** Use the original outlet or the primary record (court opinion, roll call, agency release, transcript), not a repost, aggregator or social screenshot. If the original is paywalled, link it anyway and add an open source in `also`.
+2. **One claim per receipt, and the caption says what the source says, no more.** Exact quotes go in quotation marks. Caveats go in `note`.
+3. **The label is honest.** Projections are `ESTIMATE`. Allegations are `REPORTED` or `COURT FILING`, and the caption says "alleged" where it matters. Something proposed but not done is `PROPOSED`.
+4. **They're receipts, not verdicts.** Don't call anything a crime unless a court has.
+5. **Officials, not private people.** Receipts are about officials, governments, votes, money and policy. Don't name or imply wrongdoing by private individuals.
+6. **Nothing that targets people for who they are.**
+
+## The format
+
+A submission is a JSON array of receipts:
 
 ```json
-{
-  "id": "hc11",
-  "beat": "healthcare",
-  "status": "DATA",
-  "caption": "What the source shows, in plain words",
-  "outlet": "KFF",
-  "date": "2026-10-01",
-  "url": "https://...",
-  "also": "https://... (optional second source)",
-  "note": "optional: exact quote, caveats, context"
-}
+[
+  {
+    "beat": "healthcare",
+    "status": "DATA",
+    "caption": "2.6 million fewer people on ACA plans. Two-thirds of the drop: Republican districts.",
+    "outlet": "KFF",
+    "date": "2026-10-08",
+    "url": "https://www.kff.org/affordable-care-act/how-does-aca-marketplace-enrollment-in-2026-vary-across-congressional-districts/",
+    "also": "https://www.kff.org/quick-insights/aca-marketplace-enrollment-is-down-by-3-million-after-big-jump-in-premium-payments/",
+    "note": "Paid enrollment 22.1M -> 19.2M (Feb 2026). GOP-held districts: 55% of enrollees, 67% of the decline."
+  }
+]
 ```
 
-- `beat` is one of the `beats` ids in the same file.
-- `id` is unique and stable. Don't renumber existing receipts; the video and the site link to them.
-- Then run `node scripts/build-site.mjs` to regenerate the site, and include the `docs/` changes in your PR.
+| Field | Required | What goes in it |
+|---|---|---|
+| `beat` | yes | The topic id, from [the topic list](#topics). |
+| `status` | yes | What kind of evidence it is, from [the labels](#status-labels). |
+| `caption` | yes | One claim in plain words, up to 160 characters. Under 120 reads best. |
+| `outlet` | yes | Who published the source: `Reuters`, `Supreme Court opinion`, `House roll call 123`. |
+| `date` | yes | When the source was published, as `YYYY-MM-DD`. Use `YYYY-MM` or `YYYY` only if the source gives no day. |
+| `url` | yes | The original source, as a full `https://` link. |
+| `also` | no | A second source link, or a list of links. |
+| `note` | no | Caveats, context or the exact quote, up to 600 characters. |
+| `win` | no | `true` only when the receipt records them being stopped: blocked in court, voted down. It shows as **WIN**. |
+
+Leave out `id`; ids are assigned when a submission is merged. Any other field is an error, so a typo like `"source"` for `"url"` gets caught.
+
+The same format as JSON Schema, which most validators and AI agents can work from: [opposablemeaning.com/vote/receipt.schema.json](https://opposablemeaning.com/vote/receipt.schema.json) (in this repo at `docs/vote/receipt.schema.json`). Every receipt already on the list, in the same shape: [opposablemeaning.com/vote/receipts.json](https://opposablemeaning.com/vote/receipts.json).
+
+### Status labels
+
+<!-- labels: generated by scripts/build-site.mjs from scripts/receipts.mjs -->
+| `status` | What it means |
+|---|---|
+| `QUOTE` | Their own words, from a recording, transcript or post |
+| `COURT RULING` | A decision by a judge, jury or court |
+| `COURT ORDER` | An interim court order (like the ICJ's provisional measures), not a final ruling |
+| `COURT FILING` | An allegation in a court filing, such as an indictment |
+| `OFFICIAL` | A government record: a vote tally, an order, an agency release |
+| `REPORTED` | Reporting by a news outlet |
+| `DATA` | Published statistics |
+| `ESTIMATE` | A projection or model (CBO, KFF, researchers), labeled as one |
+| `PROPOSED` | Proposed, not done |
+| `LAW` | Enacted law |
+<!-- /labels -->
+
+**WIN** isn't a label you set: it's how the page shows a receipt with `"win": true`.
+
+### Topics
+
+<!-- topics: generated by scripts/build-site.mjs from data/receipts.json -->
+| `beat` | On the page as | Receipts |
+|---|---|---|
+| `corruption` | CORRUPTION | 7 |
+| `tax` | A TAX ON YOU | 5 |
+| `cruelty` | CRUELTY | 6 |
+| `war` | WAR | 12 |
+| `genocide` | GENOCIDE | 32 |
+| `troops` | BETRAYING THE TROOPS | 4 |
+| `women` | WOMEN DYING | 4 |
+| `healthcare` | LOSING YOUR HEALTHCARE | 10 |
+| `epstein` | PROTECTING PEDOPHILES | 15 |
+| `you` | A VOTE AGAINST YOU | 12 |
+| `revenge` | REVENGE | 15 |
+| `rioters` | PARDONED RIOTERS | 3 |
+| `bills` | HIGHER BILLS | 1 |
+| `billionaires` | BILLIONAIRES FIRST | 3 |
+| `allies` | BETRAYING ALLIES | 4 |
+| `dictators` | DICTATOR WORSHIP | 4 |
+| `ukraine` | BLAMING UKRAINE | 4 |
+| `suppression` | VOTER SUPPRESSION | 7 |
+| `denial` | ELECTION DENIAL | 5 |
+| `theocracy` | THEOCRACY | 4 |
+| `science` | ANTI-SCIENCE | 5 |
+| `aid` | DEATH BY SPREADSHEET | 3 |
+| `insider` | SELLING THE PRESIDENCY | 3 |
+| `grift` | THE GRIFT | 12 |
+| `faith` | USING JESUS | 8 |
+<!-- /topics -->
+
+Nothing fits? Use the closest topic and say what's missing in your issue or pull request. New topics get added when the receipts call for them.
+
+## Check it before you send it
+
+With [Node.js](https://nodejs.org) 18 or newer and a copy of this repo (there's nothing to install):
+
+```sh
+node scripts/receipts.mjs check your-file.json
+```
+
+It checks every field and label, flags sources that are already on the list, and says exactly what to fix. Pull requests run the same check automatically.
+
+## Using an AI agent
+
+Agents are good at putting articles into this format and bad at sources: they invent links and misquote. Give yours this prompt along with the articles or topics you want covered, then open every link yourself before you send anything.
+
+```text
+Turn the sources below into receipts for opposablemeaning.com/vote, a public, sourced list of the
+record of Donald Trump, his administration and the Republican Party.
+
+Output only a JSON array that validates against
+https://opposablemeaning.com/vote/receipt.schema.json. Each receipt is an object with:
+- "beat": the closest topic id from the schema's enum
+- "status": what kind of evidence it is: QUOTE (their own words), COURT RULING, COURT ORDER
+  (an interim order), COURT FILING (an allegation in a filing), OFFICIAL (a government record),
+  REPORTED (news reporting), DATA (published statistics), ESTIMATE (a projection or model),
+  PROPOSED (not done yet) or LAW (enacted)
+- "caption": one claim in plain words, at most 160 characters, saying only what the source says,
+  with exact quotes in double quotation marks
+- "outlet": who published the source
+- "date": the source's publication date, YYYY-MM-DD
+- "url": the original source: the outlet or primary record, not a repost, aggregator or screenshot
+- "also" (optional): a second source link, especially if "url" is paywalled
+- "note" (optional): caveats, context or the exact quote
+- "win" (optional): true only if the receipt records them being stopped (blocked in court,
+  voted down)
+Leave out "id" and any other field.
+
+Rules:
+1. Open every link you cite and confirm the page says what your caption says. Never cite a page
+   you haven't opened, and never build a URL from a pattern. If you can't verify a claim, leave it out.
+2. Prefer the primary record (court opinion, roll call, agency release, transcript) or the outlet
+   that did the reporting.
+3. Don't call anything a crime unless a court has. Allegations are REPORTED or COURT FILING, and
+   the caption says "alleged" where it matters.
+4. Never name or imply wrongdoing by private individuals; receipts are about officials,
+   governments, votes, money and policy. Nothing that targets people for who they are.
+5. Skip anything already on the list: https://opposablemeaning.com/vote/receipts.json
+```
+
+## Merging (maintainers)
+
+```sh
+node scripts/receipts.mjs add submissions/<file>.json   # assigns ids, adds to data/receipts.json, deletes the file
+node scripts/build-site.mjs                             # rebuilds the page, these tables and the receipt form
+```
+
+For a submission that came in through an issue, save its JSON as `submissions/<name>.json` first. Cloudflare Pages rebuilds the page on every push, but run `build-site.mjs` before you commit anyway, so the generated tables and the receipt form in this repo stay current.

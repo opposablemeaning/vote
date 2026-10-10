@@ -2184,8 +2184,10 @@
   "hotline": {
    "en": "866-OUR-VOTE",
    "es": "888-VE-Y-VOTA",
+   "asian": "888-API-VOTE",
+   "arabic": "844-YALLA-US",
    "source": "https://866ourvote.org",
-   "verify_before_air": true
+   "checked": "2026-10-10"
   },
   "in_line": {
    "text": "In line when polls close? Stay in line. You can still vote.",

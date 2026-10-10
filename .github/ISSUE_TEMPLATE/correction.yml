@@ -1,0 +1,24 @@
+name: Correction
+description: A receipt is wrong, outdated, overstated, or its link is dead
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: input
+    id: receipt
+    attributes:
+      label: "Which receipt?"
+      description: "Its id (like c3), shown under each receipt on the page next to \"correct this\", or paste its caption."
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What's wrong?"
+      description: "What the source actually says, or what has changed since."
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: "A better or newer source (optional)"
+      description: "A link that shows the correction. It's the fastest way to get it fixed."
